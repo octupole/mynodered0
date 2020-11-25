@@ -4995,8 +4995,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 1020,
-        "y": 640,
+        "x": 1000,
+        "y": 600,
         "wires": [
             [
                 "b63d400f.006a"
