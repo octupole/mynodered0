@@ -4866,7 +4866,7 @@
         "type": "delay",
         "z": "92419cdc.39ec9",
         "name": "",
-        "pauseType": "delay",
+        "pauseType": "delayv",
         "timeout": "2",
         "timeoutUnits": "minutes",
         "rate": "1",
