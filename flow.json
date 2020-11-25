@@ -5003,8 +5003,8 @@
         "y": 560,
         "wires": [
             [
-                "7927c8a5.9313c8",
-                "edbc9ee7.cd979"
+                "edbc9ee7.cd979",
+                "c0c42fb0.a3631"
             ]
         ]
     },
@@ -5145,5 +5145,32 @@
         "x": 720,
         "y": 340,
         "wires": []
+    },
+    {
+        "id": "c0c42fb0.a3631",
+        "type": "change",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 600,
+        "wires": [
+            [
+                "7927c8a5.9313c8"
+            ]
+        ]
     }
 ]
