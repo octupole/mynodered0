@@ -5098,7 +5098,7 @@
         "y": 760,
         "wires": [
             [
-                "930f3663.c0cf58"
+                "e1650fc2.ab41c"
             ]
         ]
     },
@@ -5113,7 +5113,7 @@
         "order": 4,
         "width": "2",
         "height": "2",
-        "wrap": false,
+        "wrap": true,
         "passthru": true,
         "topic": "",
         "format": "{{value}}",
