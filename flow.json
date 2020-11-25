@@ -5003,7 +5003,8 @@
         "y": 560,
         "wires": [
             [
-                "7927c8a5.9313c8"
+                "7927c8a5.9313c8",
+                "edbc9ee7.cd979"
             ]
         ]
     },
@@ -5103,29 +5104,46 @@
         ]
     },
     {
-        "id": "930f3663.c0cf58",
+        "id": "bfa43d36.4752e",
         "type": "ui_numeric",
         "z": "481e1d7a.648f04",
         "name": "",
         "label": "numeric",
         "tooltip": "",
         "group": "9a0992c2.8c6b",
-        "order": 4,
-        "width": "2",
-        "height": "2",
+        "order": 3,
+        "width": 0,
+        "height": 0,
         "wrap": false,
         "passthru": true,
         "topic": "",
         "format": "{{value}}",
-        "min": "2",
+        "min": 0,
         "max": "100",
-        "step": "2",
-        "x": 600,
-        "y": 660,
+        "step": 1,
+        "x": 490,
+        "y": 580,
         "wires": [
             [
                 "2b63fed1.558412"
             ]
         ]
+    },
+    {
+        "id": "edbc9ee7.cd979",
+        "type": "debug",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 340,
+        "wires": []
     }
 ]
