@@ -4999,8 +4999,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 620,
-        "y": 620,
+        "x": 740,
+        "y": 560,
         "wires": [
             [
                 "7927c8a5.9313c8"
@@ -5098,7 +5098,7 @@
         "y": 760,
         "wires": [
             [
-                "e1650fc2.ab41c"
+                "930f3663.c0cf58"
             ]
         ]
     },
@@ -5113,15 +5113,15 @@
         "order": 4,
         "width": "2",
         "height": "2",
-        "wrap": true,
+        "wrap": false,
         "passthru": true,
         "topic": "",
         "format": "{{value}}",
         "min": 0,
         "max": "100",
         "step": "2",
-        "x": 250,
-        "y": 380,
+        "x": 600,
+        "y": 660,
         "wires": [
             [
                 "2b63fed1.558412"
