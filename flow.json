@@ -4981,31 +4981,6 @@
         ]
     },
     {
-        "id": "71c992fe.d96c2c",
-        "type": "ui_slider",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "label": "slider",
-        "tooltip": "",
-        "group": "9a0992c2.8c6b",
-        "order": 3,
-        "width": "2",
-        "height": "2",
-        "passthru": true,
-        "outs": "all",
-        "topic": "",
-        "min": 0,
-        "max": "100",
-        "step": 1,
-        "x": 450,
-        "y": 500,
-        "wires": [
-            [
-                "2b63fed1.558412"
-            ]
-        ]
-    },
-    {
         "id": "2b63fed1.558412",
         "type": "change",
         "z": "481e1d7a.648f04",
@@ -5148,7 +5123,9 @@
         "x": 250,
         "y": 380,
         "wires": [
-            []
+            [
+                "2b63fed1.558412"
+            ]
         ]
     }
 ]
