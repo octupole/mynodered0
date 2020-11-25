@@ -5126,5 +5126,29 @@
                 "e1650fc2.ab41c"
             ]
         ]
+    },
+    {
+        "id": "930f3663.c0cf58",
+        "type": "ui_numeric",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "label": "numeric",
+        "tooltip": "",
+        "group": "9a0992c2.8c6b",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "x": 250,
+        "y": 380,
+        "wires": [
+            []
+        ]
     }
 ]
