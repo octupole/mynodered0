@@ -5115,5 +5115,18 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "483e8fa0.d0c1f",
+        "type": "tuya-smart-device",
+        "z": "dd91d5bc.c35b28",
+        "deviceName": "socket1",
+        "deviceId": "765156865002916f36c1",
+        "deviceKey": "f04ffb380ed7b26f",
+        "x": 350,
+        "y": 1040,
+        "wires": [
+            []
+        ]
     }
 ]
