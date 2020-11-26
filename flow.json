@@ -5145,5 +5145,22 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "a5e69c0b.21ad1",
+        "type": "deconz-output",
+        "z": "92419cdc.39ec9",
+        "name": "",
+        "server": "bf0682f0.fbf51",
+        "device": "group_7",
+        "device_name": "○ Bureau0",
+        "command": "on",
+        "commandType": "deconz_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transitionTime": "",
+        "x": 1850,
+        "y": 780,
+        "wires": []
     }
 ]
