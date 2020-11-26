@@ -4559,7 +4559,7 @@
                 "8edc5cdb.f3f93"
             ],
             [
-                "8edc5cdb.f3f93"
+                "e051bc12.e08f2"
             ]
         ]
     },
@@ -5305,6 +5305,33 @@
         "wires": [
             [
                 "d3176375.6b1a"
+            ]
+        ]
+    },
+    {
+        "id": "e051bc12.e08f2",
+        "type": "change",
+        "z": "92419cdc.39ec9",
+        "name": "Toggle",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"state\":\"toggle\",\"transition\": 2}",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1390,
+        "y": 980,
+        "wires": [
+            [
+                "59562ad1.1d83c4"
             ]
         ]
     }
