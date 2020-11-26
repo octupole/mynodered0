@@ -726,6 +726,7 @@
     {
         "id": "730175b3.fb80dc",
         "type": "tuyapi-cloud-configuration",
+        "d": true,
         "name": "one",
         "key": "7vjjthvga4ayvtnk2zh1",
         "secret": "299e1b80514241b496d187e672f20ac5",
