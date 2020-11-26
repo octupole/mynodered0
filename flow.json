@@ -1649,8 +1649,8 @@
         "payload": "getInfo",
         "payloadType": "info",
         "debug": false,
-        "x": 760,
-        "y": 660,
+        "x": 720,
+        "y": 760,
         "wires": [
             [
                 "4a363a1f.6bb564",
