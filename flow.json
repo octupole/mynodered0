@@ -724,19 +724,6 @@
         "base_topic": "zigbee2mqtt"
     },
     {
-        "id": "730175b3.fb80dc",
-        "type": "tuyapi-cloud-configuration",
-        "name": "one",
-        "key": "",
-        "secret": "",
-        "secret2": "",
-        "certSign": "",
-        "apiEtVersion": "",
-        "region": "EU",
-        "email": "mm148881@gmail.com",
-        "password": "6#i3Rhp&g%Lt9bkkeg"
-    },
-    {
         "id": "d2f59c3a.a44e",
         "type": "mqtt in",
         "z": "dd91d5bc.c35b28",
