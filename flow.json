@@ -4651,19 +4651,6 @@
         "wires": []
     },
     {
-        "id": "a52dc93a.9b0fa8",
-        "type": "zigbee2mqtt-bridge",
-        "z": "92419cdc.39ec9",
-        "name": "",
-        "server": "67c87fc0.150f8",
-        "topic": null,
-        "x": 280,
-        "y": 1380,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "bb08ee96.a54d8",
         "type": "mqtt in",
         "z": "92419cdc.39ec9",
