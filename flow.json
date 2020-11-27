@@ -5402,5 +5402,30 @@
                 "f167b09f.8d036"
             ]
         ]
+    },
+    {
+        "id": "6756898c.9f5d88",
+        "type": "inject",
+        "z": "dd91d5bc.c35b28",
+        "name": "Turn on 480",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"command\": \"getdeviceinfo\", \"idx\": 480 }",
+        "payloadType": "json",
+        "x": 710,
+        "y": 240,
+        "wires": [
+            [
+                "f167b09f.8d036"
+            ]
+        ]
     }
 ]
