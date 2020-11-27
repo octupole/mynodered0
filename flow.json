@@ -5377,5 +5377,30 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "2e299c40.f8cea4",
+        "type": "inject",
+        "z": "dd91d5bc.c35b28",
+        "name": "Turn on 479",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"command\": \"getdeviceinfo\", \"idx\": 479 }",
+        "payloadType": "json",
+        "x": 490,
+        "y": 320,
+        "wires": [
+            [
+                "f167b09f.8d036"
+            ]
+        ]
     }
 ]
