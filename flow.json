@@ -5336,24 +5336,6 @@
         ]
     },
     {
-        "id": "9417977c.6a3c58",
-        "type": "tuya-smart",
-        "z": "dd91d5bc.c35b28",
-        "deviceName": "tatot",
-        "deviceIp": "192.168.1.139",
-        "deviceId": "04666673d8bfc0d81dbe",
-        "deviceKey": "b613c908eed4522f",
-        "request": "{\"schema\": true}",
-        "pollingInterval": 10,
-        "x": 440,
-        "y": 260,
-        "wires": [
-            [
-                "420fe7ab.d493c8"
-            ]
-        ]
-    },
-    {
         "id": "420fe7ab.d493c8",
         "type": "debug",
         "z": "dd91d5bc.c35b28",
@@ -5390,11 +5372,11 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 190,
-        "y": 280,
+        "x": 420,
+        "y": 200,
         "wires": [
             [
-                "9417977c.6a3c58"
+                "991a53ad.cb312"
             ]
         ]
     },
@@ -5408,7 +5390,9 @@
         "x": 680,
         "y": 180,
         "wires": [
-            []
+            [
+                "420fe7ab.d493c8"
+            ]
         ]
     }
 ]
