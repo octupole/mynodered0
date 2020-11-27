@@ -5390,12 +5390,25 @@
         "deviceKey": "b613c908eed4522f",
         "request": "{\"schema\": true}",
         "pollingInterval": 10,
-        "x": 770,
+        "x": 750,
         "y": 180,
         "wires": [
             [
                 "420fe7ab.d493c8"
             ]
+        ]
+    },
+    {
+        "id": "6537eb31.5c5894",
+        "type": "tuya-smart-device",
+        "z": "dd91d5bc.c35b28",
+        "deviceName": "tui",
+        "deviceId": "04666673d8bfc0d81dbe",
+        "deviceKey": "b613c908eed4522f",
+        "x": 900,
+        "y": 280,
+        "wires": [
+            []
         ]
     }
 ]
