@@ -5377,17 +5377,5 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "96d3cb0d.95f2d8",
-        "type": "tuya-led",
-        "z": "dd91d5bc.c35b28",
-        "name": "Led Controller",
-        "deviceid": "04666673d8bfc0d81dbe",
-        "key": "b613c908eed4522f",
-        "ip": "192.168.1.61",
-        "x": 1030,
-        "y": 360,
-        "wires": []
     }
 ]
