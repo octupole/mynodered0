@@ -5340,7 +5340,7 @@
         "type": "tuya-smart",
         "z": "dd91d5bc.c35b28",
         "deviceName": "tatot",
-        "deviceIp": "192.168.1.61",
+        "deviceIp": "192.168.1.139",
         "deviceId": "04666673d8bfc0d81dbe",
         "deviceKey": "b613c908eed4522f",
         "request": "{\"schema\": true}",
