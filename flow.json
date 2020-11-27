@@ -5375,40 +5375,7 @@
         "x": 420,
         "y": 200,
         "wires": [
-            [
-                "3cb538ac.6b8e68"
-            ]
-        ]
-    },
-    {
-        "id": "3cb538ac.6b8e68",
-        "type": "tuya-smart",
-        "z": "dd91d5bc.c35b28",
-        "deviceName": "tipo",
-        "deviceIp": "192.168.1.61",
-        "deviceId": "04666673d8bfc0d81dbe",
-        "deviceKey": "b613c908eed4522f",
-        "request": "{\"schema\": true}",
-        "pollingInterval": 10,
-        "x": 750,
-        "y": 180,
-        "wires": [
             []
-        ]
-    },
-    {
-        "id": "6537eb31.5c5894",
-        "type": "tuya-smart-device",
-        "z": "dd91d5bc.c35b28",
-        "deviceName": "tui",
-        "deviceId": "04666673d8bfc0d81dbe",
-        "deviceKey": "b613c908eed4522f",
-        "x": 900,
-        "y": 280,
-        "wires": [
-            [
-                "420fe7ab.d493c8"
-            ]
         ]
     }
 ]
