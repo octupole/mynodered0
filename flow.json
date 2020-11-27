@@ -724,6 +724,12 @@
         "base_topic": "zigbee2mqtt"
     },
     {
+        "id": "f81d1f9d.951c3",
+        "type": "smartlifeair-login",
+        "email": "mm148881@gmail.com",
+        "password": "Kur10!kumA"
+    },
+    {
         "id": "d2f59c3a.a44e",
         "type": "mqtt in",
         "z": "dd91d5bc.c35b28",
