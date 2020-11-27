@@ -5390,8 +5390,8 @@
         "deviceKey": "b613c908eed4522f",
         "request": "{\"schema\": true}",
         "pollingInterval": 10,
-        "x": 700,
-        "y": 140,
+        "x": 770,
+        "y": 180,
         "wires": [
             [
                 "420fe7ab.d493c8"
