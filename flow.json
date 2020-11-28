@@ -5490,7 +5490,7 @@
         "id": "86c0b31a.936bc",
         "type": "nora-outlet",
         "z": "dd91d5bc.c35b28",
-        "devicename": "Outlet",
+        "devicename": "Grinder",
         "roomhint": "",
         "name": "Grinder",
         "passthru": false,
