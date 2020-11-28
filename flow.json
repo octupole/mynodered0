@@ -5419,7 +5419,7 @@
         "id": "6756898c.9f5d88",
         "type": "inject",
         "z": "dd91d5bc.c35b28",
-        "name": "Turn on 480",
+        "name": "Turn on 482",
         "props": [
             {
                 "p": "payload"
@@ -5430,7 +5430,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "{\"command\": \"getdeviceinfo\", \"idx\": 480 }",
+        "payload": "{\"command\": \"getdeviceinfo\", \"idx\": 482 }",
         "payloadType": "json",
         "x": 710,
         "y": 240,
