@@ -724,6 +724,13 @@
         "base_topic": "zigbee2mqtt"
     },
     {
+        "id": "7db40803.091658",
+        "type": "vsh-connection",
+        "name": "echo",
+        "port": "8883",
+        "accessTokenExpiry": "1606582378878"
+    },
+    {
         "id": "d2f59c3a.a44e",
         "type": "mqtt in",
         "z": "dd91d5bc.c35b28",
@@ -5444,5 +5451,19 @@
         "x": 960,
         "y": 860,
         "wires": []
+    },
+    {
+        "id": "1a6b82ec.a1116d",
+        "type": "vsh-virtual-device",
+        "z": "481e1d7a.648f04",
+        "name": "espresso1",
+        "connection": "7db40803.091658",
+        "template": "SWITCH",
+        "passthrough": false,
+        "x": 1390,
+        "y": 700,
+        "wires": [
+            []
+        ]
     }
 ]
