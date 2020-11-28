@@ -731,6 +731,13 @@
         "accessTokenExpiry": "1606582378878"
     },
     {
+        "id": "cda469d1.0f29c8",
+        "type": "nora-config",
+        "name": "nora config",
+        "group": "",
+        "notify": false
+    },
+    {
         "id": "d2f59c3a.a44e",
         "type": "mqtt in",
         "z": "dd91d5bc.c35b28",
@@ -5478,5 +5485,31 @@
                 "59209739.8dab68"
             ]
         ]
+    },
+    {
+        "id": "95bb491f.7398e8",
+        "type": "nora-light",
+        "z": "dd91d5bc.c35b28",
+        "devicename": "MyLight",
+        "lightcolor": false,
+        "brightnesscontrol": false,
+        "turnonwhenbrightnesschanges": false,
+        "passthru": false,
+        "statepayload": true,
+        "brightnessoverride": "",
+        "roomhint": "Burea",
+        "name": "",
+        "nora": "cda469d1.0f29c8",
+        "topic": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "x": 1085,
+        "y": 1400,
+        "wires": [
+            []
+        ],
+        "l": false
     }
 ]
