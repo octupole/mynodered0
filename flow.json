@@ -5493,7 +5493,7 @@
         "devicename": "Grinder",
         "roomhint": "",
         "name": "",
-        "passthru": true,
+        "passthru": false,
         "nora": "cda469d1.0f29c8",
         "topic": "",
         "onvalue": "true",
