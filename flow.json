@@ -731,6 +731,11 @@
         "accessTokenExpiry": "1606582378878"
     },
     {
+        "id": "40ced0b9.7535a",
+        "type": "alexa-home-conf",
+        "username": "mm148881@gmail.com"
+    },
+    {
         "id": "d2f59c3a.a44e",
         "type": "mqtt in",
         "z": "dd91d5bc.c35b28",
@@ -5462,6 +5467,21 @@
         "passthrough": false,
         "x": 1410,
         "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ab80205e.6decf",
+        "type": "alexa-home",
+        "z": "481e1d7a.648f04",
+        "conf": "40ced0b9.7535a",
+        "device": "",
+        "acknoledge": true,
+        "name": "",
+        "topic": "",
+        "x": 380,
+        "y": 960,
         "wires": [
             []
         ]
