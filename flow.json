@@ -5454,20 +5454,6 @@
         "wires": []
     },
     {
-        "id": "1a6b82ec.a1116d",
-        "type": "vsh-virtual-device",
-        "z": "481e1d7a.648f04",
-        "name": "espresso1",
-        "connection": "7db40803.091658",
-        "template": "SWITCH",
-        "passthrough": false,
-        "x": 1410,
-        "y": 640,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "801bd6a3.675738",
         "type": "inject",
         "z": "dd91d5bc.c35b28",
