@@ -5460,8 +5460,8 @@
         "connection": "7db40803.091658",
         "template": "SWITCH",
         "passthrough": false,
-        "x": 1390,
-        "y": 700,
+        "x": 1410,
+        "y": 640,
         "wires": [
             []
         ]
