@@ -5544,9 +5544,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 510,
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 500,
         "y": 1460,
         "wires": [
             [
