@@ -802,8 +802,7 @@
         "y": 780,
         "wires": [
             [
-                "b244935d.c22bd",
-                "420fe7ab.d493c8"
+                "b244935d.c22bd"
             ]
         ]
     },
@@ -5472,29 +5471,6 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "ab80205e.6decf",
-        "type": "alexa-home",
-        "z": "481e1d7a.648f04",
-        "conf": "40ced0b9.7535a",
-        "device": "122976",
-        "acknoledge": false,
-        "name": "Espresso machine",
-        "topic": "",
-        "x": 390,
-        "y": 960,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ed98e720.29c2f8",
-        "type": "alexa-home-resp",
-        "z": "481e1d7a.648f04",
-        "x": 950,
-        "y": 920,
-        "wires": []
     },
     {
         "id": "801bd6a3.675738",
