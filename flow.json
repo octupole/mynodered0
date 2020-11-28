@@ -5476,11 +5476,11 @@
         "type": "alexa-home",
         "z": "481e1d7a.648f04",
         "conf": "40ced0b9.7535a",
-        "device": "",
-        "acknoledge": true,
-        "name": "",
+        "device": "122976",
+        "acknoledge": false,
+        "name": "Espresso machine",
         "topic": "",
-        "x": 370,
+        "x": 390,
         "y": 960,
         "wires": [
             []
