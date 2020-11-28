@@ -5496,10 +5496,10 @@
         "passthru": false,
         "nora": "cda469d1.0f29c8",
         "topic": "",
-        "onvalue": "true",
-        "onvalueType": "bool",
-        "offvalue": "false",
-        "offvalueType": "bool",
+        "onvalue": "0",
+        "onvalueType": "num",
+        "offvalue": "1",
+        "offvalueType": "num",
         "x": 880,
         "y": 1340,
         "wires": [
@@ -5521,8 +5521,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1410,
-        "y": 1160,
+        "x": 1390,
+        "y": 1340,
         "wires": []
     },
     {
