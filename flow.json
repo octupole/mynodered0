@@ -919,7 +919,7 @@
         "type": "debug",
         "z": "dd91d5bc.c35b28",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -5503,7 +5503,26 @@
         "x": 750,
         "y": 1380,
         "wires": [
-            []
+            [
+                "a2050d59.bf0cc"
+            ]
         ]
+    },
+    {
+        "id": "a2050d59.bf0cc",
+        "type": "debug",
+        "z": "dd91d5bc.c35b28",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1220,
+        "y": 1620,
+        "wires": []
     }
 ]
