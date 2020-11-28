@@ -5491,7 +5491,7 @@
         "type": "nora-outlet",
         "z": "dd91d5bc.c35b28",
         "devicename": "Grinder",
-        "roomhint": "",
+        "roomhint": "Kitchen",
         "name": "",
         "passthru": false,
         "nora": "cda469d1.0f29c8",
