@@ -5471,8 +5471,8 @@
         "topic": "",
         "payload": "{\"command\": \"getdeviceinfo\", \"idx\": 482 }",
         "payloadType": "json",
-        "x": 670,
-        "y": 620,
+        "x": 650,
+        "y": 660,
         "wires": [
             [
                 "59209739.8dab68"
