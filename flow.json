@@ -5493,5 +5493,30 @@
         "x": 950,
         "y": 920,
         "wires": []
+    },
+    {
+        "id": "801bd6a3.675738",
+        "type": "inject",
+        "z": "dd91d5bc.c35b28",
+        "name": "Turn on 482",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"command\": \"getdeviceinfo\", \"idx\": 482 }",
+        "payloadType": "json",
+        "x": 670,
+        "y": 620,
+        "wires": [
+            [
+                "59209739.8dab68"
+            ]
+        ]
     }
 ]
