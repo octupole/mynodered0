@@ -731,11 +731,6 @@
         "accessTokenExpiry": "1606582378878"
     },
     {
-        "id": "40ced0b9.7535a",
-        "type": "alexa-home-conf",
-        "username": "mm148881"
-    },
-    {
         "id": "d2f59c3a.a44e",
         "type": "mqtt in",
         "z": "dd91d5bc.c35b28",
