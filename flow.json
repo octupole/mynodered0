@@ -5492,7 +5492,7 @@
         "z": "dd91d5bc.c35b28",
         "devicename": "Grinder",
         "roomhint": "",
-        "name": "Grinder",
+        "name": "",
         "passthru": true,
         "nora": "cda469d1.0f29c8",
         "topic": "",
@@ -5500,8 +5500,8 @@
         "onvalueType": "bool",
         "offvalue": "false",
         "offvalueType": "bool",
-        "x": 750,
-        "y": 1380,
+        "x": 880,
+        "y": 1340,
         "wires": [
             [
                 "a2050d59.bf0cc"
