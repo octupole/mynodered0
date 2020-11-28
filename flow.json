@@ -734,7 +734,7 @@
         "id": "cda469d1.0f29c8",
         "type": "nora-config",
         "name": "nora config",
-        "group": "",
+        "group": "Bureau",
         "notify": false
     },
     {
@@ -5487,29 +5487,23 @@
         ]
     },
     {
-        "id": "95bb491f.7398e8",
-        "type": "nora-light",
+        "id": "86c0b31a.936bc",
+        "type": "nora-outlet",
         "z": "dd91d5bc.c35b28",
-        "devicename": "MyLight",
-        "lightcolor": false,
-        "brightnesscontrol": false,
-        "turnonwhenbrightnesschanges": false,
+        "devicename": "Outlet",
+        "roomhint": "",
+        "name": "Grinder",
         "passthru": false,
-        "statepayload": true,
-        "brightnessoverride": "",
-        "roomhint": "Burea",
-        "name": "",
         "nora": "cda469d1.0f29c8",
         "topic": "",
         "onvalue": "true",
         "onvalueType": "bool",
         "offvalue": "false",
         "offvalueType": "bool",
-        "x": 1085,
-        "y": 1400,
+        "x": 750,
+        "y": 1380,
         "wires": [
             []
-        ],
-        "l": false
+        ]
     }
 ]
