@@ -5553,5 +5553,34 @@
                 "86c0b31a.936bc"
             ]
         ]
+    },
+    {
+        "id": "6f484858.277e78",
+        "type": "inject",
+        "z": "dd91d5bc.c35b28",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 550,
+        "y": 1320,
+        "wires": [
+            [
+                "86c0b31a.936bc"
+            ]
+        ]
     }
 ]
