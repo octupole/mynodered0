@@ -5728,5 +5728,21 @@
         "x": 990,
         "y": 1340,
         "wires": []
+    },
+    {
+        "id": "d8e4d829.c11ad8",
+        "type": "zigbee2mqtt-in",
+        "z": "92419cdc.39ec9",
+        "name": "",
+        "server": "67c87fc0.150f8",
+        "friendly_name": "switch1",
+        "device_id": "0x00158d00028fd76f",
+        "state": "0",
+        "outputAtStartup": true,
+        "x": 160,
+        "y": 1680,
+        "wires": [
+            []
+        ]
     }
 ]
