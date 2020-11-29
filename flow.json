@@ -5760,8 +5760,64 @@
         "payload": "payload",
         "payloadType": "msg",
         "transition": 0,
-        "x": 550,
-        "y": 1800,
+        "x": 1340,
+        "y": 1820,
         "wires": []
+    },
+    {
+        "id": "c68ddf4e.5c993",
+        "type": "change",
+        "z": "92419cdc.39ec9",
+        "name": "Toggle",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "toggle",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 990,
+        "y": 1860,
+        "wires": [
+            [
+                "c042002b.ac685"
+            ]
+        ]
+    },
+    {
+        "id": "fc173767.b3f2f8",
+        "type": "inject",
+        "z": "92419cdc.39ec9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 680,
+        "y": 1860,
+        "wires": [
+            [
+                "c68ddf4e.5c993"
+            ]
+        ]
     }
 ]
