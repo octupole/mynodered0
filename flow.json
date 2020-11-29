@@ -5774,8 +5774,8 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "true",
-                "tot": "bool"
+                "to": "toggle",
+                "tot": "str"
             }
         ],
         "action": "",
