@@ -5707,5 +5707,18 @@
         "x": 610,
         "y": 300,
         "wires": []
+    },
+    {
+        "id": "208f8f2b.90391",
+        "type": "zigbee2mqtt-bridge",
+        "z": "92419cdc.39ec9",
+        "name": "",
+        "server": "67c87fc0.150f8",
+        "topic": null,
+        "x": 260,
+        "y": 660,
+        "wires": [
+            []
+        ]
     }
 ]
