@@ -255,9 +255,27 @@
         ]
     },
     {
-        "id": "7893f7b4.106e08",
+        "id": "6b268e7b.d7d06",
         "type": "subflow",
         "name": "Subflow 5",
+        "info": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "e137ba8a.630c78"
+                    }
+                ]
+            }
+        ],
+        "out": []
+    },
+    {
+        "id": "d9d7da4f.76fe48",
+        "type": "subflow",
+        "name": "Subflow 6",
         "info": "",
         "in": [],
         "out": []
@@ -1980,19 +1998,6 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "534eef4c.87f9b",
-        "type": "mqtt out",
-        "z": "7893f7b4.106e08",
-        "name": "",
-        "topic": "domoticz/in",
-        "qos": "2",
-        "retain": "",
-        "broker": "39f079e8.8d0cd6",
-        "x": 810,
-        "y": 100,
-        "wires": []
     },
     {
         "id": "16f0a6aa.365fd9",
@@ -5608,8 +5613,8 @@
         "topic": "",
         "payload": "{\"command\":\"switchlight\",\"idx\":482,\"switchcmd\":\"On\"}",
         "payloadType": "json",
-        "x": 797.0142211914062,
-        "y": 987.0056762695312,
+        "x": 620,
+        "y": 960,
         "wires": [
             []
         ]
@@ -5631,43 +5636,18 @@
         "topic": "",
         "payload": "{\"command\":\"switchlight\",\"idx\":482,\"switchcmd\":\"Off\"}",
         "payloadType": "json",
-        "x": 800,
-        "y": 1060,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7784e09f.3b931",
-        "type": "change",
-        "z": "7893f7b4.106e08",
-        "name": "Turn off espresso",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"command\":\"switchlight\",\"idx\":482,\"switchcmd\":\"Off\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 530,
-        "y": 80,
+        "x": 460,
+        "y": 1140,
         "wires": [
             [
-                "534eef4c.87f9b"
+                "1d127f77.a4c1c1"
             ]
         ]
     },
     {
         "id": "2b859234.17e23e",
         "type": "change",
-        "z": "15ebe48.940281c",
+        "z": "d9d7da4f.76fe48",
         "name": "Turn on espresso",
         "rules": [
             {
@@ -5683,8 +5663,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 910,
-        "y": 1300,
+        "x": 810,
+        "y": 100,
         "wires": [
             [
                 "20cd541d.77d8ec"
@@ -5692,36 +5672,9 @@
         ]
     },
     {
-        "id": "637ba2ba.c73e8c",
-        "type": "change",
-        "z": "7893f7b4.106e08",
-        "name": "Turn off grinder",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"command\":\"switchlight\",\"idx\":483,\"switchcmd\":\"Off\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 540,
-        "y": 120,
-        "wires": [
-            [
-                "534eef4c.87f9b"
-            ]
-        ]
-    },
-    {
         "id": "45b32f76.7b3db",
         "type": "change",
-        "z": "15ebe48.940281c",
+        "z": "d9d7da4f.76fe48",
         "name": "Turn on grinder",
         "rules": [
             {
@@ -5737,8 +5690,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 900,
-        "y": 1340,
+        "x": 800,
+        "y": 140,
         "wires": [
             [
                 "20cd541d.77d8ec"
@@ -5748,24 +5701,142 @@
     {
         "id": "20cd541d.77d8ec",
         "type": "mqtt out",
-        "z": "15ebe48.940281c",
+        "z": "d9d7da4f.76fe48",
         "name": "",
         "topic": "domoticz/in",
         "qos": "2",
         "retain": "",
         "broker": "39f079e8.8d0cd6",
-        "x": 1150,
-        "y": 1300,
+        "x": 1050,
+        "y": 100,
         "wires": []
     },
     {
-        "id": "3eac7b0f.eb7874",
-        "type": "link in",
+        "id": "14b9037c.f3e74d",
+        "type": "mqtt out",
+        "z": "6b268e7b.d7d06",
+        "name": "",
+        "topic": "domoticz/in",
+        "qos": "2",
+        "retain": "",
+        "broker": "39f079e8.8d0cd6",
+        "x": 690,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "829f63f5.33013",
+        "type": "change",
+        "z": "6b268e7b.d7d06",
+        "name": "Turn off espresso",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"command\":\"switchlight\",\"idx\":482,\"switchcmd\":\"Off\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 80,
+        "wires": [
+            [
+                "14b9037c.f3e74d"
+            ]
+        ]
+    },
+    {
+        "id": "268aa962.327b06",
+        "type": "change",
+        "z": "6b268e7b.d7d06",
+        "name": "Turn off grinder",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"command\":\"switchlight\",\"idx\":483,\"switchcmd\":\"Off\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 420,
+        "y": 120,
+        "wires": [
+            [
+                "14b9037c.f3e74d"
+            ]
+        ]
+    },
+    {
+        "id": "e137ba8a.630c78",
+        "type": "change",
+        "z": "6b268e7b.d7d06",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "state",
+                "pt": "flow",
+                "to": "true",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 190,
+        "y": 100,
+        "wires": [
+            [
+                "829f63f5.33013",
+                "268aa962.327b06"
+            ]
+        ]
+    },
+    {
+        "id": "1d127f77.a4c1c1",
+        "type": "subflow:6b268e7b.d7d06",
         "z": "15ebe48.940281c",
         "name": "",
-        "links": [],
-        "x": 585,
-        "y": 1320,
+        "env": [],
+        "x": 1080,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "d29e2d34.a4d84",
+        "type": "change",
+        "z": "d9d7da4f.76fe48",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "state",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 490.01422119140625,
+        "y": 123.0057373046875,
         "wires": [
             [
                 "2b859234.17e23e",
@@ -5774,13 +5845,13 @@
         ]
     },
     {
-        "id": "b17af8ac.72c808",
-        "type": "subflow:7893f7b4.106e08",
+        "id": "6aea9a26.094d54",
+        "type": "subflow:d9d7da4f.76fe48",
         "z": "15ebe48.940281c",
         "name": "",
         "env": [],
-        "x": 880,
-        "y": 1180,
+        "x": 720,
+        "y": 1320,
         "wires": []
     }
 ]
