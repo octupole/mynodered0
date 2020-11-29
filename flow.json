@@ -1667,7 +1667,7 @@
         "y": 380,
         "wires": [
             [
-                "1493bbce.b544b4"
+                "1d127f77.a4c1c1"
             ]
         ]
     },
@@ -1712,8 +1712,8 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 130,
-        "y": 1080,
+        "x": 250,
+        "y": 880,
         "wires": [
             [
                 "1807f247.7d2d3e"
@@ -1758,7 +1758,7 @@
         "y": 640,
         "wires": [
             [
-                "1493bbce.b544b4"
+                "1d127f77.a4c1c1"
             ]
         ]
     },
@@ -1800,7 +1800,7 @@
         "y": 560,
         "wires": [
             [
-                "1493bbce.b544b4"
+                "1d127f77.a4c1c1"
             ]
         ]
     },
@@ -1842,7 +1842,7 @@
         "y": 480,
         "wires": [
             [
-                "1493bbce.b544b4"
+                "1d127f77.a4c1c1"
             ]
         ]
     },
@@ -1884,7 +1884,7 @@
         "y": 420,
         "wires": [
             [
-                "1493bbce.b544b4"
+                "1d127f77.a4c1c1"
             ]
         ]
     },
@@ -1898,11 +1898,11 @@
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is deployed.\ncontext.set(\"old\",-1);\n",
         "finalize": "",
-        "x": 380,
-        "y": 940,
+        "x": 480,
+        "y": 800,
         "wires": [
             [
-                "1493bbce.b544b4"
+                "1d127f77.a4c1c1"
             ]
         ]
     },
@@ -1952,9 +1952,7 @@
         "x": 480,
         "y": 280,
         "wires": [
-            [
-                "1493bbce.b544b4"
-            ],
+            [],
             []
         ]
     },
@@ -5589,29 +5587,6 @@
         ]
     },
     {
-        "id": "74244480.285ddc",
-        "type": "inject",
-        "z": "15ebe48.940281c",
-        "name": "Turn on espresso",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{\"command\":\"switchlight\",\"idx\":482,\"switchcmd\":\"On\"}",
-        "payloadType": "json",
-        "x": 620,
-        "y": 960,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "38163abe.b8d306",
         "type": "inject",
         "z": "15ebe48.940281c",
@@ -5631,9 +5606,7 @@
         "x": 600,
         "y": 1080,
         "wires": [
-            [
-                "1d127f77.a4c1c1"
-            ]
+            []
         ]
     },
     {
@@ -5709,8 +5682,8 @@
         "z": "15ebe48.940281c",
         "name": "Coffee",
         "env": [],
-        "x": 1070,
-        "y": 1120,
+        "x": 730,
+        "y": 600,
         "wires": []
     },
     {
@@ -5831,9 +5804,7 @@
         "x": 580,
         "y": 1180,
         "wires": [
-            [
-                "1d127f77.a4c1c1"
-            ]
+            []
         ]
     }
 ]
