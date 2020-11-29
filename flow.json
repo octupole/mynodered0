@@ -5500,8 +5500,8 @@
         "onvalueType": "num",
         "offvalue": "1",
         "offvalueType": "num",
-        "x": 880,
-        "y": 1340,
+        "x": 840,
+        "y": 1540,
         "wires": [
             [
                 "a2050d59.bf0cc"
