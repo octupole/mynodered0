@@ -281,6 +281,24 @@
         "out": []
     },
     {
+        "id": "160c4b47.6fd185",
+        "type": "subflow",
+        "name": "Subflow 7",
+        "info": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 100,
+                "wires": [
+                    {
+                        "id": "541daa7d.147124"
+                    }
+                ]
+            }
+        ],
+        "out": []
+    },
+    {
         "id": "a4b224bf.4ceaf8",
         "type": "ui_group",
         "name": "Lights",
@@ -5810,9 +5828,9 @@
         "id": "1d127f77.a4c1c1",
         "type": "subflow:6b268e7b.d7d06",
         "z": "15ebe48.940281c",
-        "name": "",
+        "name": "Turn on coffee",
         "env": [],
-        "x": 1080,
+        "x": 1100,
         "y": 1120,
         "wires": []
     },
@@ -5845,13 +5863,137 @@
         ]
     },
     {
-        "id": "6aea9a26.094d54",
-        "type": "subflow:d9d7da4f.76fe48",
+        "id": "6d85e895.685af8",
+        "type": "change",
+        "z": "160c4b47.6fd185",
+        "name": "Turn on espresso",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"command\":\"switchlight\",\"idx\":482,\"switchcmd\":\"On\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 80,
+        "wires": [
+            [
+                "f8e7780f.5fb6d8"
+            ]
+        ]
+    },
+    {
+        "id": "92cea037.8b792",
+        "type": "change",
+        "z": "160c4b47.6fd185",
+        "name": "Turn on grinder",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"command\":\"switchlight\",\"idx\":483,\"switchcmd\":\"On\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 120,
+        "wires": [
+            [
+                "f8e7780f.5fb6d8"
+            ]
+        ]
+    },
+    {
+        "id": "f8e7780f.5fb6d8",
+        "type": "mqtt out",
+        "z": "160c4b47.6fd185",
+        "name": "",
+        "topic": "domoticz/in",
+        "qos": "2",
+        "retain": "",
+        "broker": "39f079e8.8d0cd6",
+        "x": 750,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "541daa7d.147124",
+        "type": "change",
+        "z": "160c4b47.6fd185",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "state",
+                "pt": "flow",
+                "to": "false",
+                "tot": "bool"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 190.01422119140625,
+        "y": 103.0057373046875,
+        "wires": [
+            [
+                "6d85e895.685af8",
+                "92cea037.8b792"
+            ]
+        ]
+    },
+    {
+        "id": "19bd5209.31556e",
+        "type": "inject",
         "z": "15ebe48.940281c",
         "name": "",
-        "env": [],
-        "x": 720,
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 270,
         "y": 1320,
+        "wires": [
+            [
+                "f2cde47d.4f07b8"
+            ]
+        ]
+    },
+    {
+        "id": "f2cde47d.4f07b8",
+        "type": "subflow:160c4b47.6fd185",
+        "z": "15ebe48.940281c",
+        "name": "Turn off coffee",
+        "env": [],
+        "x": 980,
+        "y": 1300,
         "wires": []
     }
 ]
