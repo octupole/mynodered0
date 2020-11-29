@@ -1672,26 +1672,6 @@
         ]
     },
     {
-        "id": "1493bbce.b544b4",
-        "type": "kasa",
-        "z": "15ebe48.940281c",
-        "name": "Espresso",
-        "device": "192.168.1.39",
-        "interval": "5000",
-        "eventInterval": "5000",
-        "payload": "getInfo",
-        "payloadType": "info",
-        "debug": false,
-        "x": 720,
-        "y": 760,
-        "wires": [
-            [
-                "4a363a1f.6bb564",
-                "f791edea.60459"
-            ]
-        ]
-    },
-    {
         "id": "ffc0c834.10a548",
         "type": "inject",
         "z": "15ebe48.940281c",
@@ -1953,39 +1933,6 @@
         "y": 280,
         "wires": [
             [],
-            []
-        ]
-    },
-    {
-        "id": "4a363a1f.6bb564",
-        "type": "debug",
-        "z": "15ebe48.940281c",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload.relay_state",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 960,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "f791edea.60459",
-        "type": "function",
-        "z": "15ebe48.940281c",
-        "name": "",
-        "func": "var mymsg=msg.payload;\n\nif(mymsg == 0){\n    msg.payload={\"command\":\"switchlight\", \"idx\": 457, \"switchcmd\": \"Off\"};\n} else{\n    msg.payload={\"command\":\"switchlight\", \"idx\": 457, \"switchcmd\": \"On\"};\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1120,
-        "y": 800,
-        "wires": [
             []
         ]
     },
@@ -5587,29 +5534,6 @@
         ]
     },
     {
-        "id": "38163abe.b8d306",
-        "type": "inject",
-        "z": "15ebe48.940281c",
-        "name": "Turn off espresso",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "x": 600,
-        "y": 1080,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "14b9037c.f3e74d",
         "type": "mqtt out",
         "z": "6b268e7b.d7d06",
@@ -5783,28 +5707,5 @@
         "x": 610,
         "y": 300,
         "wires": []
-    },
-    {
-        "id": "a95bcef5.5df",
-        "type": "inject",
-        "z": "15ebe48.940281c",
-        "name": "Turn on espresso",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 580,
-        "y": 1180,
-        "wires": [
-            []
-        ]
     }
 ]
