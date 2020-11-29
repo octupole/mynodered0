@@ -5735,15 +5735,15 @@
         "z": "92419cdc.39ec9",
         "name": "",
         "server": "67c87fc0.150f8",
-        "friendly_name": "switch1",
-        "device_id": "0x00158d00028fd76f",
+        "friendly_name": "aqara1",
+        "device_id": "0x00158d0002c65ad6",
         "state": "0",
         "outputAtStartup": true,
         "x": 160,
         "y": 1680,
         "wires": [
             [
-                "b084bd72.e1dc"
+                "8b7e4cad.d6c3c"
             ]
         ]
     },
@@ -5819,5 +5819,21 @@
                 "c68ddf4e.5c993"
             ]
         ]
+    },
+    {
+        "id": "8b7e4cad.d6c3c",
+        "type": "debug",
+        "z": "92419cdc.39ec9",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 330,
+        "y": 1780,
+        "wires": []
     }
 ]
