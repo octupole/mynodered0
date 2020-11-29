@@ -5437,28 +5437,6 @@
         ]
     },
     {
-        "id": "86c0b31a.936bc",
-        "type": "nora-outlet",
-        "z": "dd91d5bc.c35b28",
-        "devicename": "Grinder",
-        "roomhint": "Kitchen",
-        "name": "",
-        "passthru": false,
-        "nora": "cda469d1.0f29c8",
-        "topic": "",
-        "onvalue": "0",
-        "onvalueType": "num",
-        "offvalue": "1",
-        "offvalueType": "num",
-        "x": 840,
-        "y": 1540,
-        "wires": [
-            [
-                "a2050d59.bf0cc"
-            ]
-        ]
-    },
-    {
         "id": "a2050d59.bf0cc",
         "type": "debug",
         "z": "dd91d5bc.c35b28",
@@ -5499,9 +5477,7 @@
         "x": 500,
         "y": 1460,
         "wires": [
-            [
-                "86c0b31a.936bc"
-            ]
+            []
         ]
     },
     {
@@ -5528,9 +5504,7 @@
         "x": 550,
         "y": 1320,
         "wires": [
-            [
-                "86c0b31a.936bc"
-            ]
+            []
         ]
     },
     {
