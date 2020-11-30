@@ -5713,8 +5713,8 @@
         "payload": "payload",
         "payloadType": "msg",
         "transition": 0,
-        "x": 1280,
-        "y": 1700,
+        "x": 1320,
+        "y": 1800,
         "wires": []
     },
     {
@@ -5814,5 +5814,78 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "cc6c1ce4.5f08d",
+        "type": "inject",
+        "z": "92419cdc.39ec9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 690,
+        "y": 1760,
+        "wires": [
+            [
+                "fae27d75.9ae53"
+            ]
+        ]
+    },
+    {
+        "id": "fae27d75.9ae53",
+        "type": "change",
+        "z": "92419cdc.39ec9",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "125",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 1800,
+        "wires": [
+            [
+                "f61154d2.1f91a8"
+            ]
+        ]
+    },
+    {
+        "id": "f61154d2.1f91a8",
+        "type": "zigbee2mqtt-out",
+        "z": "92419cdc.39ec9",
+        "name": "",
+        "server": "67c87fc0.150f8",
+        "friendly_name": "aqara1",
+        "device_id": "0x00158d0002c65ad6",
+        "command": "brightness",
+        "commandType": "z2m_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transition": 0,
+        "x": 1100,
+        "y": 1720,
+        "wires": []
     }
 ]
