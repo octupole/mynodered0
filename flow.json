@@ -5898,7 +5898,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"brightness\": 160}",
+                "to": "{\"brightness\": 254}",
                 "tot": "str"
             }
         ],
