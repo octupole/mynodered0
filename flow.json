@@ -4807,8 +4807,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 250,
-        "y": 540,
+        "x": 330,
+        "y": 680,
         "wires": [
             []
         ]
@@ -5887,5 +5887,61 @@
         "x": 1100,
         "y": 1720,
         "wires": []
+    },
+    {
+        "id": "f8d4aa01.d966a8",
+        "type": "change",
+        "z": "92419cdc.39ec9",
+        "name": "Less bright",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"brightness\": 25}",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1670,
+        "y": 1620,
+        "wires": [
+            [
+                "59562ad1.1d83c4"
+            ]
+        ]
+    },
+    {
+        "id": "4fd2efdd.f9454",
+        "type": "inject",
+        "z": "92419cdc.39ec9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1330,
+        "y": 1640,
+        "wires": [
+            [
+                "f8d4aa01.d966a8"
+            ]
+        ]
     }
 ]
