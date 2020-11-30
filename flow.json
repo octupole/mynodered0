@@ -6013,27 +6013,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 800,
-        "y": 1180,
-        "wires": [
-            [
-                "47f44adc.7aa2d4"
-            ]
-        ]
-    },
-    {
-        "id": "47f44adc.7aa2d4",
-        "type": "template",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "This is the payload: {{payload}} !",
-        "output": "str",
-        "x": 1020,
-        "y": 1240,
+        "x": 970,
+        "y": 1200,
         "wires": [
             [
                 "54e1e80f.cb5738"
