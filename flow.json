@@ -5913,8 +5913,8 @@
         "topic": "",
         "payload": "aqara1",
         "payloadType": "str",
-        "x": 670,
-        "y": 440,
+        "x": 650,
+        "y": 500,
         "wires": [
             [
                 "d493393b.ec47f8"
@@ -5934,8 +5934,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1750,
-        "y": 640,
+        "x": 1550,
+        "y": 480,
         "wires": []
     },
     {
@@ -5944,8 +5944,8 @@
         "z": "481e1d7a.648f04",
         "name": "Inquire Light",
         "env": [],
-        "x": 1250,
-        "y": 340,
+        "x": 1130,
+        "y": 480,
         "wires": [
             [
                 "204f3389.18079c"
