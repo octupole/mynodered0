@@ -5917,7 +5917,7 @@
         "y": 440,
         "wires": [
             [
-                "eb1575d.a00bc88"
+                "d493393b.ec47f8"
             ]
         ]
     },
@@ -5947,7 +5947,9 @@
         "x": 1250,
         "y": 340,
         "wires": [
-            []
+            [
+                "204f3389.18079c"
+            ]
         ]
     },
     {
@@ -6121,182 +6123,6 @@
         "wires": [
             [
                 "2e429d1c.004082"
-            ]
-        ]
-    },
-    {
-        "id": "f7db5806.891848",
-        "type": "change",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "LightState",
-                "tot": "global"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1120,
-        "y": 780,
-        "wires": [
-            [
-                "204f3389.18079c"
-            ]
-        ]
-    },
-    {
-        "id": "40acdad7.3df784",
-        "type": "mqtt in",
-        "z": "481e1d7a.648f04",
-        "name": "zigbee2mqtt",
-        "topic": "zigbee2mqtt/#",
-        "qos": "0",
-        "datatype": "auto",
-        "broker": "39f079e8.8d0cd6",
-        "x": 850,
-        "y": 560,
-        "wires": [
-            [
-                "3314b709.93c828"
-            ]
-        ]
-    },
-    {
-        "id": "3314b709.93c828",
-        "type": "json",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 1030,
-        "y": 540,
-        "wires": [
-            [
-                "4542eb76.c52c34"
-            ]
-        ]
-    },
-    {
-        "id": "ee0f7d3b.8042e",
-        "type": "mqtt out",
-        "z": "481e1d7a.648f04",
-        "name": "LightOut",
-        "topic": "",
-        "qos": "",
-        "retain": "",
-        "broker": "39f079e8.8d0cd6",
-        "x": 1400,
-        "y": 680,
-        "wires": []
-    },
-    {
-        "id": "5010ad1a.c60284",
-        "type": "change",
-        "z": "481e1d7a.648f04",
-        "name": "Light-inject",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"state\": \"\"}",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "topic",
-                "pt": "msg",
-                "to": "TopicSet",
-                "tot": "flow"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1110,
-        "y": 700,
-        "wires": [
-            [
-                "ee0f7d3b.8042e"
-            ]
-        ]
-    },
-    {
-        "id": "f0f6f49d.e20048",
-        "type": "change",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "LightState",
-                "pt": "global",
-                "to": "payload.state",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1420,
-        "y": 560,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "eb1575d.a00bc88",
-        "type": "function",
-        "z": "481e1d7a.648f04",
-        "name": "SetLight",
-        "func": "var Light=msg.payload;\nvar LightTopic=\"zigbee2mqtt/\"+Light;\nvar LightTopicSet=LightTopic+\"/set\";\nvar LightTopicGet=LightTopic+\"/get\";\nflow.set(\"Topic\",LightTopic);\nflow.set(\"TopicSet\",LightTopicSet);\nflow.set(\"TopicGet\",LightTopicGet);\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 800,
-        "y": 720,
-        "wires": [
-            [
-                "f7db5806.891848",
-                "5010ad1a.c60284"
-            ]
-        ]
-    },
-    {
-        "id": "4542eb76.c52c34",
-        "type": "switch",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "property": "topic",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "Topic",
-                "vt": "flow"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 1190,
-        "y": 560,
-        "wires": [
-            [
-                "f0f6f49d.e20048"
             ]
         ]
     }
