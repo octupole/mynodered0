@@ -5713,8 +5713,8 @@
         "payload": "payload",
         "payloadType": "msg",
         "transition": 0,
-        "x": 1340,
-        "y": 1820,
+        "x": 1280,
+        "y": 1700,
         "wires": []
     },
     {
