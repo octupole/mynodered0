@@ -6017,8 +6017,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 870,
-        "y": 660,
+        "x": 790,
+        "y": 700,
         "wires": []
     }
 ]
