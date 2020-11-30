@@ -5958,5 +5958,23 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "6e689991.d86108",
+        "type": "config",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "properties": [
+            {
+                "p": "topic",
+                "pt": "flow",
+                "to": "zigbee2mqtt/aqara1",
+                "tot": "str"
+            }
+        ],
+        "active": true,
+        "x": 760,
+        "y": 940,
+        "wires": []
     }
 ]
