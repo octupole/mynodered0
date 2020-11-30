@@ -6125,5 +6125,88 @@
                 "2e429d1c.004082"
             ]
         ]
+    },
+    {
+        "id": "65cc2f4.7a294d",
+        "type": "mqtt in",
+        "z": "481e1d7a.648f04",
+        "name": "Sensor1",
+        "topic": "zigbee2mqtt/Sensor1",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "39f079e8.8d0cd6",
+        "x": 962,
+        "y": 690,
+        "wires": [
+            [
+                "b6b11715.bd2968"
+            ]
+        ]
+    },
+    {
+        "id": "b6b11715.bd2968",
+        "type": "json",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1122,
+        "y": 690,
+        "wires": [
+            [
+                "88bc2e71.1a8b6"
+            ]
+        ]
+    },
+    {
+        "id": "88bc2e71.1a8b6",
+        "type": "change",
+        "z": "481e1d7a.648f04",
+        "name": "detect",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Sensor1_motion",
+                "pt": "global",
+                "to": "payload.occupancy",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1282,
+        "y": 690,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "929efd59.95173",
+        "type": "change",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Sensor1_motion",
+                "tot": "global"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1002,
+        "y": 770,
+        "wires": [
+            []
+        ]
     }
 ]
