@@ -6032,7 +6032,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "aqara1",
+        "payload": "aqara2",
         "payloadType": "str",
         "x": 620,
         "y": 380,
