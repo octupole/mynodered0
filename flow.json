@@ -5956,7 +5956,9 @@
         "x": 610,
         "y": 1180,
         "wires": [
-            []
+            [
+                "54e1e80f.cb5738"
+            ]
         ]
     },
     {
@@ -5975,6 +5977,22 @@
         "active": true,
         "x": 760,
         "y": 940,
+        "wires": []
+    },
+    {
+        "id": "54e1e80f.cb5738",
+        "type": "debug",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 1240,
         "wires": []
     }
 ]
