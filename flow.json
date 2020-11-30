@@ -5949,11 +5949,11 @@
         "type": "mqtt in",
         "z": "481e1d7a.648f04",
         "name": "",
-        "topic": "flow.topic",
+        "topic": "zigbee2mqtt/aqara1",
         "qos": "2",
         "datatype": "auto",
         "broker": "39f079e8.8d0cd6",
-        "x": 610,
+        "x": 640,
         "y": 1180,
         "wires": [
             [
