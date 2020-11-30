@@ -5898,7 +5898,7 @@
         "z": "481e1d7a.648f04",
         "name": "zigbee2mqtt",
         "topic": "zigbee2mqtt/#",
-        "qos": "2",
+        "qos": "0",
         "datatype": "auto",
         "broker": "39f079e8.8d0cd6",
         "x": 850,
