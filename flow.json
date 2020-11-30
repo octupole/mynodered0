@@ -5934,8 +5934,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1770,
-        "y": 440,
+        "x": 1750,
+        "y": 640,
         "wires": []
     },
     {
@@ -5944,8 +5944,8 @@
         "z": "481e1d7a.648f04",
         "name": "Inquire Light",
         "env": [],
-        "x": 950,
-        "y": 440,
+        "x": 1250,
+        "y": 340,
         "wires": [
             []
         ]
