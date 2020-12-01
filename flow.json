@@ -6344,7 +6344,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"command\":\"switchlight\",\"idx\":486,\"switchcmd\":\"On\"}",
+                "to": "{\"command\":\"switchlight\",\"idx\":485,\"switchcmd\":\"On\"}",
                 "tot": "json"
             }
         ],
