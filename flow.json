@@ -6490,7 +6490,7 @@
         "onceDelay": 0.1,
         "topic": "",
         "payload": "false",
-        "payloadType": "bool",
+        "payloadType": "str",
         "x": 730,
         "y": 1700,
         "wires": [
