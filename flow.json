@@ -6489,7 +6489,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "false",
+        "payload": "OFF",
         "payloadType": "str",
         "x": 730,
         "y": 1700,
