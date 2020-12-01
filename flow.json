@@ -6437,8 +6437,8 @@
         "payload": "payload",
         "payloadType": "msg",
         "transition": 0,
-        "x": 970,
-        "y": 1540,
+        "x": 1140,
+        "y": 1640,
         "wires": []
     },
     {
