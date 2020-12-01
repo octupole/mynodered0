@@ -6460,9 +6460,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 820,
+        "payload": "toggle",
+        "payloadType": "str",
+        "x": 730,
         "y": 1580,
         "wires": [
             [
@@ -6491,8 +6491,8 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 810,
-        "y": 1660,
+        "x": 730,
+        "y": 1700,
         "wires": [
             [
                 "924a4f01.8e23c"
