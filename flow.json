@@ -6423,5 +6423,80 @@
                 "bf76c870.0f50f8"
             ]
         ]
+    },
+    {
+        "id": "924a4f01.8e23c",
+        "type": "zigbee2mqtt-out",
+        "z": "dd91d5bc.c35b28",
+        "name": "",
+        "server": "67c87fc0.150f8",
+        "friendly_name": "aqara1",
+        "device_id": "0x00158d0002c65ad6",
+        "command": "state",
+        "commandType": "z2m_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transition": 0,
+        "x": 970,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "dbf17c53.b3b53",
+        "type": "inject",
+        "z": "dd91d5bc.c35b28",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 820,
+        "y": 1580,
+        "wires": [
+            [
+                "924a4f01.8e23c"
+            ]
+        ]
+    },
+    {
+        "id": "2025b7cf.2e65c8",
+        "type": "inject",
+        "z": "dd91d5bc.c35b28",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 810,
+        "y": 1660,
+        "wires": [
+            [
+                "924a4f01.8e23c"
+            ]
+        ]
     }
 ]
