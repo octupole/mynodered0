@@ -7364,12 +7364,12 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1410,
-        "y": 1420,
+        "x": 1670,
+        "y": 1560,
         "wires": []
     },
     {
