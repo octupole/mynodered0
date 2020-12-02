@@ -7088,7 +7088,7 @@
         "type": "function",
         "z": "481e1d7a.648f04",
         "name": "",
-        "func": "var myflow=flow.get(\"Light\");\nmsg.payload=myflow.Light.aqara1;\nreturn msg;",
+        "func": "var myflow=flow.get();\nmsg.payload=myflow.Light.aqara1;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
