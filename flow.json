@@ -7034,8 +7034,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 660,
-        "y": 260,
+        "x": 840,
+        "y": 320,
         "wires": [
             [
                 "b21282c1.190e5"
@@ -7090,7 +7090,7 @@
         "type": "function",
         "z": "481e1d7a.648f04",
         "name": "",
-        "func": "var myflow=flow.get(\"Light\");\nmsg.payload=myflow.aqara1;\nmyflow.aqara2=\"ON\";\nflow.set(\"Light\",myflow);\nreturn msg;",
+        "func": "var myflow=flow.get(\"Light\");\nmsg.payload=myflow.aqara1;\nmyflow.aqara2={\"state\":\"ON\"};\nflow.set(\"Light\",myflow);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
