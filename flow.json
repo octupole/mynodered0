@@ -7029,7 +7029,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Light.aqara1",
+                "to": "Light.aqara1.state",
                 "tot": "flow"
             }
         ],
