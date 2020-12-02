@@ -7347,7 +7347,7 @@
         "topic": "",
         "payload": "aqara2",
         "payloadType": "str",
-        "x": 310,
+        "x": 230,
         "y": 1440,
         "wires": [
             [
@@ -7451,8 +7451,8 @@
         "topic": "",
         "payload": "aqara1",
         "payloadType": "str",
-        "x": 310,
-        "y": 1520,
+        "x": 250,
+        "y": 1500,
         "wires": [
             [
                 "d8e33454.195a68"
@@ -7476,7 +7476,7 @@
         "topic": "",
         "payload": "aqara3",
         "payloadType": "str",
-        "x": 290,
+        "x": 230,
         "y": 1580,
         "wires": [
             [
@@ -7744,8 +7744,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1180,
-        "y": 1400,
+        "x": 1160,
+        "y": 1380,
         "wires": [
             [
                 "bf6cbd9e.ddc88"
@@ -7807,10 +7807,10 @@
         "rules": [
             {
                 "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Light0",
-                "tot": "flow"
+                "p": "Light0",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
             }
         ],
         "action": "",
