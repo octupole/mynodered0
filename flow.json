@@ -7026,8 +7026,8 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "",
-                "tot": "str"
+                "to": "Light.aqara1.state",
+                "tot": "flow"
             }
         ],
         "action": "",
