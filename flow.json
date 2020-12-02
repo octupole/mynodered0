@@ -7319,7 +7319,7 @@
         "type": "function",
         "z": "aabac456.759338",
         "name": "GetState",
-        "func": "var mymsgL=flow.get(\"Light0\");\nvar mystate=msg.payload.state;\nmyflow={\"state\": mystate};\nflow.set(mymsgL,myflow);\nreturn msg;",
+        "func": "var mymsgL=flow.get(\"Light0\") ;\nvar mystate=msg.payload.state;\nmyflow={\"state\": mystate};\nflow.set(mymsgL,myflow);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7488,6 +7488,8 @@
         "id": "f6662e4d.dea21",
         "type": "subflow:aabac456.759338",
         "z": "481e1d7a.648f04",
+        "name": "",
+        "env": [],
         "x": 1070,
         "y": 1480,
         "wires": [
@@ -7495,5 +7497,68 @@
                 "22fb3d3f.24d152"
             ]
         ]
+    },
+    {
+        "id": "afb0d78d.d78418",
+        "type": "function",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "func": "var my=flow.get(\"Pippo\") || \"lila\";\nmsg.payload=my;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1110,
+        "y": 1560,
+        "wires": [
+            [
+                "5eb1947d.afa8ac"
+            ]
+        ]
+    },
+    {
+        "id": "ff513f44.4f505",
+        "type": "inject",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 710,
+        "y": 1620,
+        "wires": [
+            [
+                "afb0d78d.d78418"
+            ]
+        ]
+    },
+    {
+        "id": "5eb1947d.afa8ac",
+        "type": "debug",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1430,
+        "y": 1640,
+        "wires": []
     }
 ]
