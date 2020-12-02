@@ -6686,7 +6686,7 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "This is the payload: {{payload}} !",
+        "template": "{{topic}} the payload: {{payload}} !",
         "output": "str",
         "x": 1390,
         "y": 520,
