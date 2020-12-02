@@ -7347,8 +7347,8 @@
         "topic": "",
         "payload": "aqara2",
         "payloadType": "str",
-        "x": 230,
-        "y": 1440,
+        "x": 250,
+        "y": 1260,
         "wires": [
             [
                 "d8e33454.195a68"
