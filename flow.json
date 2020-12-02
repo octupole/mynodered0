@@ -7451,7 +7451,7 @@
         "topic": "",
         "payload": "aqara1",
         "payloadType": "str",
-        "x": 250,
+        "x": 190,
         "y": 1500,
         "wires": [
             [
@@ -7596,8 +7596,8 @@
         "qos": "0",
         "datatype": "auto",
         "broker": "39f079e8.8d0cd6",
-        "x": 510,
-        "y": 1400,
+        "x": 470,
+        "y": 1340,
         "wires": [
             [
                 "6012010f.72ac"
@@ -7612,8 +7612,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 670,
-        "y": 1400,
+        "x": 650,
+        "y": 1320,
         "wires": [
             [
                 "b73f485f.664d78"
@@ -7704,7 +7704,7 @@
         "repair": false,
         "outputs": 1,
         "x": 810,
-        "y": 1400,
+        "y": 1320,
         "wires": [
             [
                 "991a7179.26484"
