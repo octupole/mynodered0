@@ -7304,7 +7304,8 @@
         "y": 1460,
         "wires": [
             [
-                "a15f489f.eeaa48"
+                "a15f489f.eeaa48",
+                "a319e2c.0f9162"
             ]
         ]
     },
@@ -7479,5 +7480,21 @@
                 "1d709fb4.1ae38"
             ]
         ]
+    },
+    {
+        "id": "a319e2c.0f9162",
+        "type": "debug",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 1560,
+        "wires": []
     }
 ]
