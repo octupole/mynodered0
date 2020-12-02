@@ -7011,7 +7011,8 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
         "x": 920,
@@ -7028,7 +7029,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Light",
+                "to": "Light.aqara1",
                 "tot": "flow"
             }
         ],
