@@ -7295,7 +7295,7 @@
         "type": "function",
         "z": "481e1d7a.648f04",
         "name": "SetLight",
-        "func": "var Light=msg.payload;\nvar LightTopic=\"zigbee2mqtt/\"+Light;\nvar LightTopicSet=LightTopic+\"/set\";\nvar LightTopicGet=LightTopic+\"/get\";\nflow.set(\"Topic\",LightTopic);\nflow.set(\"TopicSet\",LightTopicSet);\nflow.set(\"TopicGet\",LightTopicGet);\nmsg.Light=Light;\nreturn msg;",
+        "func": "var Light=msg.payload;\nvar LightTopic=\"zigbee2mqtt/\"+Light;\nvar LightTopicSet=LightTopic+\"/set\";\nvar LightTopicGet=LightTopic+\"/get\";\nflow.set(\"Topic\",LightTopic);\nflow.set(\"TopicSet\",LightTopicSet);\nflow.set(\"TopicGet\",LightTopicGet);\nflow.set(\"Light\",Light);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7361,13 +7361,13 @@
         "type": "function",
         "z": "481e1d7a.648f04",
         "name": "",
-        "func": "var mymsgL=\"aqara2\";\nvar mystate=msg.payload.state;\nmyflow={\"state\": mystate};\nflow.set(mymsgL,myflow);\nreturn msg;",
+        "func": "var mymsgL=flow.get(\"Light\");\nvar mystate=msg.payload.state;\nmyflow={\"state\": mystate};\nflow.set(mymsgL,myflow);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "x": 1380,
-        "y": 1400,
+        "y": 1380,
         "wires": [
             []
         ]
