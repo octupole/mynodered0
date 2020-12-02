@@ -6807,7 +6807,7 @@
                 "t": "change",
                 "p": "topic",
                 "pt": "msg",
-                "from": "zigbee2mqtt&#x2F;",
+                "from": "zigbee2mqtt",
                 "fromt": "str",
                 "to": "",
                 "tot": "str"
