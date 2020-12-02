@@ -7503,7 +7503,7 @@
         "type": "function",
         "z": "481e1d7a.648f04",
         "name": "",
-        "func": "var my=flow.get(\"Pippo\") || \"lila\";\nmsg.payload=my;\nreturn msg;",
+        "func": "var myt=false;\nvar my=myt || \"lila\";\nmsg.payload=my;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
