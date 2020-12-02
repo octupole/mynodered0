@@ -7747,7 +7747,9 @@
         "x": 1180,
         "y": 1400,
         "wires": [
-            []
+            [
+                "bf6cbd9e.ddc88"
+            ]
         ]
     },
     {
@@ -7824,5 +7826,21 @@
                 "991a7179.26484"
             ]
         ]
+    },
+    {
+        "id": "bf6cbd9e.ddc88",
+        "type": "debug",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1660,
+        "y": 1380,
+        "wires": []
     }
 ]
