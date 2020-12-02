@@ -6006,8 +6006,7 @@
         "y": 80,
         "wires": [
             [
-                "206f6a1e.8b7bf6",
-                "c3cfeecb.5e1ab"
+                "206f6a1e.8b7bf6"
             ]
         ]
     },
@@ -6598,21 +6597,5 @@
                 "1252e21.24f521e"
             ]
         ]
-    },
-    {
-        "id": "c3cfeecb.5e1ab",
-        "type": "debug",
-        "z": "25aa1bc0.f7cb04",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1050,
-        "y": 180,
-        "wires": []
     }
 ]
