@@ -7295,7 +7295,7 @@
         "type": "function",
         "z": "481e1d7a.648f04",
         "name": "SetLight",
-        "func": "var Light=msg.payload;\nvar LightTopic=\"zigbee2mqtt/\"+Light;\nvar LightTopicSet=LightTopic+\"/set\";\nvar LightTopicGet=LightTopic+\"/get\";\nflow.set(\"Topic\",LightTopic);\nflow.set(\"TopicSet\",LightTopicSet);\nflow.set(\"TopicGet\",LightTopicGet);\nflow.set(\"Light\",Light);\nreturn msg;",
+        "func": "var Light=msg.payload;\nvar LightTopic=\"zigbee2mqtt/\"+Light;\nvar LightTopicSet=LightTopic+\"/set\";\nvar LightTopicGet=LightTopic+\"/get\";\nflow.set(\"Topic\",LightTopic);\nflow.set(\"TopicSet\",LightTopicSet);\nflow.set(\"TopicGet\",LightTopicGet);\nflow.set(\"Light\",Light);\nmsg.Light=Light;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
