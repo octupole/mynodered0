@@ -6994,7 +6994,7 @@
         "y": 200,
         "wires": [
             [
-                "b4366227.491c7"
+                "a4e5b618.ec1008"
             ]
         ]
     },
@@ -7034,12 +7034,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 630,
-        "y": 200,
+        "x": 660,
+        "y": 260,
         "wires": [
-            [
-                "f2b1d142.cc93e"
-            ]
+            []
         ]
     },
     {
@@ -7084,5 +7082,23 @@
         "x": 1190,
         "y": 120,
         "wires": []
+    },
+    {
+        "id": "a4e5b618.ec1008",
+        "type": "function",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "func": "var myflow=flow.get(\"Light\");\nmsg.payload=myflow.Light.aqara1;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 640,
+        "y": 200,
+        "wires": [
+            [
+                "f2b1d142.cc93e"
+            ]
+        ]
     }
 ]
