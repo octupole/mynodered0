@@ -7361,7 +7361,7 @@
         "type": "function",
         "z": "481e1d7a.648f04",
         "name": "",
-        "func": "var mymsgL=msg.Light;\nvar myflow=flow.get(mymsgL);\nvar mystate=msg.payload.state;\nmyflow={\"state\": mystate};\nflow.set(mymsgL,myflow);\nreturn msg;",
+        "func": "var mymsgL=msg.Light;\nvar mystate=msg.payload.state;\nmyflow={\"state\": mystate};\nflow.set(mymsgL,myflow);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
