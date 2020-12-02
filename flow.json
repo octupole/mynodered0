@@ -7025,8 +7025,8 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{flow.Light.aqara1}",
-                "tot": "json"
+                "to": "Light.aqara1",
+                "tot": "flow"
             }
         ],
         "action": "",
