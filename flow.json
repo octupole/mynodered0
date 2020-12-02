@@ -5928,11 +5928,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1730,
+        "x": 1750,
         "y": 700,
         "wires": []
     },
@@ -5946,7 +5946,6 @@
         "y": 540,
         "wires": [
             [
-                "d10e3f9b.f5bd7",
                 "3b251942.fd5cb6"
             ]
         ]
@@ -6687,12 +6686,14 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "{{topic}}\n{{payload}}",
+        "template": "Lamp {{topic}} is {{payload}}",
         "output": "str",
-        "x": 1340,
-        "y": 500,
+        "x": 1640,
+        "y": 640,
         "wires": [
-            []
+            [
+                "204f3389.18079c"
+            ]
         ]
     },
     {
@@ -6822,7 +6823,7 @@
         "y": 600,
         "wires": [
             [
-                "204f3389.18079c"
+                "d10e3f9b.f5bd7"
             ]
         ]
     }
