@@ -7304,8 +7304,7 @@
         "y": 1460,
         "wires": [
             [
-                "a15f489f.eeaa48",
-                "a319e2c.0f9162"
+                "a15f489f.eeaa48"
             ]
         ]
     },
@@ -7362,7 +7361,7 @@
         "type": "function",
         "z": "481e1d7a.648f04",
         "name": "",
-        "func": "var mymsgL=msg.Light;\nvar mystate=msg.payload.state;\nmyflow={\"state\": mystate};\nflow.set(mymsgL,myflow);\nreturn msg;",
+        "func": "var mymsgL=\"aqara2\";\nvar mystate=msg.payload.state;\nmyflow={\"state\": mystate};\nflow.set(mymsgL,myflow);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7480,21 +7479,5 @@
                 "1d709fb4.1ae38"
             ]
         ]
-    },
-    {
-        "id": "a319e2c.0f9162",
-        "type": "debug",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 860,
-        "y": 1560,
-        "wires": []
     }
 ]
