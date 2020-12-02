@@ -7069,23 +7069,5 @@
         "wires": [
             []
         ]
-    },
-    {
-        "id": "65b70a78.0003a4",
-        "type": "config",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "properties": [
-            {
-                "p": "Light",
-                "pt": "flow",
-                "to": "{\"aqara1\": {\"state\": \"OFF\"}, \"aqara2\": {\"state\": \"OB}}}",
-                "tot": "json"
-            }
-        ],
-        "active": true,
-        "x": 490,
-        "y": 100,
-        "wires": []
     }
 ]
