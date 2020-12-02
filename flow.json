@@ -355,8 +355,8 @@
         ],
         "out": [
             {
-                "x": 1040,
-                "y": 280,
+                "x": 1240,
+                "y": 260,
                 "wires": [
                     {
                         "id": "1d709fb4.1ae38",
@@ -7239,8 +7239,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 450,
-        "y": 160,
+        "x": 510,
+        "y": 240,
         "wires": [
             [
                 "1e5b4fe0.1fb8e",
@@ -7258,8 +7258,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 300,
-        "y": 240,
+        "x": 340,
+        "y": 220,
         "wires": [
             [
                 "a15f489f.eeaa48"
@@ -7306,8 +7306,8 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 490,
-        "y": 280,
+        "x": 710,
+        "y": 260,
         "wires": [
             [
                 "f29a95d4.bd8638"
@@ -7319,7 +7319,7 @@
         "type": "function",
         "z": "aabac456.759338",
         "name": "GetState",
-        "func": "var mymsgL=flow.get(\"Light0\") || \"\";\nvar mystate=msg.payload.state;\nmyflow={\"state\": mystate};\nflow.set(mymsgL,myflow);\nreturn msg;",
+        "func": "var mymsgL=flow.get(\"Light0\");\nvar mystate=msg.payload.state;\nmyflow={\"state\": mystate};\nflow.set(mymsgL,myflow);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7410,8 +7410,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 870,
-        "y": 280,
+        "x": 1090,
+        "y": 260,
         "wires": [
             []
         ]
@@ -7426,8 +7426,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 670,
-        "y": 280,
+        "x": 870,
+        "y": 260,
         "wires": [
             [
                 "1d709fb4.1ae38"
@@ -7580,8 +7580,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 160,
-        "y": 200,
+        "x": 180,
+        "y": 180,
         "wires": [
             [
                 "9e0c7499.d11538",
