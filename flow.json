@@ -7025,8 +7025,8 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Light.aqara1.state",
-                "tot": "flow"
+                "to": "flow.Light.aqara1.state",
+                "tot": "json"
             }
         ],
         "action": "",
@@ -7084,30 +7084,5 @@
         "x": 1190,
         "y": 120,
         "wires": []
-    },
-    {
-        "id": "8300d040.bf599",
-        "type": "inject",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "aqara1",
-        "payloadType": "str",
-        "x": 390,
-        "y": 80,
-        "wires": [
-            [
-                "612cdb02.65d3c4"
-            ]
-        ]
     }
 ]
