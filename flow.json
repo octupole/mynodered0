@@ -6981,10 +6981,6 @@
         "props": [
             {
                 "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
             }
         ],
         "repeat": "",
@@ -6992,9 +6988,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 350,
+        "payload": "aqara1",
+        "payloadType": "str",
+        "x": 340,
         "y": 200,
         "wires": [
             [
@@ -7088,5 +7084,30 @@
         "x": 1190,
         "y": 120,
         "wires": []
+    },
+    {
+        "id": "8300d040.bf599",
+        "type": "inject",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "aqara1",
+        "payloadType": "str",
+        "x": 390,
+        "y": 80,
+        "wires": [
+            [
+                "612cdb02.65d3c4"
+            ]
+        ]
     }
 ]
