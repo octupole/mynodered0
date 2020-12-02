@@ -5716,7 +5716,7 @@
         "y": 1760,
         "wires": [
             [
-                "fae27d75.9ae53"
+                "b14e68ac.c6e3d8"
             ]
         ]
     },
@@ -5739,12 +5739,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 900,
-        "y": 1760,
+        "x": 820,
+        "y": 1960,
         "wires": [
-            [
-                "f61154d2.1f91a8"
-            ]
+            []
         ]
     },
     {
@@ -6649,6 +6647,33 @@
         "wires": [
             [
                 "d493393b.ec47f8"
+            ]
+        ]
+    },
+    {
+        "id": "b14e68ac.c6e3d8",
+        "type": "change",
+        "z": "92419cdc.39ec9",
+        "name": "Toggle",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "toggle",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 890,
+        "y": 1740,
+        "wires": [
+            [
+                "f61154d2.1f91a8"
             ]
         ]
     }
