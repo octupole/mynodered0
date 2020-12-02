@@ -6544,5 +6544,39 @@
                 "a3b84db7.e9f75"
             ]
         ]
+    },
+    {
+        "id": "43142dc4.230694",
+        "type": "zigbee2mqtt-in",
+        "z": "dd91d5bc.c35b28",
+        "name": "",
+        "server": "67c87fc0.150f8",
+        "friendly_name": "switch1",
+        "device_id": "0x00158d00028fd76f",
+        "state": "0",
+        "outputAtStartup": true,
+        "x": 430,
+        "y": 1860,
+        "wires": [
+            [
+                "1252e21.24f521e"
+            ]
+        ]
+    },
+    {
+        "id": "1252e21.24f521e",
+        "type": "debug",
+        "z": "dd91d5bc.c35b28",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 800,
+        "y": 1880,
+        "wires": []
     }
 ]
