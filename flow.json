@@ -348,7 +348,7 @@
                 "y": 160,
                 "wires": [
                     {
-                        "id": "9e0c7499.d11538"
+                        "id": "c69b8680.b5a698"
                     }
                 ]
             }
@@ -7253,13 +7253,13 @@
         "type": "function",
         "z": "aabac456.759338",
         "name": "SetLight",
-        "func": "var Light=msg.payload;\nvar LightTopic=\"zigbee2mqtt/\"+Light;\nvar LightTopicSet=LightTopic+\"/set\";\nvar LightTopicGet=LightTopic+\"/get\";\nflow.set(\"Topic\",LightTopic);\nflow.set(\"TopicSet\",LightTopicSet);\nflow.set(\"TopicGet\",LightTopicGet);\nflow.set(\"Light0\",Light);\nmsg.Light=Light;\nreturn msg;",
+        "func": "var Light=msg.payload;\nvar LightTopic=\"zigbee2mqtt/\"+Light;\nvar LightTopicSet=LightTopic+\"/set\";\nvar LightTopicGet=LightTopic+\"/get\";\nflow.set(\"Topic\",LightTopic);\nflow.set(\"TopicSet\",LightTopicSet);\nflow.set(\"TopicGet\",LightTopicGet);\nmsg.Light=Light;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 200,
-        "y": 160,
+        "x": 300,
+        "y": 240,
         "wires": [
             [
                 "a15f489f.eeaa48"
@@ -7319,12 +7319,12 @@
         "type": "function",
         "z": "aabac456.759338",
         "name": "GetState",
-        "func": "var mymsgL=flow.get(\"Light0\") ;\nvar mystate=msg.payload.state;\nmyflow={\"state\": mystate};\nflow.set(mymsgL,myflow);\nreturn msg;",
+        "func": "var mymsgL=flow.get(\"Light0\") || \"\";\nvar mystate=msg.payload.state;\nmyflow={\"state\": mystate};\nflow.set(mymsgL,myflow);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 680,
+        "x": 900,
         "y": 80,
         "wires": [
             []
@@ -7560,5 +7560,33 @@
         "x": 1430,
         "y": 1640,
         "wires": []
+    },
+    {
+        "id": "c69b8680.b5a698",
+        "type": "change",
+        "z": "aabac456.759338",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Light0",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 160,
+        "y": 200,
+        "wires": [
+            [
+                "9e0c7499.d11538",
+                "77edf1fa.c2672"
+            ]
+        ]
     }
 ]
