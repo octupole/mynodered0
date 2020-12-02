@@ -7603,11 +7603,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1510,
+        "x": 1490,
         "y": 1360,
         "wires": []
     },
@@ -7685,8 +7685,8 @@
         "z": "481e1d7a.648f04",
         "name": "",
         "env": [],
-        "x": 830,
-        "y": 1460,
+        "x": 910,
+        "y": 1380,
         "wires": [
             [
                 "bf6cbd9e.ddc88"
