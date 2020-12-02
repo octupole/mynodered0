@@ -7506,21 +7506,26 @@
         ]
     },
     {
-        "id": "d7ac2034.d9993",
-        "type": "config",
+        "id": "38cda654.6f412a",
+        "type": "inject",
         "z": "481e1d7a.648f04",
         "name": "",
-        "properties": [
+        "props": [
             {
-                "p": "",
-                "pt": "flow",
-                "to": "",
-                "tot": "str"
+                "p": "payload"
             }
         ],
-        "active": true,
-        "x": 920,
-        "y": 1720,
-        "wires": []
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "aqara3",
+        "payloadType": "str",
+        "x": 290,
+        "y": 1580,
+        "wires": [
+            []
+        ]
     }
 ]
