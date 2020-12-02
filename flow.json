@@ -304,8 +304,9 @@
     {
         "id": "40daa49d.a7ac8c",
         "type": "subflow",
-        "name": "Subflow 7",
+        "name": "CheckSensor",
         "info": "",
+        "category": "",
         "in": [
             {
                 "x": 60,
@@ -328,7 +329,9 @@
                     }
                 ]
             }
-        ]
+        ],
+        "env": [],
+        "color": "#DDAA99"
     },
     {
         "id": "a4b224bf.4ceaf8",
@@ -6775,12 +6778,12 @@
         "id": "163fc1e0.019b9e",
         "type": "mqtt in",
         "z": "40daa49d.a7ac8c",
-        "name": "Sensor1",
+        "name": "Sensor",
         "topic": "zigbee2mqtt/#",
         "qos": "0",
         "datatype": "auto",
         "broker": "39f079e8.8d0cd6",
-        "x": 200,
+        "x": 190,
         "y": 80,
         "wires": [
             [
