@@ -7360,7 +7360,7 @@
         "type": "debug",
         "z": "481e1d7a.648f04",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -7738,7 +7738,7 @@
         "type": "function",
         "z": "481e1d7a.648f04",
         "name": "GetState",
-        "func": "var mymsgL=flow.get(\"Light0\");\nvar mystate=msg.payload.state;\nmyflow={\"state\": mystate};\nflow.set(mymsgL,myflow);\nreturn msg;",
+        "func": "var mymsgL=flow.get(\"Light0\");\nvar mystate=msg.payload.state;\nmyflow={\"state\": mystate};\nflow.set(mymsgL,myflow);\nmsg.payload=mystate;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7747,7 +7747,7 @@
         "y": 1320,
         "wires": [
             [
-                "9378209.7393de"
+                "bf6cbd9e.ddc88"
             ]
         ]
     },
@@ -7838,26 +7838,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1640,
-        "y": 1380,
+        "x": 1490,
+        "y": 1360,
         "wires": []
-    },
-    {
-        "id": "9378209.7393de",
-        "type": "rbe",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "property": "payload.state",
-        "x": 1370,
-        "y": 1340,
-        "wires": [
-            [
-                "bf6cbd9e.ddc88"
-            ]
-        ]
     }
 ]
