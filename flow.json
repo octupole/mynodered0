@@ -5912,7 +5912,7 @@
         "payload": "aqara2",
         "payloadType": "str",
         "x": 650,
-        "y": 500,
+        "y": 360,
         "wires": [
             [
                 "d493393b.ec47f8"
@@ -5942,11 +5942,11 @@
         "z": "481e1d7a.648f04",
         "name": "Inquire Light",
         "env": [],
-        "x": 1130,
-        "y": 480,
+        "x": 1150,
+        "y": 540,
         "wires": [
             [
-                "204f3389.18079c"
+                "d10e3f9b.f5bd7"
             ]
         ]
     },
@@ -6674,6 +6674,25 @@
         "wires": [
             [
                 "f61154d2.1f91a8"
+            ]
+        ]
+    },
+    {
+        "id": "d10e3f9b.f5bd7",
+        "type": "template",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "This is the payload: {{payload}} !",
+        "output": "str",
+        "x": 1390,
+        "y": 520,
+        "wires": [
+            [
+                "204f3389.18079c"
             ]
         ]
     }
