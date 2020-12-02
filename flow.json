@@ -337,6 +337,38 @@
         "color": "#DDAA99"
     },
     {
+        "id": "d20a07d1.915368",
+        "type": "subflow",
+        "name": "CheckLight",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 40,
+                "y": 160,
+                "wires": [
+                    {
+                        "id": "d8e33454.195a68"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 1080,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "de326ac1.1e0838",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
         "id": "a4b224bf.4ceaf8",
         "type": "ui_group",
         "name": "Lights",
@@ -7081,7 +7113,7 @@
         "y": 1420,
         "wires": [
             [
-                "d8e33454.195a68"
+                "25a993b4.53489c"
             ]
         ]
     },
@@ -7185,7 +7217,7 @@
         "y": 1500,
         "wires": [
             [
-                "d8e33454.195a68"
+                "25a993b4.53489c"
             ]
         ]
     },
@@ -7210,7 +7242,7 @@
         "y": 1580,
         "wires": [
             [
-                "d8e33454.195a68"
+                "25a993b4.53489c"
             ]
         ]
     },
@@ -7320,14 +7352,14 @@
     {
         "id": "66e94844.8209e8",
         "type": "mqtt in",
-        "z": "481e1d7a.648f04",
+        "z": "d20a07d1.915368",
         "name": "zigbee2mqtt",
         "topic": "zigbee2mqtt/#",
         "qos": "0",
         "datatype": "auto",
         "broker": "39f079e8.8d0cd6",
-        "x": 450,
-        "y": 1420,
+        "x": 190,
+        "y": 80,
         "wires": [
             [
                 "6012010f.72ac"
@@ -7337,13 +7369,13 @@
     {
         "id": "6012010f.72ac",
         "type": "json",
-        "z": "481e1d7a.648f04",
+        "z": "d20a07d1.915368",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 630,
-        "y": 1420,
+        "x": 370,
+        "y": 80,
         "wires": [
             [
                 "b73f485f.664d78"
@@ -7353,20 +7385,20 @@
     {
         "id": "5d2266b8.5536c8",
         "type": "mqtt out",
-        "z": "481e1d7a.648f04",
+        "z": "d20a07d1.915368",
         "name": "LightOut",
         "topic": "",
         "qos": "",
         "retain": "",
         "broker": "39f079e8.8d0cd6",
-        "x": 1000,
-        "y": 1500,
+        "x": 740,
+        "y": 160,
         "wires": []
     },
     {
         "id": "c1334bf8.453248",
         "type": "change",
-        "z": "481e1d7a.648f04",
+        "z": "d20a07d1.915368",
         "name": "Light-inject",
         "rules": [
             {
@@ -7389,8 +7421,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 790,
-        "y": 1500,
+        "x": 530,
+        "y": 160,
         "wires": [
             [
                 "5d2266b8.5536c8"
@@ -7400,15 +7432,15 @@
     {
         "id": "5982898b.ce5368",
         "type": "function",
-        "z": "481e1d7a.648f04",
+        "z": "d20a07d1.915368",
         "name": "SetLight",
         "func": "var Light=msg.payload;\nvar LightTopic=\"zigbee2mqtt/\"+Light;\nvar LightTopicSet=LightTopic+\"/set\";\nvar LightTopicGet=LightTopic+\"/get\";\nflow.set(\"Topic\",LightTopic);\nflow.set(\"TopicSet\",LightTopicSet);\nflow.set(\"TopicGet\",LightTopicGet);\nmsg.Light=Light;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 620,
-        "y": 1500,
+        "x": 360,
+        "y": 160,
         "wires": [
             [
                 "c1334bf8.453248"
@@ -7418,7 +7450,7 @@
     {
         "id": "b73f485f.664d78",
         "type": "switch",
-        "z": "481e1d7a.648f04",
+        "z": "d20a07d1.915368",
         "name": "",
         "property": "topic",
         "propertyType": "msg",
@@ -7432,8 +7464,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 790,
-        "y": 1420,
+        "x": 530,
+        "y": 80,
         "wires": [
             [
                 "991a7179.26484"
@@ -7466,15 +7498,15 @@
     {
         "id": "991a7179.26484",
         "type": "function",
-        "z": "481e1d7a.648f04",
+        "z": "d20a07d1.915368",
         "name": "GetState",
         "func": "var mystate=msg.payload.state;\nmsg.payload=mystate;\nvar req=flow.get(\"Req\");\nif(req){\n    flow.set(\"Req\",false);\n    return msg;\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 960,
-        "y": 1420,
+        "x": 700,
+        "y": 80,
         "wires": [
             [
                 "de326ac1.1e0838"
@@ -7531,7 +7563,7 @@
     {
         "id": "d8e33454.195a68",
         "type": "change",
-        "z": "481e1d7a.648f04",
+        "z": "d20a07d1.915368",
         "name": "",
         "rules": [
             {
@@ -7554,8 +7586,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 460,
-        "y": 1500,
+        "x": 200,
+        "y": 160,
         "wires": [
             [
                 "5982898b.ce5368"
@@ -7623,7 +7655,7 @@
     {
         "id": "de326ac1.1e0838",
         "type": "change",
-        "z": "481e1d7a.648f04",
+        "z": "d20a07d1.915368",
         "name": "",
         "rules": [
             {
@@ -7641,8 +7673,20 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1170,
-        "y": 1420,
+        "x": 910,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "25a993b4.53489c",
+        "type": "subflow:d20a07d1.915368",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "env": [],
+        "x": 820,
+        "y": 1460,
         "wires": [
             [
                 "bf6cbd9e.ddc88"
