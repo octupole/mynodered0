@@ -4617,7 +4617,7 @@
         "id": "59562ad1.1d83c4",
         "type": "mqtt out",
         "z": "92419cdc.39ec9",
-        "name": "aqara1 out",
+        "name": "aqara2 out",
         "topic": "zigbee2mqtt/aqara2/set",
         "qos": "2",
         "retain": "",
@@ -5774,7 +5774,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "{\"brightness\": 254}",
+                "to": "{\"brightness\": 124}",
                 "tot": "str"
             }
         ],
