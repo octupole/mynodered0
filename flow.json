@@ -7064,8 +7064,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 620,
-        "y": 40,
+        "x": 670,
+        "y": 100,
         "wires": [
             []
         ]
@@ -7079,11 +7079,11 @@
             {
                 "p": "Light",
                 "pt": "flow",
-                "to": "{\"aqara1\": {\"state\": \"OFF\"}, \"aqara2\": {\"state\": \"OB}}}",
+                "to": "{\"aqara1\":{\"state\":\"OFF\"},\"aqara2\":{\"state\":\"ON\"}}",
                 "tot": "json"
             }
         ],
-        "active": false,
+        "active": true,
         "x": 1190,
         "y": 120,
         "wires": []
