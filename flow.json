@@ -5911,7 +5911,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "aqara1",
+        "payload": "aqara2",
         "payloadType": "str",
         "x": 650,
         "y": 500,
