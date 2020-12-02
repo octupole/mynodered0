@@ -5932,8 +5932,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1570,
-        "y": 480,
+        "x": 1730,
+        "y": 560,
         "wires": []
     },
     {
@@ -6686,9 +6686,45 @@
         "fieldType": "msg",
         "format": "handlebars",
         "syntax": "mustache",
-        "template": "{{topic.split[0]}} the payload: {{payload}} !",
+        "template": "{{topic}}\n{{payload}}",
         "output": "str",
         "x": 1390,
+        "y": 520,
+        "wires": [
+            [
+                "f836f356.333f8"
+            ]
+        ]
+    },
+    {
+        "id": "e5f420b9.2892f",
+        "type": "template",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "This is the payload: {{payload}} !",
+        "output": "str",
+        "x": 590,
+        "y": 1620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f836f356.333f8",
+        "type": "split",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 1530,
         "y": 520,
         "wires": [
             [
