@@ -7178,12 +7178,10 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1320,
-        "y": 1660,
+        "x": 1520,
+        "y": 1700,
         "wires": [
-            [
-                "1d709fb4.1ae38"
-            ]
+            []
         ]
     },
     {
@@ -7286,8 +7284,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1270,
-        "y": 1380,
+        "x": 1530,
+        "y": 1320,
         "wires": [
             []
         ]
@@ -7331,7 +7329,7 @@
         "y": 1380,
         "wires": [
             [
-                "73e4c59a.4d561c"
+                "77edf1fa.c2672"
             ]
         ]
     },
@@ -7354,7 +7352,7 @@
         "y": 1560,
         "wires": [
             [
-                "93c3c698.072b98"
+                "f29a95d4.bd8638"
             ]
         ]
     },
@@ -7363,13 +7361,13 @@
         "type": "function",
         "z": "481e1d7a.648f04",
         "name": "",
-        "func": "var mymsgL=msg.Light;\nvar myflow=flow.get(mymsgL);\nmyflow={\"state\":\"ON\"};\nflow.set(mymsgL,myflow);\nreturn msg;",
+        "func": "var mymsgL=msg.Light;\nvar myflow=flow.get(mymsgL);\nvar mystate=msg.payload.state;\nmyflow={\"state\": mystate};\nflow.set(mymsgL,myflow);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1580,
-        "y": 1440,
+        "x": 1380,
+        "y": 1400,
         "wires": [
             []
         ]
@@ -7461,6 +7459,24 @@
         "wires": [
             [
                 "e617ead5.881888"
+            ]
+        ]
+    },
+    {
+        "id": "f29a95d4.bd8638",
+        "type": "function",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "func": "var mymsgL=msg.Light;\nvar myflow=flow.get(mymsgL);\nmsg.payload=myflow.state;\nmsg.topic=flow.get(\"Topic\");\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1280,
+        "y": 1760,
+        "wires": [
+            [
+                "1d709fb4.1ae38"
             ]
         ]
     }
