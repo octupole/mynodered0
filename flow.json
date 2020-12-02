@@ -275,8 +275,9 @@
     {
         "id": "25aa1bc0.f7cb04",
         "type": "subflow",
-        "name": "Subflow 6",
+        "name": "CheckLight",
         "info": "",
+        "category": "",
         "in": [
             {
                 "x": 60,
@@ -299,7 +300,9 @@
                     }
                 ]
             }
-        ]
+        ],
+        "env": [],
+        "color": "#DDAA99"
     },
     {
         "id": "40daa49d.a7ac8c",
@@ -4872,7 +4875,7 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 440,
+        "x": 260,
         "y": 1040,
         "wires": [
             [
@@ -6799,7 +6802,7 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 370,
+        "x": 410,
         "y": 80,
         "wires": [
             [
@@ -6908,7 +6911,7 @@
         "z": "481e1d7a.648f04",
         "name": "",
         "env": [],
-        "x": 640,
+        "x": 660,
         "y": 920,
         "wires": [
             [
@@ -6926,8 +6929,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 300,
-        "y": 160,
+        "x": 340,
+        "y": 180,
         "wires": [
             [
                 "bf69f3b4.a9393"
@@ -6958,5 +6961,127 @@
                 "a0f56e7.bacc99"
             ]
         ]
+    },
+    {
+        "id": "3c773906.3a0d06",
+        "type": "subflow:40daa49d.a7ac8c",
+        "z": "92419cdc.39ec9",
+        "name": "",
+        "x": 570,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7b1fac51.e20d94",
+        "type": "inject",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 350,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f2b1d142.cc93e",
+        "type": "debug",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "b4366227.491c7",
+        "type": "change",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "612cdb02.65d3c4",
+        "type": "change",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 630,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "65b70a78.0003a4",
+        "type": "config",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "properties": [
+            {
+                "p": "Light",
+                "pt": "flow",
+                "to": "{\"laqara1\": {\"state\": \"OFF\"}}",
+                "tot": "json"
+            }
+        ],
+        "active": true,
+        "x": 360,
+        "y": 120,
+        "wires": []
     }
 ]
