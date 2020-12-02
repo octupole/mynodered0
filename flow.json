@@ -6579,5 +6579,20 @@
         "x": 780,
         "y": 1880,
         "wires": []
+    },
+    {
+        "id": "a5c30a38.690658",
+        "type": "zigbee2mqtt-get",
+        "z": "dd91d5bc.c35b28",
+        "name": "",
+        "server": "67c87fc0.150f8",
+        "friendly_name": "switch1",
+        "device_id": "0x00158d00028fd76f",
+        "state": "0",
+        "x": 450,
+        "y": 1980,
+        "wires": [
+            []
+        ]
     }
 ]
