@@ -7075,7 +7075,7 @@
             {
                 "p": "Light",
                 "pt": "flow",
-                "to": "{\"laqara1\": {\"state\": \"OFF\"}}",
+                "to": "{\"aqara1\": {\"state\": \"OFF\"}, \"aqara2\": {\"state\": \"OB}}}",
                 "tot": "json"
             }
         ],
