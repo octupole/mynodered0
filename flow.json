@@ -6688,11 +6688,11 @@
         "syntax": "mustache",
         "template": "{{topic}}\n{{payload}}",
         "output": "str",
-        "x": 1390,
-        "y": 520,
+        "x": 1340,
+        "y": 500,
         "wires": [
             [
-                "f836f356.333f8"
+                "3b251942.fd5cb6"
             ]
         ]
     },
@@ -6725,11 +6725,9 @@
         "stream": false,
         "addname": "",
         "x": 1530,
-        "y": 520,
+        "y": 420,
         "wires": [
-            [
-                "204f3389.18079c"
-            ]
+            []
         ]
     },
     {
@@ -6810,7 +6808,7 @@
                 "t": "change",
                 "p": "topic",
                 "pt": "msg",
-                "from": "zigbee2mqtt",
+                "from": "zigbee2mqtt&#x2F;",
                 "fromt": "str",
                 "to": "",
                 "tot": "str"
@@ -6821,10 +6819,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1260,
-        "y": 980,
+        "x": 1510,
+        "y": 600,
         "wires": [
-            []
+            [
+                "204f3389.18079c"
+            ]
         ]
     }
 ]
