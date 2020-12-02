@@ -7747,7 +7747,7 @@
         "y": 1320,
         "wires": [
             [
-                "bf6cbd9e.ddc88"
+                "9378209.7393de"
             ]
         ]
     },
@@ -7841,5 +7841,23 @@
         "x": 1640,
         "y": 1380,
         "wires": []
+    },
+    {
+        "id": "9378209.7393de",
+        "type": "rbe",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload.state",
+        "x": 1370,
+        "y": 1340,
+        "wires": [
+            [
+                "bf6cbd9e.ddc88"
+            ]
+        ]
     }
 ]
