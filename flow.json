@@ -7007,11 +7007,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 900,
+        "x": 1190,
         "y": 220,
         "wires": []
     },
@@ -7025,7 +7025,7 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "Light.aqara1",
+                "to": "Light.aqara2",
                 "tot": "flow"
             }
         ],
@@ -7037,7 +7037,9 @@
         "x": 660,
         "y": 260,
         "wires": [
-            []
+            [
+                "b21282c1.190e5"
+            ]
         ]
     },
     {
@@ -7074,7 +7076,7 @@
             {
                 "p": "Light",
                 "pt": "flow",
-                "to": "{\"aqara1\":{\"state\":\"OFF\"},\"aqara2\":{\"state\":\"ON\"}}",
+                "to": "{\"aqara1\":{\"state\":\"OFF\"},\"aqara3\":{\"state\":\"OFF\"}}",
                 "tot": "json"
             }
         ],
@@ -7097,8 +7099,26 @@
         "y": 200,
         "wires": [
             [
-                "f2b1d142.cc93e"
+                "f2b1d142.cc93e",
+                "b4366227.491c7"
             ]
         ]
+    },
+    {
+        "id": "b21282c1.190e5",
+        "type": "debug",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1150,
+        "y": 280,
+        "wires": []
     }
 ]
