@@ -5932,8 +5932,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1730,
-        "y": 560,
+        "x": 1750,
+        "y": 700,
         "wires": []
     },
     {
@@ -6726,6 +6726,25 @@
         "addname": "",
         "x": 1530,
         "y": 520,
+        "wires": [
+            [
+                "e24cf3dd.67243"
+            ]
+        ]
+    },
+    {
+        "id": "e24cf3dd.67243",
+        "type": "split",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 1650,
+        "y": 600,
         "wires": [
             [
                 "204f3389.18079c"
