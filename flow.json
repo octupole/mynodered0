@@ -6619,5 +6619,30 @@
                 "8be632b4.4c625"
             ]
         ]
+    },
+    {
+        "id": "7b103642.1e3548",
+        "type": "inject",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "aqara1",
+        "payloadType": "str",
+        "x": 630,
+        "y": 620,
+        "wires": [
+            [
+                "d493393b.ec47f8"
+            ]
+        ]
     }
 ]
