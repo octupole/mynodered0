@@ -7504,5 +7504,23 @@
                 "9e0c7499.d11538"
             ]
         ]
+    },
+    {
+        "id": "d7ac2034.d9993",
+        "type": "config",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "properties": [
+            {
+                "p": "",
+                "pt": "flow",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "active": true,
+        "x": 920,
+        "y": 1720,
+        "wires": []
     }
 ]
