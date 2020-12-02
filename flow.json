@@ -7347,8 +7347,8 @@
         "topic": "",
         "payload": "aqara2",
         "payloadType": "str",
-        "x": 250,
-        "y": 1260,
+        "x": 210,
+        "y": 1420,
         "wires": [
             [
                 "d8e33454.195a68"
@@ -7738,7 +7738,7 @@
         "type": "function",
         "z": "481e1d7a.648f04",
         "name": "GetState",
-        "func": "var mystate=msg.payload.state;\nmsg.payload=mystate;\nvar req=flow.get(\"Req\");\nif(req){\n    flow.set(\"Req\",false);\n}\nreturn msg;",
+        "func": "var mystate=msg.payload.state;\nmsg.payload=mystate;\nvar req=flow.get(\"Req\");\nif(req){\n    flow.set(\"Req\",false);\n    return msg;\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7813,7 +7813,7 @@
             },
             {
                 "t": "set",
-                "p": "request",
+                "p": "Req",
                 "pt": "flow",
                 "to": "true",
                 "tot": "bool"
@@ -7886,8 +7886,8 @@
             }
         ],
         "active": true,
-        "x": 140,
-        "y": 1380,
+        "x": 230,
+        "y": 1320,
         "wires": []
     }
 ]
