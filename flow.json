@@ -7596,8 +7596,8 @@
         "qos": "0",
         "datatype": "auto",
         "broker": "39f079e8.8d0cd6",
-        "x": 470,
-        "y": 1340,
+        "x": 450,
+        "y": 1420,
         "wires": [
             [
                 "6012010f.72ac"
@@ -7612,8 +7612,8 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 650,
-        "y": 1320,
+        "x": 630,
+        "y": 1420,
         "wires": [
             [
                 "b73f485f.664d78"
@@ -7629,8 +7629,8 @@
         "qos": "",
         "retain": "",
         "broker": "39f079e8.8d0cd6",
-        "x": 980,
-        "y": 1460,
+        "x": 1000,
+        "y": 1500,
         "wires": []
     },
     {
@@ -7702,8 +7702,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 810,
-        "y": 1320,
+        "x": 790,
+        "y": 1420,
         "wires": [
             [
                 "991a7179.26484"
@@ -7743,11 +7743,11 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 1060,
-        "y": 1320,
+        "x": 980,
+        "y": 1400,
         "wires": [
             [
-                "bf6cbd9e.ddc88"
+                "de326ac1.1e0838"
             ]
         ]
     },
@@ -7841,11 +7841,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1510,
+        "x": 1490,
         "y": 1360,
         "wires": []
     },
@@ -7889,5 +7889,34 @@
         "x": 230,
         "y": 1320,
         "wires": []
+    },
+    {
+        "id": "de326ac1.1e0838",
+        "type": "change",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "rules": [
+            {
+                "t": "change",
+                "p": "topic",
+                "pt": "msg",
+                "from": "zigbee2mqtt/",
+                "fromt": "str",
+                "to": "",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1230,
+        "y": 1380,
+        "wires": [
+            [
+                "bf6cbd9e.ddc88"
+            ]
+        ]
     }
 ]
