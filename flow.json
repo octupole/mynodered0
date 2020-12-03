@@ -8212,7 +8212,8 @@
         "y": 1040,
         "wires": [
             [
-                "fbe177a0.168af8"
+                "fbe177a0.168af8",
+                "a2c87d15.e4029"
             ]
         ]
     },
@@ -8343,5 +8344,32 @@
         "x": 1860,
         "y": 1080,
         "wires": []
+    },
+    {
+        "id": "a2c87d15.e4029",
+        "type": "change",
+        "z": "481e1d7a.648f04",
+        "name": "toggle",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "toggle",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1610,
+        "y": 1060,
+        "wires": [
+            [
+                "cc08e902.857d48"
+            ]
+        ]
     }
 ]
