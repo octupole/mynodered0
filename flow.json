@@ -7804,12 +7804,12 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload.action",
+        "complete": "payload",
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1170,
-        "y": 660,
+        "x": 750,
+        "y": 720,
         "wires": []
     },
     {
@@ -7830,12 +7830,11 @@
         "z": "481e1d7a.648f04",
         "name": "",
         "env": [],
-        "x": 550,
+        "x": 430,
         "y": 760,
         "wires": [
             [
-                "f213e8e7.02a1b8",
-                "c67bafcd.cd3c7"
+                "d20bc28.dd0bf4"
             ]
         ]
     },
@@ -7905,7 +7904,7 @@
         ],
         "allowColorForValueInMessage": false,
         "name": "",
-        "x": 830,
+        "x": 990,
         "y": 760,
         "wires": []
     },
@@ -7934,8 +7933,35 @@
         ],
         "allowColorForValueInMessage": false,
         "name": "",
-        "x": 830,
-        "y": 800,
+        "x": 1090,
+        "y": 820,
         "wires": []
+    },
+    {
+        "id": "d20bc28.dd0bf4",
+        "type": "change",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.action",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 660,
+        "y": 780,
+        "wires": [
+            [
+                "e6557611.fa0bf8"
+            ]
+        ]
     }
 ]
