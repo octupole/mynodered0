@@ -8149,7 +8149,7 @@
         "z": "481e1d7a.648f04",
         "name": "",
         "controlTopic": "control",
-        "defaultState": "open",
+        "defaultState": "closed",
         "openCmd": "open",
         "closeCmd": "close",
         "toggleCmd": "toggle",
