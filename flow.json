@@ -287,38 +287,6 @@
         "out": []
     },
     {
-        "id": "40daa49d.a7ac8c",
-        "type": "subflow",
-        "name": "CheckSensor",
-        "info": "",
-        "category": "",
-        "in": [
-            {
-                "x": 60,
-                "y": 160,
-                "wires": [
-                    {
-                        "id": "830d1436.1e6e28"
-                    }
-                ]
-            }
-        ],
-        "out": [
-            {
-                "x": 960,
-                "y": 160,
-                "wires": [
-                    {
-                        "id": "bf69f3b4.a9393",
-                        "port": 0
-                    }
-                ]
-            }
-        ],
-        "env": [],
-        "color": "#DDAA99"
-    },
-    {
         "id": "aabac456.759338",
         "type": "subflow",
         "name": "CheckLight0",
@@ -374,6 +342,38 @@
                 "wires": [
                     {
                         "id": "de326ac1.1e0838",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
+        "id": "e4b58bd9.464be8",
+        "type": "subflow",
+        "name": "CheckSensor",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 220,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "61c73fbc.84069"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 880,
+                "y": 200,
+                "wires": [
+                    {
+                        "id": "5cae1e5c.36b9e",
                         "port": 0
                     }
                 ]
@@ -5961,65 +5961,6 @@
         ]
     },
     {
-        "id": "b98a5d3d.f99c1",
-        "type": "mqtt in",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "topic": "zigbee2mqtt/#",
-        "qos": "2",
-        "datatype": "auto",
-        "broker": "39f079e8.8d0cd6",
-        "x": 620,
-        "y": 1180,
-        "wires": [
-            [
-                "ca9a04ee.9cd0c8"
-            ]
-        ]
-    },
-    {
-        "id": "54e1e80f.cb5738",
-        "type": "debug",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1310,
-        "y": 1220,
-        "wires": []
-    },
-    {
-        "id": "ca9a04ee.9cd0c8",
-        "type": "switch",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "property": "topic",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "topic",
-                "vt": "flow"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 970,
-        "y": 1200,
-        "wires": [
-            [
-                "54e1e80f.cb5738"
-            ]
-        ]
-    },
-    {
         "id": "3f93e0bb.71d3e",
         "type": "debug",
         "z": "92419cdc.39ec9",
@@ -6052,64 +5993,6 @@
         "x": 1730,
         "y": 600,
         "wires": []
-    },
-    {
-        "id": "65cc2f4.7a294d",
-        "type": "mqtt in",
-        "z": "481e1d7a.648f04",
-        "name": "Sensor1",
-        "topic": "zigbee2mqtt/Sensor1",
-        "qos": "0",
-        "datatype": "auto",
-        "broker": "39f079e8.8d0cd6",
-        "x": 962,
-        "y": 690,
-        "wires": [
-            [
-                "b6b11715.bd2968"
-            ]
-        ]
-    },
-    {
-        "id": "b6b11715.bd2968",
-        "type": "json",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 1122,
-        "y": 690,
-        "wires": [
-            [
-                "88bc2e71.1a8b6"
-            ]
-        ]
-    },
-    {
-        "id": "88bc2e71.1a8b6",
-        "type": "change",
-        "z": "481e1d7a.648f04",
-        "name": "detect",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Sensor1_motion",
-                "pt": "global",
-                "to": "payload.occupancy",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1282,
-        "y": 690,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "eb2257dd.23b488",
@@ -6575,89 +6458,6 @@
         ]
     },
     {
-        "id": "163fc1e0.019b9e",
-        "type": "mqtt in",
-        "z": "40daa49d.a7ac8c",
-        "name": "Sensor",
-        "topic": "zigbee2mqtt/#",
-        "qos": "0",
-        "datatype": "auto",
-        "broker": "39f079e8.8d0cd6",
-        "x": 190,
-        "y": 80,
-        "wires": [
-            [
-                "6f52c66d.636b78"
-            ]
-        ]
-    },
-    {
-        "id": "6f52c66d.636b78",
-        "type": "json",
-        "z": "40daa49d.a7ac8c",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 410,
-        "y": 80,
-        "wires": [
-            [
-                "731b1430.4d55dc"
-            ]
-        ]
-    },
-    {
-        "id": "a0f56e7.bacc99",
-        "type": "change",
-        "z": "40daa49d.a7ac8c",
-        "name": "detect",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Sensor_motion",
-                "pt": "flow",
-                "to": "payload.occupancy",
-                "tot": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 790,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "bf69f3b4.a9393",
-        "type": "change",
-        "z": "40daa49d.a7ac8c",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Sensor_motion",
-                "tot": "flow"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 680,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "fc608945.45d458",
         "type": "inject",
         "z": "481e1d7a.648f04",
@@ -6678,7 +6478,7 @@
         "y": 900,
         "wires": [
             [
-                "61c73fbc.84069"
+                "3d2d6793.d8b1f8"
             ]
         ]
     },
@@ -6697,159 +6497,6 @@
         "statusType": "auto",
         "x": 1410,
         "y": 900,
-        "wires": []
-    },
-    {
-        "id": "a83e871d.fcc348",
-        "type": "subflow:40daa49d.a7ac8c",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "env": [],
-        "x": 660,
-        "y": 1020,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "830d1436.1e6e28",
-        "type": "function",
-        "z": "40daa49d.a7ac8c",
-        "name": "SetSensor",
-        "func": "var Sensor=msg.payload;\nvar SensorTopic=\"zigbee2mqtt/\"+Sensor;\nflow.set(\"Topic\",SensorTopic);\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 470,
-        "y": 160,
-        "wires": [
-            [
-                "bf69f3b4.a9393"
-            ]
-        ]
-    },
-    {
-        "id": "731b1430.4d55dc",
-        "type": "switch",
-        "z": "40daa49d.a7ac8c",
-        "name": "",
-        "property": "topic",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "Topic",
-                "vt": "flow"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 610,
-        "y": 80,
-        "wires": [
-            [
-                "a0f56e7.bacc99"
-            ]
-        ]
-    },
-    {
-        "id": "3c773906.3a0d06",
-        "type": "subflow:40daa49d.a7ac8c",
-        "z": "92419cdc.39ec9",
-        "name": "",
-        "x": 570,
-        "y": 1100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7b1fac51.e20d94",
-        "type": "inject",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "aqara1",
-        "payloadType": "str",
-        "x": 340,
-        "y": 200,
-        "wires": [
-            [
-                "a4e5b618.ec1008"
-            ]
-        ]
-    },
-    {
-        "id": "b4366227.491c7",
-        "type": "change",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Light.aqara2",
-                "tot": "flow"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 840,
-        "y": 320,
-        "wires": [
-            [
-                "b21282c1.190e5"
-            ]
-        ]
-    },
-    {
-        "id": "a4e5b618.ec1008",
-        "type": "function",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "func": "var myflow=flow.get(\"Light\");\nmyflow.aqara2={\"state\":\"ON\"};\nflow.set(\"Light\",myflow);\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 640,
-        "y": 200,
-        "wires": [
-            [
-                "b4366227.491c7"
-            ]
-        ]
-    },
-    {
-        "id": "b21282c1.190e5",
-        "type": "debug",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1150,
-        "y": 280,
         "wires": []
     },
     {
@@ -7448,29 +7095,6 @@
         "wires": []
     },
     {
-        "id": "f25efbd.a3b7d08",
-        "type": "trigger",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "op1": "1",
-        "op2": "0",
-        "op1type": "val",
-        "op2type": "val",
-        "duration": "250",
-        "extend": "false",
-        "overrideDelay": "false",
-        "units": "ms",
-        "reset": "",
-        "bytopic": "all",
-        "topic": "topic",
-        "outputs": 1,
-        "x": 290,
-        "y": 1160,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "de326ac1.1e0838",
         "type": "change",
         "z": "d20a07d1.915368",
@@ -7532,14 +7156,14 @@
     {
         "id": "7896ee02.55a72",
         "type": "mqtt in",
-        "z": "481e1d7a.648f04",
+        "z": "e4b58bd9.464be8",
         "name": "Sensor",
         "topic": "zigbee2mqtt/#",
         "qos": "0",
         "datatype": "auto",
         "broker": "39f079e8.8d0cd6",
-        "x": 490,
-        "y": 840,
+        "x": 190,
+        "y": 140,
         "wires": [
             [
                 "18b5e4a8.0509eb"
@@ -7549,13 +7173,13 @@
     {
         "id": "18b5e4a8.0509eb",
         "type": "json",
-        "z": "481e1d7a.648f04",
+        "z": "e4b58bd9.464be8",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 710,
-        "y": 840,
+        "x": 410,
+        "y": 140,
         "wires": [
             [
                 "8615d977.73b698"
@@ -7565,7 +7189,7 @@
     {
         "id": "e09b9900.f56d68",
         "type": "change",
-        "z": "481e1d7a.648f04",
+        "z": "e4b58bd9.464be8",
         "name": "detect",
         "rules": [
             {
@@ -7581,8 +7205,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1090,
-        "y": 840,
+        "x": 790,
+        "y": 140,
         "wires": [
             []
         ]
@@ -7590,7 +7214,7 @@
     {
         "id": "5cae1e5c.36b9e",
         "type": "change",
-        "z": "481e1d7a.648f04",
+        "z": "e4b58bd9.464be8",
         "name": "",
         "rules": [
             {
@@ -7606,26 +7230,24 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1020,
-        "y": 900,
+        "x": 720,
+        "y": 200,
         "wires": [
-            [
-                "1da7f3b2.4dcb8c"
-            ]
+            []
         ]
     },
     {
         "id": "61c73fbc.84069",
         "type": "function",
-        "z": "481e1d7a.648f04",
+        "z": "e4b58bd9.464be8",
         "name": "SetSensor",
         "func": "var Sensor=msg.payload;\nvar SensorTopic=\"zigbee2mqtt/\"+Sensor;\nflow.set(\"Topic\",SensorTopic);\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 670,
-        "y": 900,
+        "x": 370,
+        "y": 200,
         "wires": [
             [
                 "5cae1e5c.36b9e"
@@ -7635,7 +7257,7 @@
     {
         "id": "8615d977.73b698",
         "type": "switch",
-        "z": "481e1d7a.648f04",
+        "z": "e4b58bd9.464be8",
         "name": "",
         "property": "topic",
         "propertyType": "msg",
@@ -7649,8 +7271,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 890,
-        "y": 840,
+        "x": 590,
+        "y": 140,
         "wires": [
             [
                 "e09b9900.f56d68"
@@ -7660,7 +7282,7 @@
     {
         "id": "94df9129.dab79",
         "type": "config",
-        "z": "481e1d7a.648f04",
+        "z": "e4b58bd9.464be8",
         "name": "",
         "properties": [
             {
@@ -7671,8 +7293,22 @@
             }
         ],
         "active": true,
-        "x": 610,
-        "y": 780,
+        "x": 310,
+        "y": 80,
         "wires": []
+    },
+    {
+        "id": "3d2d6793.d8b1f8",
+        "type": "subflow:e4b58bd9.464be8",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "env": [],
+        "x": 820,
+        "y": 840,
+        "wires": [
+            [
+                "1da7f3b2.4dcb8c"
+            ]
+        ]
     }
 ]
