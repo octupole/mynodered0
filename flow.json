@@ -8590,8 +8590,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1050,
-        "y": 1020,
+        "x": 790,
+        "y": 1040,
         "wires": []
     },
     {
