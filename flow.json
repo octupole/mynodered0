@@ -373,7 +373,7 @@
                 "y": 180,
                 "wires": [
                     {
-                        "id": "e09b9900.f56d68",
+                        "id": "5ff54b83.8af984",
                         "port": 0
                     }
                 ]
@@ -7285,7 +7285,9 @@
         "x": 890,
         "y": 140,
         "wires": [
-            []
+            [
+                "5ff54b83.8af984"
+            ]
         ]
     },
     {
@@ -8088,6 +8090,22 @@
             [
                 "1da7f3b2.4dcb8c"
             ]
+        ]
+    },
+    {
+        "id": "5ff54b83.8af984",
+        "type": "rbe",
+        "z": "e4b58bd9.464be8",
+        "name": "",
+        "func": "rbei",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "property": "payload.occupancy",
+        "x": 1030,
+        "y": 160,
+        "wires": [
+            []
         ]
     }
 ]
