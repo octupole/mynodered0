@@ -8077,8 +8077,8 @@
         "z": "481e1d7a.648f04",
         "name": "",
         "env": [],
-        "x": 140,
-        "y": 640,
+        "x": 160,
+        "y": 240,
         "wires": [
             [
                 "3a556150.2539de"
@@ -8603,7 +8603,7 @@
                 "t": "set",
                 "p": "Sensor1",
                 "pt": "global",
-                "to": "payload.occupancy",
+                "to": "payload",
                 "tot": "msg"
             }
         ],
