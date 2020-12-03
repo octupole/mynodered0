@@ -8414,8 +8414,8 @@
         "topic": "",
         "payload": "{\"occupancy\": false}",
         "payloadType": "json",
-        "x": 1030,
-        "y": 1160,
+        "x": 1070,
+        "y": 1240,
         "wires": [
             [
                 "3a556150.2539de"
