@@ -369,11 +369,11 @@
         ],
         "out": [
             {
-                "x": 1120,
-                "y": 180,
+                "x": 1320,
+                "y": 220,
                 "wires": [
                     {
-                        "id": "5ff54b83.8af984",
+                        "id": "cada2a01.8b5fd8",
                         "port": 0
                     }
                 ]
@@ -445,11 +445,11 @@
         "in": [],
         "out": [
             {
-                "x": 680,
-                "y": 80,
+                "x": 1100,
+                "y": 180,
                 "wires": [
                     {
-                        "id": "3d2d6793.d8b1f8",
+                        "id": "77c0a332.bacd3c",
                         "port": 0
                     }
                 ]
@@ -7342,7 +7342,9 @@
         "x": 520,
         "y": 80,
         "wires": [
-            []
+            [
+                "77c0a332.bacd3c"
+            ]
         ]
     },
     {
@@ -8094,7 +8096,9 @@
         "x": 1030,
         "y": 160,
         "wires": [
-            []
+            [
+                "cada2a01.8b5fd8"
+            ]
         ]
     },
     {
@@ -8663,6 +8667,47 @@
             [
                 "7ba004e4.01ba1c"
             ]
+        ]
+    },
+    {
+        "id": "77c0a332.bacd3c",
+        "type": "change",
+        "z": "7bad3bd5.01d824",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Sensor1",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cada2a01.8b5fd8",
+        "type": "function",
+        "z": "e4b58bd9.464be8",
+        "name": "SetOccupancy",
+        "func": "var Topic=msg.topic;\nvar myocc=msg.payload.occupancy;\nflow.set(Topic,{\"occupancy\": myocc});\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1180,
+        "y": 200,
+        "wires": [
+            []
         ]
     }
 ]
