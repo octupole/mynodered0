@@ -8664,7 +8664,7 @@
         "type": "function",
         "z": "481e1d7a.648f04",
         "name": "",
-        "func": "var sensor=msg.payload;\nvar myocc=flow.get(sensor) || undefined;\nmsg.payload=myocc;\nreturn msg;",
+        "func": "var sensor=msg.payload;\nvar myocc=flow.get(sensor) || undefined;\nmsg.payload=myocc.occupancy;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
