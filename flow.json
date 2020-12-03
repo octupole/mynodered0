@@ -8605,7 +8605,7 @@
                 "p": "payload",
                 "pt": "msg",
                 "to": "Sensor1",
-                "tot": "flow"
+                "tot": "global"
             }
         ],
         "action": "",
