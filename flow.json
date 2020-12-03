@@ -7543,7 +7543,7 @@
         "type": "function",
         "z": "84e935f5.891fe8",
         "name": "Gate Control",
-        "func": "var msg1=msg;\nmsg.payload=\"close\";\nmsg1.payload=\"open\";\nreturn [msg,msg1];",
+        "func": "var msg1=msg;\nmsg.payload=\"close\";\nmsg1.payload=\"close\";\nreturn [msg,msg1];",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
