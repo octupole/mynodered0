@@ -8154,10 +8154,13 @@
         "defaultCmd": "default",
         "statusCmd": "status",
         "persist": false,
-        "x": 1490,
-        "y": 1100,
+        "x": 1530,
+        "y": 1080,
         "wires": [
-            []
+            [
+                "a7c48857.5c7578",
+                "5486b4b1.78c09c"
+            ]
         ]
     },
     {
@@ -8344,7 +8347,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1610,
+        "x": 1650,
         "y": 1180,
         "wires": [
             [
@@ -8505,6 +8508,40 @@
         "wires": [
             [
                 "cc08e902.857d48"
+            ]
+        ]
+    },
+    {
+        "id": "a7c48857.5c7578",
+        "type": "change",
+        "z": "481e1d7a.648f04",
+        "name": "close",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "close",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "control",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1490,
+        "y": 1160,
+        "wires": [
+            [
+                "fbe177a0.168af8"
             ]
         ]
     }
