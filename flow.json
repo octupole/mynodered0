@@ -7300,8 +7300,8 @@
         "qos": "0",
         "datatype": "auto",
         "broker": "39f079e8.8d0cd6",
-        "x": 550,
-        "y": 820,
+        "x": 490,
+        "y": 800,
         "wires": [
             [
                 "c5d6238e.d9818"
@@ -7316,11 +7316,11 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 730,
-        "y": 820,
+        "x": 650,
+        "y": 800,
         "wires": [
             [
-                "fb057f68.d80a1"
+                "3e1a2fbd.2a3c6"
             ]
         ]
     },
@@ -7382,7 +7382,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1000,
+        "x": 920,
         "y": 920,
         "wires": [
             [
@@ -7395,16 +7395,16 @@
         "type": "function",
         "z": "481e1d7a.648f04",
         "name": "SetSensor",
-        "func": "var Sensor=msg.payload;\nvar SensorTopic=\"zigbee2mqtt/\"+Sensor;\nflow.set(\"Topic\",SensorTopic);\nmsg.payload=\"close\";\nmsg.topic=\"control\";\nreturn msg;",
+        "func": "var Sensor=msg.payload;\nvar SensorTopic=\"zigbee2mqtt/\"+Sensor;\nflow.set(\"Topic\",SensorTopic);\nmsg.payload=\"open\";\nmsg.topic=\"control\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 670,
+        "x": 570,
         "y": 920,
         "wires": [
             [
-                "8742b89.bc60348"
+                "3e1a2fbd.2a3c6"
             ]
         ]
     },
@@ -7425,8 +7425,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 910,
-        "y": 820,
+        "x": 930,
+        "y": 800,
         "wires": [
             [
                 "9c0043b.839c5c"
@@ -7747,10 +7747,13 @@
         "defaultCmd": "default",
         "statusCmd": "",
         "persist": false,
-        "x": 950,
-        "y": 1060,
+        "x": 790,
+        "y": 820,
         "wires": [
-            []
+            [
+                "fb057f68.d80a1",
+                "8742b89.bc60348"
+            ]
         ]
     }
 ]
