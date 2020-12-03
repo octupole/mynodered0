@@ -8566,13 +8566,13 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
+        "payload": "Sensor1",
+        "payloadType": "str",
         "x": 140,
         "y": 900,
         "wires": [
             [
-                "cf90192a.722aa8"
+                "97b3a559.c571e8"
             ]
         ]
     },
@@ -8659,6 +8659,24 @@
         "y": 200,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "97b3a559.c571e8",
+        "type": "function",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "func": "var sensor=msg.payload;\nvar myocc=flow.get(sensor) || undefined;\nmsg.payload=undefined;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 320,
+        "y": 920,
+        "wires": [
+            [
+                "cf90192a.722aa8"
+            ]
         ]
     }
 ]
