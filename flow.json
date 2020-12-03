@@ -8628,8 +8628,8 @@
                 "t": "set",
                 "p": "Sensor1",
                 "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
+                "to": "33",
+                "tot": "num"
             }
         ],
         "action": "",
