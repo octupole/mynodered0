@@ -8078,9 +8078,11 @@
         "name": "",
         "env": [],
         "x": 140,
-        "y": 680,
+        "y": 640,
         "wires": [
-            []
+            [
+                "3a556150.2539de"
+            ]
         ]
     },
     {
@@ -8550,53 +8552,6 @@
         ]
     },
     {
-        "id": "318ce168.2fac1e",
-        "type": "change",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "rules": [
-            {
-                "t": "change",
-                "p": "topic",
-                "pt": "msg",
-                "from": "zigbee2mqtt/",
-                "fromt": "str",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 390,
-        "y": 940,
-        "wires": [
-            [
-                "5e91b027.c4b75"
-            ]
-        ]
-    },
-    {
-        "id": "5e91b027.c4b75",
-        "type": "function",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "func": "var Topic=msg.topic;\nvar myocc=msg.payload.occupancy;\nflow.set(Topic,{\"occupancy\": myocc});\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 600,
-        "y": 980,
-        "wires": [
-            [
-                "cf90192a.722aa8"
-            ]
-        ]
-    },
-    {
         "id": "2a1a489e.f2c968",
         "type": "inject",
         "z": "481e1d7a.648f04",
@@ -8604,24 +8559,20 @@
         "props": [
             {
                 "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
             }
         ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "zigbee2mqtt/Sensor1",
-        "payload": "{\"occupancy\":true}",
-        "payloadType": "json",
-        "x": 170,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
         "y": 900,
         "wires": [
             [
-                "318ce168.2fac1e"
+                "cf90192a.722aa8"
             ]
         ]
     },
@@ -8661,8 +8612,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 800,
-        "y": 1000,
+        "x": 500,
+        "y": 940,
         "wires": [
             [
                 "7ba004e4.01ba1c"
