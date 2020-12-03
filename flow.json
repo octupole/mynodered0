@@ -5187,6 +5187,7 @@
         "id": "a5e69c0b.21ad1",
         "type": "deconz-output",
         "z": "92419cdc.39ec9",
+        "d": true,
         "name": "",
         "server": "bf0682f0.fbf51",
         "device": "group_7",
@@ -5311,7 +5312,9 @@
         "x": 870,
         "y": 1600,
         "wires": [
-            []
+            [
+                "a5e69c0b.21ad1"
+            ]
         ]
     },
     {
