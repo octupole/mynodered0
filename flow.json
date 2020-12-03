@@ -8634,7 +8634,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 820,
+        "x": 1050,
         "y": 1020,
         "wires": []
     },
@@ -8657,8 +8657,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 750,
-        "y": 1020,
+        "x": 800,
+        "y": 1000,
         "wires": [
             [
                 "7ba004e4.01ba1c"
