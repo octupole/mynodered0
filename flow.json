@@ -8639,7 +8639,7 @@
         "type": "function",
         "z": "481e1d7a.648f04",
         "name": "",
-        "func": "var sensor=msg.payload;\nvar myocc=global.get(\"Sensor1\");\nmsg.payload=myocc;\nreturn msg;",
+        "func": "var sensor=msg.payload;\nvar myocc=global.get(sensor);\nmsg.payload=myocc;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
