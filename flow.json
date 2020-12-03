@@ -6055,23 +6055,6 @@
         "wires": []
     },
     {
-        "id": "204f3389.18079c",
-        "type": "debug",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 890,
-        "y": 1240,
-        "wires": []
-    },
-    {
         "id": "eb2257dd.23b488",
         "type": "mqtt out",
         "z": "15ebe48.940281c",
@@ -6483,54 +6466,6 @@
         "wires": [
             [
                 "f61154d2.1f91a8"
-            ]
-        ]
-    },
-    {
-        "id": "d10e3f9b.f5bd7",
-        "type": "template",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "field": "payload",
-        "fieldType": "msg",
-        "format": "handlebars",
-        "syntax": "mustache",
-        "template": "Lamp {{topic}} is {{payload}}",
-        "output": "str",
-        "x": 740,
-        "y": 1180,
-        "wires": [
-            [
-                "204f3389.18079c"
-            ]
-        ]
-    },
-    {
-        "id": "3b251942.fd5cb6",
-        "type": "change",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "rules": [
-            {
-                "t": "change",
-                "p": "topic",
-                "pt": "msg",
-                "from": "zigbee2mqtt/",
-                "fromt": "str",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 530,
-        "y": 1160,
-        "wires": [
-            [
-                "d10e3f9b.f5bd7"
             ]
         ]
     },
@@ -8568,8 +8503,8 @@
         "topic": "",
         "payload": "Sensor1",
         "payloadType": "str",
-        "x": 180,
-        "y": 960,
+        "x": 260,
+        "y": 920,
         "wires": [
             [
                 "97b3a559.c571e8"
@@ -8589,7 +8524,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 810,
+        "x": 770,
         "y": 980,
         "wires": []
     },
@@ -8638,14 +8573,14 @@
         "id": "97b3a559.c571e8",
         "type": "function",
         "z": "481e1d7a.648f04",
-        "name": "",
+        "name": "Test sensor",
         "func": "var sensor=msg.payload;\nvar myocc=global.get(sensor);\nmsg.payload=myocc;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 500,
-        "y": 960,
+        "x": 490,
+        "y": 1000,
         "wires": [
             [
                 "7ba004e4.01ba1c"
