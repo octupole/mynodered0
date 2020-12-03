@@ -369,11 +369,11 @@
         ],
         "out": [
             {
-                "x": 880,
-                "y": 200,
+                "x": 1120,
+                "y": 180,
                 "wires": [
                     {
-                        "id": "5cae1e5c.36b9e",
+                        "id": "e09b9900.f56d68",
                         "port": 0
                     }
                 ]
@@ -6529,8 +6529,8 @@
         "topic": "",
         "payload": "Sensor1",
         "payloadType": "str",
-        "x": 540,
-        "y": 900,
+        "x": 800,
+        "y": 1160,
         "wires": [
             [
                 "3d2d6793.d8b1f8"
@@ -6550,8 +6550,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1190,
-        "y": 920,
+        "x": 1430,
+        "y": 1200,
         "wires": []
     },
     {
@@ -7233,11 +7233,11 @@
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 410,
+        "x": 370,
         "y": 140,
         "wires": [
             [
-                "8615d977.73b698"
+                "18bbfc18.d87454"
             ]
         ]
     },
@@ -7260,33 +7260,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 790,
+        "x": 890,
         "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5cae1e5c.36b9e",
-        "type": "change",
-        "z": "e4b58bd9.464be8",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Sensor_motion",
-                "tot": "flow"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 680,
-        "y": 280,
         "wires": [
             []
         ]
@@ -7296,7 +7271,7 @@
         "type": "function",
         "z": "e4b58bd9.464be8",
         "name": "SetSensor",
-        "func": "var Sensor=msg.payload;\nvar SensorTopic=\"zigbee2mqtt/\"+Sensor;\nflow.set(\"Topic\",SensorTopic);\nreturn msg;",
+        "func": "var Sensor=msg.payload;\nvar SensorTopic=\"zigbee2mqtt/\"+Sensor;\nflow.set(\"Topic\",SensorTopic);\nmsg.payload=\"open\";\nmsg.topic=\"control\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7305,7 +7280,7 @@
         "y": 260,
         "wires": [
             [
-                "e4e0c871.e900d8"
+                "18bbfc18.d87454"
             ]
         ]
     },
@@ -7326,7 +7301,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 590,
+        "x": 710,
         "y": 140,
         "wires": [
             [
@@ -7340,34 +7315,11 @@
         "z": "481e1d7a.648f04",
         "name": "",
         "env": [],
-        "x": 840,
-        "y": 920,
+        "x": 1080,
+        "y": 1180,
         "wires": [
             [
                 "1da7f3b2.4dcb8c"
-            ]
-        ]
-    },
-    {
-        "id": "e4e0c871.e900d8",
-        "type": "delay",
-        "z": "e4b58bd9.464be8",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "500",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "x": 490,
-        "y": 320,
-        "wires": [
-            [
-                "5cae1e5c.36b9e"
             ]
         ]
     },
@@ -8080,6 +8032,27 @@
         "wires": [
             [
                 "d94d1e90.168ff"
+            ]
+        ]
+    },
+    {
+        "id": "18bbfc18.d87454",
+        "type": "gate",
+        "z": "e4b58bd9.464be8",
+        "name": "",
+        "controlTopic": "control",
+        "defaultState": "closed",
+        "openCmd": "open",
+        "closeCmd": "close",
+        "toggleCmd": "toggle",
+        "defaultCmd": "default",
+        "statusCmd": "status",
+        "persist": false,
+        "x": 530,
+        "y": 140,
+        "wires": [
+            [
+                "8615d977.73b698"
             ]
         ]
     }
