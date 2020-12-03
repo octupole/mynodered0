@@ -358,7 +358,7 @@
         "category": "",
         "in": [
             {
-                "x": 220,
+                "x": 80,
                 "y": 200,
                 "wires": [
                     {
@@ -6478,7 +6478,7 @@
         "y": 900,
         "wires": [
             [
-                "3d2d6793.d8b1f8"
+                "4718f48e.129ecc"
             ]
         ]
     },
@@ -7162,7 +7162,7 @@
         "qos": "0",
         "datatype": "auto",
         "broker": "39f079e8.8d0cd6",
-        "x": 190,
+        "x": 230,
         "y": 140,
         "wires": [
             [
@@ -7303,12 +7303,156 @@
         "z": "481e1d7a.648f04",
         "name": "",
         "env": [],
-        "x": 820,
-        "y": 840,
+        "x": 800,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d15083f5.a9b74",
+        "type": "mqtt in",
+        "z": "481e1d7a.648f04",
+        "name": "Sensor",
+        "topic": "zigbee2mqtt/#",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "39f079e8.8d0cd6",
+        "x": 550,
+        "y": 820,
+        "wires": [
+            [
+                "c5d6238e.d9818"
+            ]
+        ]
+    },
+    {
+        "id": "c5d6238e.d9818",
+        "type": "json",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 730,
+        "y": 820,
+        "wires": [
+            [
+                "fb057f68.d80a1"
+            ]
+        ]
+    },
+    {
+        "id": "9c0043b.839c5c",
+        "type": "change",
+        "z": "481e1d7a.648f04",
+        "name": "detect",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Sensor_motion",
+                "pt": "flow",
+                "to": "payload.occupancy",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1110,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8742b89.bc60348",
+        "type": "change",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Sensor_motion",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 900,
         "wires": [
             [
                 "1da7f3b2.4dcb8c"
             ]
         ]
+    },
+    {
+        "id": "4718f48e.129ecc",
+        "type": "function",
+        "z": "481e1d7a.648f04",
+        "name": "SetSensor",
+        "func": "var Sensor=msg.payload;\nvar SensorTopic=\"zigbee2mqtt/\"+Sensor;\nflow.set(\"Topic\",SensorTopic);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 690,
+        "y": 880,
+        "wires": [
+            [
+                "8742b89.bc60348"
+            ]
+        ]
+    },
+    {
+        "id": "fb057f68.d80a1",
+        "type": "switch",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Topic",
+                "vt": "flow"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 910,
+        "y": 820,
+        "wires": [
+            [
+                "9c0043b.839c5c"
+            ]
+        ]
+    },
+    {
+        "id": "296937e.13f6bc8",
+        "type": "config",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "properties": [
+            {
+                "p": "Topic",
+                "pt": "flow",
+                "to": "Null",
+                "tot": "str"
+            }
+        ],
+        "active": true,
+        "x": 630,
+        "y": 760,
+        "wires": []
     }
 ]
