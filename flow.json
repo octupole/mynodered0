@@ -6665,10 +6665,6 @@
         "props": [
             {
                 "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
             }
         ],
         "repeat": "",
@@ -6676,13 +6672,13 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
+        "payload": "Sensor1",
+        "payloadType": "str",
         "x": 180,
         "y": 900,
         "wires": [
             [
-                "a83e871d.fcc348"
+                "61c73fbc.84069"
             ]
         ]
     },
@@ -6698,8 +6694,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1080,
-        "y": 1040,
+        "x": 1450,
+        "y": 920,
         "wires": []
     },
     {
@@ -6709,11 +6705,9 @@
         "name": "",
         "env": [],
         "x": 660,
-        "y": 920,
+        "y": 1020,
         "wires": [
-            [
-                "1da7f3b2.4dcb8c"
-            ]
+            []
         ]
     },
     {
@@ -7786,6 +7780,134 @@
         "wires": [
             [
                 "5712e7df.c43448"
+            ]
+        ]
+    },
+    {
+        "id": "7896ee02.55a72",
+        "type": "mqtt in",
+        "z": "481e1d7a.648f04",
+        "name": "Sensor",
+        "topic": "zigbee2mqtt/#",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "39f079e8.8d0cd6",
+        "x": 490,
+        "y": 840,
+        "wires": [
+            [
+                "18b5e4a8.0509eb"
+            ]
+        ]
+    },
+    {
+        "id": "18b5e4a8.0509eb",
+        "type": "json",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 710,
+        "y": 840,
+        "wires": [
+            [
+                "8615d977.73b698"
+            ]
+        ]
+    },
+    {
+        "id": "e09b9900.f56d68",
+        "type": "change",
+        "z": "481e1d7a.648f04",
+        "name": "detect",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Sensor_motion",
+                "pt": "flow",
+                "to": "payload.occupancy",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1090,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5cae1e5c.36b9e",
+        "type": "change",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Sensor_motion",
+                "tot": "flow"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1080,
+        "y": 900,
+        "wires": [
+            [
+                "1da7f3b2.4dcb8c"
+            ]
+        ]
+    },
+    {
+        "id": "61c73fbc.84069",
+        "type": "function",
+        "z": "481e1d7a.648f04",
+        "name": "SetSensor",
+        "func": "var Sensor=msg.payload;\nvar SensorTopic=\"zigbee2mqtt/\"+Sensor;\nflow.set(\"Topic\",SensorTopic);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 710,
+        "y": 920,
+        "wires": [
+            [
+                "5cae1e5c.36b9e"
+            ]
+        ]
+    },
+    {
+        "id": "8615d977.73b698",
+        "type": "switch",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "property": "topic",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "Topic",
+                "vt": "flow"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 910,
+        "y": 840,
+        "wires": [
+            [
+                "e09b9900.f56d68"
             ]
         ]
     }
