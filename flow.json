@@ -8373,5 +8373,34 @@
                 "24a0736a.09385c"
             ]
         ]
+    },
+    {
+        "id": "1030f561.4d621b",
+        "type": "inject",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1710,
+        "y": 1220,
+        "wires": [
+            [
+                "5486b4b1.78c09c"
+            ]
+        ]
     }
 ]
