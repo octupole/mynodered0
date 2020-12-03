@@ -8602,10 +8602,10 @@
         "rules": [
             {
                 "t": "set",
-                "p": "Sensor1",
-                "pt": "flow",
-                "to": "payload",
-                "tot": "msg"
+                "p": "payload",
+                "pt": "msg",
+                "to": "Sensor1",
+                "tot": "flow"
             }
         ],
         "action": "",
