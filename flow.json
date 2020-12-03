@@ -8566,7 +8566,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "Sensor2",
+        "payload": "Sensor1",
         "payloadType": "str",
         "x": 180,
         "y": 960,
