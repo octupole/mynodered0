@@ -7674,7 +7674,9 @@
         "x": 1190,
         "y": 600,
         "wires": [
-            []
+            [
+                "e6557611.fa0bf8"
+            ]
         ]
     },
     {
@@ -7788,5 +7790,21 @@
                 "26311863.bc8ef8"
             ]
         ]
+    },
+    {
+        "id": "e6557611.fa0bf8",
+        "type": "debug",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1460,
+        "y": 660,
+        "wires": []
     }
 ]
