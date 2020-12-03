@@ -7606,12 +7606,12 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
+        "once": true,
+        "onceDelay": "0.0",
         "topic": "",
         "payload": "switch1",
         "payloadType": "str",
-        "x": 400,
+        "x": 410,
         "y": 660,
         "wires": [
             [
