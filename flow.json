@@ -8374,5 +8374,51 @@
                 "24a0736a.09385c"
             ]
         ]
+    },
+    {
+        "id": "70de209b.965ff",
+        "type": "inject",
+        "z": "481e1d7a.648f04",
+        "name": "True",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"occupancy\": true}",
+        "payloadType": "json",
+        "x": 760,
+        "y": 1240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c5817c15.dec51",
+        "type": "inject",
+        "z": "481e1d7a.648f04",
+        "name": "False",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"occupancy\": false}",
+        "payloadType": "json",
+        "x": 890,
+        "y": 1200,
+        "wires": [
+            []
+        ]
     }
 ]
