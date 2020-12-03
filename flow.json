@@ -8078,9 +8078,7 @@
         "x": 140,
         "y": 680,
         "wires": [
-            [
-                "318ce168.2fac1e"
-            ]
+            []
         ]
     },
     {
@@ -8568,10 +8566,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 480,
-        "y": 880,
+        "x": 390,
+        "y": 940,
         "wires": [
-            []
+            [
+                "5e91b027.c4b75"
+            ]
         ]
     },
     {
@@ -8584,10 +8584,58 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 250,
-        "y": 1020,
+        "x": 600,
+        "y": 980,
         "wires": [
-            []
+            [
+                "7ba004e4.01ba1c"
+            ]
         ]
+    },
+    {
+        "id": "2a1a489e.f2c968",
+        "type": "inject",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "zigbee2mqtt/Sensor1",
+        "payload": "{\"occupancy\":true}",
+        "payloadType": "json",
+        "x": 170,
+        "y": 900,
+        "wires": [
+            [
+                "318ce168.2fac1e"
+            ]
+        ]
+    },
+    {
+        "id": "7ba004e4.01ba1c",
+        "type": "debug",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 1020,
+        "wires": []
     }
 ]
