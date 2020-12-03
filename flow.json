@@ -8430,5 +8430,82 @@
                 "fbe177a0.168af8"
             ]
         ]
+    },
+    {
+        "id": "a0f8d80e.7c3788",
+        "type": "inject",
+        "z": "481e1d7a.648f04",
+        "name": "on",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1240,
+        "y": 1280,
+        "wires": [
+            [
+                "a2c87d15.e4029"
+            ]
+        ]
+    },
+    {
+        "id": "f2712d9f.78eaa",
+        "type": "inject",
+        "z": "481e1d7a.648f04",
+        "name": "off",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1430,
+        "y": 1280,
+        "wires": [
+            [
+                "72adc8dc.cf9f08"
+            ]
+        ]
+    },
+    {
+        "id": "72adc8dc.cf9f08",
+        "type": "change",
+        "z": "481e1d7a.648f04",
+        "name": "OFF",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "off",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1598,
+        "y": 1267,
+        "wires": [
+            [
+                "cc08e902.857d48"
+            ]
+        ]
     }
 ]
