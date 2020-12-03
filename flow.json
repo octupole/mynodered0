@@ -7470,7 +7470,26 @@
         "x": 550,
         "y": 700,
         "wires": [
-            []
+            [
+                "8d801d4c.c8d7e"
+            ]
         ]
+    },
+    {
+        "id": "8d801d4c.c8d7e",
+        "type": "debug",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 840,
+        "y": 780,
+        "wires": []
     }
 ]
