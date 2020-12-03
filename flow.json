@@ -8566,7 +8566,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "Sensor1",
+        "payload": "Sensor2",
         "payloadType": "str",
         "x": 180,
         "y": 960,
@@ -8590,7 +8590,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 810,
-        "y": 940,
+        "y": 980,
         "wires": []
     },
     {
