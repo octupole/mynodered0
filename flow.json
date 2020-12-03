@@ -8630,9 +8630,9 @@
             {
                 "t": "set",
                 "p": "Sensor1",
-                "pt": "flow",
-                "to": "33",
-                "tot": "num"
+                "pt": "global",
+                "to": "payload.occupancy",
+                "tot": "msg"
             }
         ],
         "action": "",
@@ -8640,7 +8640,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 760,
+        "x": 770,
         "y": 100,
         "wires": [
             []
