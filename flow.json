@@ -7475,7 +7475,7 @@
         "y": 400,
         "wires": [
             [
-                "15261ee.29d0fe1"
+                "1c649f7b.4b24a1"
             ]
         ]
     },
@@ -7738,6 +7738,24 @@
         "wires": [
             [
                 "14b50a7b.932996"
+            ]
+        ]
+    },
+    {
+        "id": "1c649f7b.4b24a1",
+        "type": "function",
+        "z": "481e1d7a.648f04",
+        "name": "Gate Control",
+        "func": "msg.payload=\"close\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 530,
+        "y": 420,
+        "wires": [
+            [
+                "15261ee.29d0fe1"
             ]
         ]
     }
