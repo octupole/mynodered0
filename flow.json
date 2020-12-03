@@ -63,14 +63,7 @@
         "info": ""
     },
     {
-        "id": "713e4a0f.35dcec",
-        "type": "tab",
-        "label": "status Node Example",
-        "disabled": false,
-        "info": ""
-    },
-    {
-        "id": "84e935f5.891fe8",
+        "id": "d7c21ccf.d5fc",
         "type": "tab",
         "label": "status Node Example",
         "disabled": false,
@@ -7462,20 +7455,24 @@
         "props": [
             {
                 "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
             }
         ],
         "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "",
+        "topic": "control",
         "payload": "close",
         "payloadType": "str",
-        "x": 380,
+        "x": 400,
         "y": 400,
         "wires": [
             [
-                "1c649f7b.4b24a1"
+                "15261ee.29d0fe1"
             ]
         ]
     },
@@ -7495,69 +7492,6 @@
         "x": 980,
         "y": 500,
         "wires": []
-    },
-    {
-        "id": "b88f90e6.e7125",
-        "type": "gate",
-        "z": "84e935f5.891fe8",
-        "name": "gate1",
-        "controlTopic": "control",
-        "defaultState": "open",
-        "openCmd": "open",
-        "closeCmd": "close",
-        "toggleCmd": "toggle",
-        "defaultCmd": "default",
-        "statusCmd": "",
-        "persist": false,
-        "x": 1280,
-        "y": 740,
-        "wires": [
-            [
-                "a5dc315e.016c6"
-            ]
-        ]
-    },
-    {
-        "id": "90cfa8cf.41d7d8",
-        "type": "gate",
-        "z": "84e935f5.891fe8",
-        "name": "gate2",
-        "controlTopic": "control",
-        "defaultState": "closed",
-        "openCmd": "open",
-        "closeCmd": "close",
-        "toggleCmd": "toggle",
-        "defaultCmd": "default",
-        "statusCmd": "",
-        "persist": false,
-        "x": 1260,
-        "y": 880,
-        "wires": [
-            [
-                "d042b093.325a6"
-            ]
-        ]
-    },
-    {
-        "id": "914b2db4.aba38",
-        "type": "function",
-        "z": "84e935f5.891fe8",
-        "name": "Gate Control",
-        "func": "var msg1=msg;\nmsg.payload=\"close\";\nmsg1.payload=\"close\";\nreturn [msg,msg1];",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 1080,
-        "y": 660,
-        "wires": [
-            [
-                "b88f90e6.e7125"
-            ],
-            [
-                "90cfa8cf.41d7d8"
-            ]
-        ]
     },
     {
         "id": "15261ee.29d0fe1",
@@ -7581,59 +7515,9 @@
         ]
     },
     {
-        "id": "1c649f7b.4b24a1",
-        "type": "function",
-        "z": "481e1d7a.648f04",
-        "name": "Gate Control",
-        "func": "msg.payload=\"close\";\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 530,
-        "y": 420,
-        "wires": [
-            [
-                "15261ee.29d0fe1"
-            ]
-        ]
-    },
-    {
-        "id": "a5dc315e.016c6",
-        "type": "debug",
-        "z": "84e935f5.891fe8",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1520,
-        "y": 640,
-        "wires": []
-    },
-    {
-        "id": "d042b093.325a6",
-        "type": "debug",
-        "z": "84e935f5.891fe8",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1680,
-        "y": 800,
-        "wires": []
-    },
-    {
-        "id": "d1604a92.aaab68",
+        "id": "6ea6e848.e701c8",
         "type": "inject",
-        "z": "84e935f5.891fe8",
+        "z": "d7c21ccf.d5fc",
         "name": "",
         "props": [
             {
@@ -7644,19 +7528,224 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "3",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 790,
-        "y": 600,
+        "topic": "test",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 1070,
+        "y": 1120,
         "wires": [
             [
-                "914b2db4.aba38"
+                "b31db25f.70886"
             ]
         ]
+    },
+    {
+        "id": "4c8635ec.78b54c",
+        "type": "gate",
+        "z": "d7c21ccf.d5fc",
+        "name": "gate1",
+        "controlTopic": "control",
+        "defaultState": "open",
+        "openCmd": "open",
+        "closeCmd": "close",
+        "toggleCmd": "toggle",
+        "defaultCmd": "default",
+        "persist": false,
+        "x": 1420,
+        "y": 1120,
+        "wires": [
+            [
+                "abd10e3a.d1c54"
+            ]
+        ]
+    },
+    {
+        "id": "fa69abb0.986478",
+        "type": "gate",
+        "z": "d7c21ccf.d5fc",
+        "name": "gate2",
+        "controlTopic": "control",
+        "defaultState": "closed",
+        "openCmd": "open",
+        "closeCmd": "close",
+        "toggleCmd": "toggle",
+        "defaultCmd": "default",
+        "persist": false,
+        "x": 1400,
+        "y": 1260,
+        "wires": [
+            [
+                "9b8e9f94.d0973"
+            ]
+        ]
+    },
+    {
+        "id": "abd10e3a.d1c54",
+        "type": "mqtt out",
+        "z": "d7c21ccf.d5fc",
+        "name": "Pi2",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "38f1fa7a.482f9e",
+        "x": 1620,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "9b8e9f94.d0973",
+        "type": "mqtt out",
+        "z": "d7c21ccf.d5fc",
+        "name": "localhost",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "89de8d8e.bac3d8",
+        "x": 1610,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "1c6b6a59.4d5c86",
+        "type": "status",
+        "z": "d7c21ccf.d5fc",
+        "name": "",
+        "scope": [
+            "abd10e3a.d1c54",
+            "9b8e9f94.d0973"
+        ],
+        "x": 1330,
+        "y": 960,
+        "wires": [
+            [
+                "8db2e415.20f168",
+                "113ecb02.bcdc35"
+            ]
+        ]
+    },
+    {
+        "id": "8db2e415.20f168",
+        "type": "debug",
+        "z": "d7c21ccf.d5fc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1510,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "113ecb02.bcdc35",
+        "type": "function",
+        "z": "d7c21ccf.d5fc",
+        "name": "Gate Control",
+        "func": "var node_status=flow.get(\"node_status\") || {};\nvar status_colour= msg.status.fill;\nvar broker_name=msg.status.source.name;\nvar msg1={};\nmsg.topic=\"control\";\nmsg1.topic=\"control\";\nif(typeof node_status[\"Pi2\"]==\"undefined\")\n{\n\n    node_status[\"Pi2\"]={};\n node_status[\"Pi2\"][\"status\"]=1;   \n}\nif(typeof node_status[\"localhost\"]==\"undefined\")\n{\n        node_status[\"localhost\"]={};\n node_status[\"localhost\"][\"status\"]=1;   \n}\nif(status_colour==\"green\") //good\n{\n  \n    node_status[broker_name][\"status\"]=1;\n    \n}\nelse\n{\n\n\nnode_status[broker_name][\"status\"]=0;\n}\n\nif(node_status[\"Pi2\"][\"status\"]==1 && node_status[\"localhost\"][\"status\"]==1)\n{\n    msg.payload=\"open\";\n    msg1.payload=\"close\";\n}\nif(node_status[\"Pi2\"][\"status\"]==1 && typeof node_status[\"localhost\"][\"status\"]==\"undefined\")\n{\n    msg.payload=\"open\";\n    msg1.payload=\"close\";\n}\nif(node_status[\"Pi2\"][\"status\"]==1 && node_status[\"localhost\"][\"status\"]==0)\n{\n    msg.payload=\"open\";\n    msg1.payload=\"close\";\n}\n\nif(node_status[\"Pi2\"][\"status\"]==0 && node_status[\"localhost\"][\"status\"]==0)\n{\n    msg.payload=\"open\";\n    msg1.payload=\"close\";\n}\nif(node_status[\"Pi2\"][\"status\"]==0 && typeof node_status[\"localhost\"][\"status\"]==\"undefined\")\n{\n    msg.payload=\"open\";\n    msg1.payload=\"close\";\n}\nif(node_status[\"Pi2\"][\"status\"]==0 && node_status[\"localhost\"][\"status\"]==1)\n{\n    msg.payload=\"close\";\n    msg1.payload=\"open\";\n}\nflow.set(\"node_status\",node_status)\nreturn [msg,msg1];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1220,
+        "y": 1040,
+        "wires": [
+            [
+                "4c8635ec.78b54c"
+            ],
+            [
+                "fa69abb0.986478"
+            ]
+        ]
+    },
+    {
+        "id": "b31db25f.70886",
+        "type": "function",
+        "z": "d7c21ccf.d5fc",
+        "name": "Create Message",
+        "func": "var count=context.get(\"count\");\nif(typeof count==\"undefined\")\ncount=0;\ncount+=1;\nmsg.payload=\"test message \" +count;\nmsg.topic=\"test\";\ncontext.set(\"count\",count);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1220,
+        "y": 1180,
+        "wires": [
+            [
+                "4c8635ec.78b54c",
+                "fa69abb0.986478"
+            ]
+        ]
+    },
+    {
+        "id": "848f184d.d3d138",
+        "type": "mqtt in",
+        "z": "d7c21ccf.d5fc",
+        "name": "Pi2",
+        "topic": "test",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "38f1fa7a.482f9e",
+        "x": 1120,
+        "y": 1340,
+        "wires": [
+            [
+                "1fe0dc0d.94aef4"
+            ]
+        ]
+    },
+    {
+        "id": "9d358f55.b147c",
+        "type": "mqtt in",
+        "z": "d7c21ccf.d5fc",
+        "name": "localhost",
+        "topic": "test",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "89de8d8e.bac3d8",
+        "x": 1150,
+        "y": 1420,
+        "wires": [
+            [
+                "69d63dd6.9c8984"
+            ]
+        ]
+    },
+    {
+        "id": "1fe0dc0d.94aef4",
+        "type": "ui_text",
+        "z": "d7c21ccf.d5fc",
+        "group": "2ac8e3fa.8b8584",
+        "order": 14,
+        "width": "6",
+        "height": "1",
+        "name": "Pi2",
+        "label": "Pi2",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1360,
+        "y": 1360,
+        "wires": []
+    },
+    {
+        "id": "69d63dd6.9c8984",
+        "type": "ui_text",
+        "z": "d7c21ccf.d5fc",
+        "group": "2ac8e3fa.8b8584",
+        "order": 14,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "Localhost",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1350,
+        "y": 1420,
+        "wires": []
     }
 ]
