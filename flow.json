@@ -8081,8 +8081,7 @@
         "y": 640,
         "wires": [
             [
-                "3a556150.2539de",
-                "cf90192a.722aa8"
+                "3a556150.2539de"
             ]
         ]
     },
@@ -8613,8 +8612,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 420,
-        "y": 760,
+        "x": 560,
+        "y": 1080,
         "wires": [
             [
                 "7ba004e4.01ba1c"
@@ -8667,7 +8666,7 @@
         "type": "function",
         "z": "481e1d7a.648f04",
         "name": "",
-        "func": "var sensor=msg.payload;\nvar myocc=flow.get(\"Sensor1\");\nmsg.payload=myocc.occupancy;\nreturn msg;",
+        "func": "var sensor=msg.payload;\nvar myocc=global.get(\"Sensor1\");\nmsg.payload=myocc;\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -8675,7 +8674,9 @@
         "x": 480,
         "y": 940,
         "wires": [
-            []
+            [
+                "7ba004e4.01ba1c"
+            ]
         ]
     }
 ]
