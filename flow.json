@@ -7971,16 +7971,24 @@
                 "t": "eq",
                 "v": "single_left",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "double_left",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 1,
-        "x": 310,
-        "y": 940,
+        "outputs": 2,
+        "x": 470,
+        "y": 880,
         "wires": [
             [
                 "b335a9bd.616a18"
+            ],
+            [
+                "18a0555c.95be7b"
             ]
         ]
     },
@@ -8003,8 +8011,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 370,
-        "y": 1000,
+        "x": 710,
+        "y": 940,
         "wires": [
             [
                 "ee3fdc1c.53fab"
@@ -8106,6 +8114,50 @@
         "y": 160,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "cc68eb10.a69518",
+        "type": "zigbee2mqtt-out",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "server": "67c87fc0.150f8",
+        "friendly_name": "aqara1",
+        "device_id": "0x00158d0002c65ad6",
+        "command": "state",
+        "commandType": "z2m_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transition": 0,
+        "x": 720,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "18a0555c.95be7b",
+        "type": "change",
+        "z": "481e1d7a.648f04",
+        "name": "toggle",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "toggle",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 590,
+        "y": 960,
+        "wires": [
+            [
+                "cc68eb10.a69518"
+            ]
         ]
     }
 ]
