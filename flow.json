@@ -6478,7 +6478,7 @@
         "y": 900,
         "wires": [
             [
-                "3d2d6793.d8b1f8"
+                "4718f48e.129ecc"
             ]
         ]
     },
@@ -7246,8 +7246,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 370,
-        "y": 200,
+        "x": 290,
+        "y": 220,
         "wires": [
             [
                 "e4e0c871.e900d8"
@@ -7288,9 +7288,7 @@
         "x": 800,
         "y": 1140,
         "wires": [
-            [
-                "1da7f3b2.4dcb8c"
-            ]
+            []
         ]
     },
     {
@@ -7338,6 +7336,13 @@
                 "pt": "flow",
                 "to": "payload.occupancy",
                 "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "open",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -7348,7 +7353,9 @@
         "x": 1110,
         "y": 820,
         "wires": [
-            []
+            [
+                "21e926a8.46828a"
+            ]
         ]
     },
     {
@@ -7370,10 +7377,12 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 980,
-        "y": 900,
+        "x": 1120,
+        "y": 920,
         "wires": [
-            []
+            [
+                "1da7f3b2.4dcb8c"
+            ]
         ]
     },
     {
@@ -7381,7 +7390,7 @@
         "type": "function",
         "z": "481e1d7a.648f04",
         "name": "SetSensor",
-        "func": "var Sensor=msg.payload;\nvar SensorTopic=\"zigbee2mqtt/\"+Sensor;\nflow.set(\"Topic\",SensorTopic);\nreturn msg;",
+        "func": "var Sensor=msg.payload;\nvar SensorTopic=\"zigbee2mqtt/\"+Sensor;\nflow.set(\"Topic\",SensorTopic);\nmsg.payload=\"close\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7390,7 +7399,7 @@
         "y": 920,
         "wires": [
             [
-                "8742b89.bc60348"
+                "21e926a8.46828a"
             ]
         ]
     },
@@ -7434,11 +7443,32 @@
         "randomLast": "5",
         "randomUnits": "seconds",
         "drop": false,
-        "x": 590,
-        "y": 200,
+        "x": 490,
+        "y": 240,
         "wires": [
             [
                 "5cae1e5c.36b9e"
+            ]
+        ]
+    },
+    {
+        "id": "21e926a8.46828a",
+        "type": "gate",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "controlTopic": "control",
+        "defaultState": "open",
+        "openCmd": "open",
+        "closeCmd": "close",
+        "toggleCmd": "toggle",
+        "defaultCmd": "default",
+        "statusCmd": "status",
+        "persist": false,
+        "x": 910,
+        "y": 920,
+        "wires": [
+            [
+                "8742b89.bc60348"
             ]
         ]
     }
