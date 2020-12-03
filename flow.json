@@ -7483,7 +7483,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "closed",
+        "payload": "open",
         "payloadType": "str",
         "x": 380,
         "y": 400,
