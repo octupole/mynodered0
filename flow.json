@@ -7388,7 +7388,7 @@
         "type": "function",
         "z": "481e1d7a.648f04",
         "name": "SetSensor",
-        "func": "var Sensor=msg.payload;\nvar SensorTopic=\"zigbee2mqtt/\"+Sensor;\nflow.set(\"Topic\",SensorTopic);\nmsg.payload=\"closed\";\nreturn msg;",
+        "func": "var Sensor=msg.payload;\nvar SensorTopic=\"zigbee2mqtt/\"+Sensor;\nflow.set(\"Topic\",SensorTopic);\nmsg.payload=\"open\";\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
