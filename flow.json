@@ -8630,7 +8630,7 @@
             {
                 "t": "set",
                 "p": "Sensor1",
-                "pt": "flow",
+                "pt": "global",
                 "to": "33",
                 "tot": "num"
             }
@@ -8640,7 +8640,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 760,
+        "x": 770,
         "y": 100,
         "wires": [
             []
