@@ -6694,8 +6694,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1450,
-        "y": 920,
+        "x": 1430,
+        "y": 900,
         "wires": []
     },
     {
@@ -7529,23 +7529,6 @@
         "wires": []
     },
     {
-        "id": "8d801d4c.c8d7e",
-        "type": "debug",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1110,
-        "y": 1060,
-        "wires": []
-    },
-    {
         "id": "7896ee02.55a72",
         "type": "mqtt in",
         "z": "481e1d7a.648f04",
@@ -7622,8 +7605,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1080,
-        "y": 920,
+        "x": 1020,
+        "y": 900,
         "wires": [
             [
                 "1da7f3b2.4dcb8c"
@@ -7640,8 +7623,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 710,
-        "y": 920,
+        "x": 670,
+        "y": 900,
         "wires": [
             [
                 "5cae1e5c.36b9e"
@@ -7669,9 +7652,26 @@
         "y": 840,
         "wires": [
             [
-                "e09b9900.f56d68",
-                "8d801d4c.c8d7e"
+                "e09b9900.f56d68"
             ]
         ]
+    },
+    {
+        "id": "94df9129.dab79",
+        "type": "config",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "properties": [
+            {
+                "p": "Topic",
+                "pt": "flow",
+                "to": "Null",
+                "tot": "str"
+            }
+        ],
+        "active": true,
+        "x": 610,
+        "y": 780,
+        "wires": []
     }
 ]
