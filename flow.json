@@ -8419,8 +8419,7 @@
         "y": 1240,
         "wires": [
             [
-                "3a556150.2539de",
-                "cc08e902.857d48"
+                "3a556150.2539de"
             ]
         ]
     },
@@ -8475,6 +8474,62 @@
         "wires": [
             [
                 "fbe177a0.168af8"
+            ]
+        ]
+    },
+    {
+        "id": "5cd6eba.a2d5114",
+        "type": "change",
+        "z": "481e1d7a.648f04",
+        "name": "toggle",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "toggle",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1630,
+        "y": 1160,
+        "wires": [
+            [
+                "cc08e902.857d48"
+            ]
+        ]
+    },
+    {
+        "id": "8a02bb8c.3c1348",
+        "type": "inject",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1430,
+        "y": 1300,
+        "wires": [
+            [
+                "5cd6eba.a2d5114"
             ]
         ]
     }
