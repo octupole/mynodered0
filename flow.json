@@ -8482,8 +8482,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 850,
-        "y": 880,
+        "x": 870,
+        "y": 820,
         "wires": [
             [
                 "72adc8dc.cf9f08"
@@ -8568,8 +8568,8 @@
         "topic": "",
         "payload": "Sensor1",
         "payloadType": "str",
-        "x": 140,
-        "y": 900,
+        "x": 180,
+        "y": 960,
         "wires": [
             [
                 "97b3a559.c571e8"
@@ -8589,36 +8589,9 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 790,
-        "y": 1040,
+        "x": 810,
+        "y": 940,
         "wires": []
-    },
-    {
-        "id": "cf90192a.722aa8",
-        "type": "change",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Sensor1",
-                "tot": "global"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 560,
-        "y": 1080,
-        "wires": [
-            [
-                "7ba004e4.01ba1c"
-            ]
-        ]
     },
     {
         "id": "77c0a332.bacd3c",
@@ -8671,8 +8644,8 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "x": 480,
-        "y": 940,
+        "x": 500,
+        "y": 960,
         "wires": [
             [
                 "7ba004e4.01ba1c"
