@@ -437,6 +437,28 @@
         "color": "#DDAA99"
     },
     {
+        "id": "7bad3bd5.01d824",
+        "type": "subflow",
+        "name": "MonitorSensor1",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": [
+            {
+                "x": 680,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "3d2d6793.d8b1f8",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "color": "#DDAA99"
+    },
+    {
         "id": "a4b224bf.4ceaf8",
         "type": "ui_group",
         "name": "Lights",
@@ -6515,7 +6537,7 @@
     {
         "id": "fc608945.45d458",
         "type": "inject",
-        "z": "481e1d7a.648f04",
+        "z": "7bad3bd5.01d824",
         "name": "",
         "props": [
             {
@@ -6524,13 +6546,13 @@
         ],
         "repeat": "",
         "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
+        "once": true,
+        "onceDelay": "0.0",
         "topic": "",
         "payload": "Sensor1",
         "payloadType": "str",
-        "x": 800,
-        "y": 1160,
+        "x": 200,
+        "y": 100,
         "wires": [
             [
                 "3d2d6793.d8b1f8"
@@ -7312,15 +7334,13 @@
     {
         "id": "3d2d6793.d8b1f8",
         "type": "subflow:e4b58bd9.464be8",
-        "z": "481e1d7a.648f04",
+        "z": "7bad3bd5.01d824",
         "name": "",
         "env": [],
-        "x": 1080,
-        "y": 1180,
+        "x": 520,
+        "y": 80,
         "wires": [
-            [
-                "1da7f3b2.4dcb8c"
-            ]
+            []
         ]
     },
     {
@@ -8053,6 +8073,20 @@
         "wires": [
             [
                 "8615d977.73b698"
+            ]
+        ]
+    },
+    {
+        "id": "1921e52.af8f11b",
+        "type": "subflow:7bad3bd5.01d824",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "env": [],
+        "x": 960,
+        "y": 1160,
+        "wires": [
+            [
+                "1da7f3b2.4dcb8c"
             ]
         ]
     }
