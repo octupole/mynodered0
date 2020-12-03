@@ -70,6 +70,13 @@
         "info": ""
     },
     {
+        "id": "84e935f5.891fe8",
+        "type": "tab",
+        "label": "status Node Example",
+        "disabled": false,
+        "info": ""
+    },
+    {
         "id": "1d7f96d0.a5ef29",
         "type": "subflow",
         "name": "Network Map (4)",
@@ -7448,27 +7455,6 @@
         ]
     },
     {
-        "id": "48731cfd.0c0394",
-        "type": "gate",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "controlTopic": "control",
-        "defaultState": "closed",
-        "openCmd": "open",
-        "closeCmd": "closed",
-        "toggleCmd": "toggle",
-        "defaultCmd": "default",
-        "statusCmd": "status",
-        "persist": false,
-        "x": 670,
-        "y": 480,
-        "wires": [
-            [
-                "14b50a7b.932996"
-            ]
-        ]
-    },
-    {
         "id": "23018b42.257b64",
         "type": "inject",
         "z": "481e1d7a.648f04",
@@ -7483,13 +7469,13 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "open",
+        "payload": "close",
         "payloadType": "str",
         "x": 380,
         "y": 400,
         "wires": [
             [
-                "48731cfd.0c0394"
+                "15261ee.29d0fe1"
             ]
         ]
     },
@@ -7509,5 +7495,250 @@
         "x": 980,
         "y": 500,
         "wires": []
+    },
+    {
+        "id": "4f291013.e33d1",
+        "type": "inject",
+        "z": "84e935f5.891fe8",
+        "name": "",
+        "repeat": "3",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "test",
+        "payload": "1",
+        "payloadType": "num",
+        "x": 930,
+        "y": 740,
+        "wires": [
+            [
+                "3831a75c.983e28"
+            ]
+        ]
+    },
+    {
+        "id": "b88f90e6.e7125",
+        "type": "gate",
+        "z": "84e935f5.891fe8",
+        "name": "gate1",
+        "controlTopic": "control",
+        "defaultState": "open",
+        "openCmd": "open",
+        "closeCmd": "close",
+        "toggleCmd": "toggle",
+        "defaultCmd": "default",
+        "statusCmd": "",
+        "persist": false,
+        "x": 1280,
+        "y": 740,
+        "wires": [
+            [
+                "a532511b.3fc81"
+            ]
+        ]
+    },
+    {
+        "id": "90cfa8cf.41d7d8",
+        "type": "gate",
+        "z": "84e935f5.891fe8",
+        "name": "gate2",
+        "controlTopic": "control",
+        "defaultState": "closed",
+        "openCmd": "open",
+        "closeCmd": "close",
+        "toggleCmd": "toggle",
+        "defaultCmd": "default",
+        "persist": false,
+        "x": 1260,
+        "y": 880,
+        "wires": [
+            [
+                "aca98732.fc1ed8"
+            ]
+        ]
+    },
+    {
+        "id": "a532511b.3fc81",
+        "type": "mqtt out",
+        "z": "84e935f5.891fe8",
+        "name": "Pi2",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "38f1fa7a.482f9e",
+        "x": 1480,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "aca98732.fc1ed8",
+        "type": "mqtt out",
+        "z": "84e935f5.891fe8",
+        "name": "localhost",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "broker": "89de8d8e.bac3d8",
+        "x": 1470,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "4fc7888d.68ecf8",
+        "type": "status",
+        "z": "84e935f5.891fe8",
+        "name": "",
+        "scope": [
+            "a532511b.3fc81",
+            "aca98732.fc1ed8"
+        ],
+        "x": 1190,
+        "y": 580,
+        "wires": [
+            [
+                "492f7d0.f480a84",
+                "914b2db4.aba38"
+            ]
+        ]
+    },
+    {
+        "id": "492f7d0.f480a84",
+        "type": "debug",
+        "z": "84e935f5.891fe8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "x": 1370,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "914b2db4.aba38",
+        "type": "function",
+        "z": "84e935f5.891fe8",
+        "name": "Gate Control",
+        "func": "var node_status=flow.get(\"node_status\") || {};\nvar status_colour= msg.status.fill;\nvar broker_name=msg.status.source.name;\nvar msg1={};\nmsg.topic=\"control\";\nmsg1.topic=\"control\";\nif(typeof node_status[\"Pi2\"]==\"undefined\")\n{\n\n    node_status[\"Pi2\"]={};\n node_status[\"Pi2\"][\"status\"]=1;   \n}\nif(typeof node_status[\"localhost\"]==\"undefined\")\n{\n        node_status[\"localhost\"]={};\n node_status[\"localhost\"][\"status\"]=1;   \n}\nif(status_colour==\"green\") //good\n{\n  \n    node_status[broker_name][\"status\"]=1;\n    \n}\nelse\n{\n\n\nnode_status[broker_name][\"status\"]=0;\n}\n\nif(node_status[\"Pi2\"][\"status\"]==1 && node_status[\"localhost\"][\"status\"]==1)\n{\n    msg.payload=\"open\";\n    msg1.payload=\"close\";\n}\nif(node_status[\"Pi2\"][\"status\"]==1 && typeof node_status[\"localhost\"][\"status\"]==\"undefined\")\n{\n    msg.payload=\"open\";\n    msg1.payload=\"close\";\n}\nif(node_status[\"Pi2\"][\"status\"]==1 && node_status[\"localhost\"][\"status\"]==0)\n{\n    msg.payload=\"open\";\n    msg1.payload=\"close\";\n}\n\nif(node_status[\"Pi2\"][\"status\"]==0 && node_status[\"localhost\"][\"status\"]==0)\n{\n    msg.payload=\"open\";\n    msg1.payload=\"close\";\n}\nif(node_status[\"Pi2\"][\"status\"]==0 && typeof node_status[\"localhost\"][\"status\"]==\"undefined\")\n{\n    msg.payload=\"open\";\n    msg1.payload=\"close\";\n}\nif(node_status[\"Pi2\"][\"status\"]==0 && node_status[\"localhost\"][\"status\"]==1)\n{\n    msg.payload=\"close\";\n    msg1.payload=\"open\";\n}\nflow.set(\"node_status\",node_status)\nreturn [msg,msg1];",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 1080,
+        "y": 660,
+        "wires": [
+            [
+                "b88f90e6.e7125"
+            ],
+            [
+                "90cfa8cf.41d7d8"
+            ]
+        ]
+    },
+    {
+        "id": "3831a75c.983e28",
+        "type": "function",
+        "z": "84e935f5.891fe8",
+        "name": "Create Message",
+        "func": "var count=context.get(\"count\");\nif(typeof count==\"undefined\")\ncount=0;\ncount+=1;\nmsg.payload=\"test message \" +count;\nmsg.topic=\"test\";\ncontext.set(\"count\",count);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 1080,
+        "y": 800,
+        "wires": [
+            [
+                "b88f90e6.e7125",
+                "90cfa8cf.41d7d8"
+            ]
+        ]
+    },
+    {
+        "id": "39453d21.4681b2",
+        "type": "mqtt in",
+        "z": "84e935f5.891fe8",
+        "name": "Pi2",
+        "topic": "test",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "38f1fa7a.482f9e",
+        "x": 980,
+        "y": 960,
+        "wires": [
+            [
+                "9f51475e.43a028"
+            ]
+        ]
+    },
+    {
+        "id": "8e51a14.1a1c96",
+        "type": "mqtt in",
+        "z": "84e935f5.891fe8",
+        "name": "localhost",
+        "topic": "test",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "89de8d8e.bac3d8",
+        "x": 1010,
+        "y": 1040,
+        "wires": [
+            [
+                "e83e6aff.2cba28"
+            ]
+        ]
+    },
+    {
+        "id": "9f51475e.43a028",
+        "type": "ui_text",
+        "z": "84e935f5.891fe8",
+        "group": "2ac8e3fa.8b8584",
+        "order": 14,
+        "width": "6",
+        "height": "1",
+        "name": "Pi2",
+        "label": "Pi2",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1220,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "e83e6aff.2cba28",
+        "type": "ui_text",
+        "z": "84e935f5.891fe8",
+        "group": "2ac8e3fa.8b8584",
+        "order": 14,
+        "width": "6",
+        "height": "1",
+        "name": "",
+        "label": "Localhost",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 1210,
+        "y": 1040,
+        "wires": []
+    },
+    {
+        "id": "15261ee.29d0fe1",
+        "type": "gate",
+        "z": "481e1d7a.648f04",
+        "name": "gate1",
+        "controlTopic": "control",
+        "defaultState": "open",
+        "openCmd": "open",
+        "closeCmd": "close",
+        "toggleCmd": "toggle",
+        "defaultCmd": "default",
+        "statusCmd": "",
+        "persist": false,
+        "x": 730,
+        "y": 460,
+        "wires": [
+            [
+                "14b50a7b.932996"
+            ]
+        ]
     }
 ]
