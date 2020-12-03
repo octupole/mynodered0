@@ -7385,8 +7385,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 980,
-        "y": 500,
+        "x": 1810,
+        "y": 1260,
         "wires": []
     },
     {
@@ -8174,11 +8174,12 @@
         "defaultCmd": "default",
         "statusCmd": "status",
         "persist": false,
-        "x": 1550,
-        "y": 920,
+        "x": 1530,
+        "y": 900,
         "wires": [
             [
-                "5486b4b1.78c09c"
+                "5486b4b1.78c09c",
+                "14b50a7b.932996"
             ]
         ]
     },
@@ -8371,35 +8372,6 @@
         "wires": [
             [
                 "24a0736a.09385c"
-            ]
-        ]
-    },
-    {
-        "id": "1030f561.4d621b",
-        "type": "inject",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1560,
-        "y": 740,
-        "wires": [
-            [
-                "5486b4b1.78c09c"
             ]
         ]
     }
