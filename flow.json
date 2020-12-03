@@ -7800,10 +7800,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload.action",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1460,
+        "x": 1480,
         "y": 660,
         "wires": []
     }
