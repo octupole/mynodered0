@@ -8274,7 +8274,8 @@
         "y": 1140,
         "wires": [
             [
-                "fbe177a0.168af8"
+                "fbe177a0.168af8",
+                "59f94ae1.70a684"
             ]
         ]
     },
@@ -8459,8 +8460,15 @@
                 "t": "set",
                 "p": "payload",
                 "pt": "msg",
-                "to": "false",
-                "tot": "bool"
+                "to": "1",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "inject",
+                "tot": "str"
             }
         ],
         "action": "",
