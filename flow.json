@@ -8588,7 +8588,7 @@
         "y": 980,
         "wires": [
             [
-                "7ba004e4.01ba1c"
+                "cf90192a.722aa8"
             ]
         ]
     },
@@ -8637,5 +8637,32 @@
         "x": 820,
         "y": 1020,
         "wires": []
+    },
+    {
+        "id": "cf90192a.722aa8",
+        "type": "change",
+        "z": "481e1d7a.648f04",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "Sensor1",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 750,
+        "y": 1020,
+        "wires": [
+            [
+                "7ba004e4.01ba1c"
+            ]
+        ]
     }
 ]
