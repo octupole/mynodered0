@@ -5196,8 +5196,8 @@
         "payload": "payload",
         "payloadType": "msg",
         "transitionTime": "",
-        "x": 870,
-        "y": 1700,
+        "x": 1090,
+        "y": 1600,
         "wires": []
     },
     {
@@ -5311,9 +5311,7 @@
         "x": 870,
         "y": 1600,
         "wires": [
-            [
-                "a5e69c0b.21ad1"
-            ]
+            []
         ]
     },
     {
@@ -7808,8 +7806,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 750,
-        "y": 720,
+        "x": 1010,
+        "y": 640,
         "wires": []
     },
     {
@@ -7870,8 +7868,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 4,
-        "x": 890,
-        "y": 660,
+        "x": 590,
+        "y": 580,
         "wires": [
             [],
             [],
