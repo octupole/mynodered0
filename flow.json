@@ -5962,29 +5962,6 @@
         "wires": []
     },
     {
-        "id": "c742bbdf.5b5318",
-        "type": "inject",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "aqara2",
-        "payloadType": "str",
-        "x": 650,
-        "y": 360,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "204f3389.18079c",
         "type": "debug",
         "z": "481e1d7a.648f04",
@@ -6055,31 +6032,6 @@
         "reg": false,
         "x": 1282,
         "y": 690,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "929efd59.95173",
-        "type": "change",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "Sensor1_motion",
-                "tot": "global"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1002,
-        "y": 770,
         "wires": [
             []
         ]
@@ -6473,29 +6425,6 @@
         ]
     },
     {
-        "id": "7b103642.1e3548",
-        "type": "inject",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "aqara1",
-        "payloadType": "str",
-        "x": 630,
-        "y": 620,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "b14e68ac.c6e3d8",
         "type": "change",
         "z": "92419cdc.39ec9",
@@ -6792,23 +6721,6 @@
         ]
     },
     {
-        "id": "f2b1d142.cc93e",
-        "type": "debug",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1190,
-        "y": 220,
-        "wires": []
-    },
-    {
         "id": "b4366227.491c7",
         "type": "change",
         "z": "481e1d7a.648f04",
@@ -6834,49 +6746,6 @@
                 "b21282c1.190e5"
             ]
         ]
-    },
-    {
-        "id": "612cdb02.65d3c4",
-        "type": "change",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "Light",
-                "pt": "flow",
-                "to": "",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 670,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "b1751aa5.28d8d8",
-        "type": "config",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "properties": [
-            {
-                "p": "Light",
-                "pt": "flow",
-                "to": "{\"aqara1\":{\"state\":\"OFF\"},\"aqara3\":{\"state\":\"OFF\"}}",
-                "tot": "json"
-            }
-        ],
-        "active": true,
-        "x": 1190,
-        "y": 120,
-        "wires": []
     },
     {
         "id": "a4e5b618.ec1008",
@@ -6912,22 +6781,6 @@
         "x": 1150,
         "y": 280,
         "wires": []
-    },
-    {
-        "id": "4e8a0110.fe358",
-        "type": "function",
-        "z": "481e1d7a.648f04",
-        "name": "",
-        "func": "var myflow=flow.get(\"Light\");\nmyflow.aqara2={\"state\":\"ON\"};\nflow.set(\"Light\",myflow);\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "x": 920,
-        "y": 160,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "10849d9.3805762",
