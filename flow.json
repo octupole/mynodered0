@@ -7280,24 +7280,6 @@
         ]
     },
     {
-        "id": "94df9129.dab79",
-        "type": "config",
-        "z": "e4b58bd9.464be8",
-        "name": "",
-        "properties": [
-            {
-                "p": "Topic",
-                "pt": "flow",
-                "to": "Null",
-                "tot": "str"
-            }
-        ],
-        "active": true,
-        "x": 310,
-        "y": 80,
-        "wires": []
-    },
-    {
         "id": "3d2d6793.d8b1f8",
         "type": "subflow:e4b58bd9.464be8",
         "z": "481e1d7a.648f04",
