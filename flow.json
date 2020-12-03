@@ -6491,11 +6491,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1410,
+        "x": 1430,
         "y": 900,
         "wires": []
     },
@@ -7382,7 +7382,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1120,
+        "x": 1000,
         "y": 920,
         "wires": [
             [
@@ -7618,7 +7618,7 @@
         "type": "debug",
         "z": "d7c21ccf.d5fc",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
