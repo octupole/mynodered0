@@ -4848,6 +4848,7 @@
         "id": "bb08ee96.a54d8",
         "type": "mqtt in",
         "z": "92419cdc.39ec9",
+        "d": true,
         "name": "Sensor1",
         "topic": "zigbee2mqtt/Sensor1",
         "qos": "2",
