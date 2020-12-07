@@ -8593,7 +8593,7 @@
         "z": "dd91d5bc.c35b28",
         "name": "",
         "server": "48d01de6.b64724",
-        "event_type": "state_chenged",
+        "event_type": "state_changed",
         "exposeToHomeAssistant": false,
         "haConfig": [
             {
@@ -8619,15 +8619,15 @@
         "type": "debug",
         "z": "dd91d5bc.c35b28",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 320,
-        "y": 700,
+        "x": 430,
+        "y": 680,
         "wires": []
     }
 ]
