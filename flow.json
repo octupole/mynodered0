@@ -8609,7 +8609,25 @@
         "x": 150,
         "y": 700,
         "wires": [
-            []
+            [
+                "90e00771.76cf88"
+            ]
         ]
+    },
+    {
+        "id": "90e00771.76cf88",
+        "type": "debug",
+        "z": "dd91d5bc.c35b28",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 700,
+        "wires": []
     }
 ]
