@@ -1007,7 +1007,7 @@
         "type": "server",
         "name": "Home Assistant",
         "legacy": false,
-        "addon": true,
+        "addon": false,
         "rejectUnauthorizedCerts": true,
         "ha_boolean": "y|yes|true|on|home|open",
         "connectionDelay": true,
@@ -8584,33 +8584,6 @@
         "wires": [
             [
                 "7ba004e4.01ba1c"
-            ]
-        ]
-    },
-    {
-        "id": "6866790a.1bb038",
-        "type": "server-events",
-        "z": "dd91d5bc.c35b28",
-        "name": "",
-        "server": "48d01de6.b64724",
-        "event_type": "state_changed",
-        "exposeToHomeAssistant": false,
-        "haConfig": [
-            {
-                "property": "name",
-                "value": ""
-            },
-            {
-                "property": "icon",
-                "value": ""
-            }
-        ],
-        "waitForRunning": true,
-        "x": 190,
-        "y": 700,
-        "wires": [
-            [
-                "90e00771.76cf88"
             ]
         ]
     },
