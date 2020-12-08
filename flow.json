@@ -122,8 +122,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 870,
-        "y": 240,
+        "x": 950,
+        "y": 220,
         "wires": []
     },
     {
@@ -149,7 +149,7 @@
         "y": 220,
         "wires": [
             [
-                "f3375175.ff6f"
+                "3fcbe2f5.b2b93e"
             ]
         ]
     },
@@ -192,6 +192,54 @@
         "y": 360,
         "wires": [
             [],
+            []
+        ]
+    },
+    {
+        "id": "3fcbe2f5.b2b93e",
+        "type": "switch",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "property": "payload.id",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "extra_2_gang",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 730,
+        "y": 220,
+        "wires": [
+            [
+                "f3375175.ff6f"
+            ]
+        ]
+    },
+    {
+        "id": "499cde45.ee948",
+        "type": "api-call-service",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "server": "48d01de6.b64724",
+        "version": 1,
+        "debugenabled": false,
+        "service_domain": "light",
+        "service": "toggle",
+        "entityId": "Aqara1",
+        "data": "",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 1010,
+        "y": 340,
+        "wires": [
             []
         ]
     }
