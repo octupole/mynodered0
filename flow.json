@@ -8602,5 +8602,30 @@
         "x": 430,
         "y": 680,
         "wires": []
+    },
+    {
+        "id": "c9507717.587208",
+        "type": "server-events",
+        "z": "629f21c7.4f293",
+        "name": "",
+        "server": "48d01de6.b64724",
+        "event_type": "ddd",
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "waitForRunning": true,
+        "x": 380,
+        "y": 380,
+        "wires": [
+            []
+        ]
     }
 ]
