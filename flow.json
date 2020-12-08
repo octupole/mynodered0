@@ -242,5 +242,34 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "f6e017d1.803f88",
+        "type": "inject",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 690,
+        "y": 320,
+        "wires": [
+            [
+                "499cde45.ee948"
+            ]
+        ]
     }
 ]
