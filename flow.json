@@ -8611,7 +8611,7 @@
         "server": "48d01de6.b64724",
         "version": 1,
         "outputs": 2,
-        "halt_if": "true",
+        "halt_if": "false",
         "halt_if_type": "bool",
         "halt_if_compare": "is",
         "override_topic": false,
