@@ -8615,14 +8615,14 @@
         "halt_if_type": "bool",
         "halt_if_compare": "is",
         "override_topic": false,
-        "entity_id": "device_tracker.quadrupole",
+        "entity_id": "device_tracker.quadrupole_2",
         "state_type": "habool",
         "state_location": "payload",
         "override_payload": "msg",
         "entity_location": "data",
         "override_data": "msg",
         "blockInputOverrides": false,
-        "x": 570,
+        "x": 580,
         "y": 600,
         "wires": [
             [
