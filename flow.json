@@ -8610,21 +8610,22 @@
         "name": "",
         "server": "48d01de6.b64724",
         "version": 1,
-        "outputs": 1,
-        "halt_if": "",
-        "halt_if_type": "str",
+        "outputs": 2,
+        "halt_if": "true",
+        "halt_if_type": "bool",
         "halt_if_compare": "is",
         "override_topic": false,
-        "entity_id": "",
-        "state_type": "str",
+        "entity_id": "device_tracker.quadrupole",
+        "state_type": "habool",
         "state_location": "payload",
         "override_payload": "msg",
         "entity_location": "data",
         "override_data": "msg",
         "blockInputOverrides": false,
-        "x": 490,
+        "x": 570,
         "y": 600,
         "wires": [
+            [],
             []
         ]
     }
