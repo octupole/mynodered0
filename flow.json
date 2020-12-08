@@ -132,7 +132,7 @@
         "z": "f0166d14.e4e0c",
         "name": "",
         "server": "48d01de6.b64724",
-        "event_type": "deconz",
+        "event_type": "",
         "exposeToHomeAssistant": false,
         "haConfig": [
             {
@@ -145,7 +145,7 @@
             }
         ],
         "waitForRunning": true,
-        "x": 510,
+        "x": 490,
         "y": 220,
         "wires": [
             [
