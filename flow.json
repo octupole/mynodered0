@@ -8604,26 +8604,26 @@
         "wires": []
     },
     {
-        "id": "c9507717.587208",
-        "type": "server-events",
+        "id": "d3ae4b41.17ca78",
+        "type": "api-current-state",
         "z": "629f21c7.4f293",
         "name": "",
         "server": "48d01de6.b64724",
-        "event_type": "ddd",
-        "exposeToHomeAssistant": false,
-        "haConfig": [
-            {
-                "property": "name",
-                "value": ""
-            },
-            {
-                "property": "icon",
-                "value": ""
-            }
-        ],
-        "waitForRunning": true,
-        "x": 380,
-        "y": 380,
+        "version": 1,
+        "outputs": 1,
+        "halt_if": "",
+        "halt_if_type": "str",
+        "halt_if_compare": "is",
+        "override_topic": false,
+        "entity_id": "",
+        "state_type": "str",
+        "state_location": "payload",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "blockInputOverrides": false,
+        "x": 490,
+        "y": 600,
         "wires": [
             []
         ]
