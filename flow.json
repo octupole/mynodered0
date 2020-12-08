@@ -105,12 +105,8 @@
         "x": 710,
         "y": 500,
         "wires": [
-            [
-                "f3375175.ff6f"
-            ],
-            [
-                "f3375175.ff6f"
-            ]
+            [],
+            []
         ]
     },
     {
@@ -126,8 +122,35 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1080,
-        "y": 500,
+        "x": 810,
+        "y": 240,
         "wires": []
+    },
+    {
+        "id": "7979bebf.06641",
+        "type": "server-events",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "server": "48d01de6.b64724",
+        "event_type": "",
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "waitForRunning": true,
+        "x": 490,
+        "y": 220,
+        "wires": [
+            [
+                "f3375175.ff6f"
+            ]
+        ]
     }
 ]
