@@ -114,7 +114,7 @@
         "type": "debug",
         "z": "f0166d14.e4e0c",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -132,7 +132,7 @@
         "z": "f0166d14.e4e0c",
         "name": "",
         "server": "48d01de6.b64724",
-        "event_type": "",
+        "event_type": "deconz_event",
         "exposeToHomeAssistant": false,
         "haConfig": [
             {
@@ -145,7 +145,7 @@
             }
         ],
         "waitForRunning": true,
-        "x": 490,
+        "x": 530,
         "y": 220,
         "wires": [
             [
