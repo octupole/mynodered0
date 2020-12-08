@@ -122,7 +122,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 950,
+        "x": 1150,
         "y": 220,
         "wires": []
     },
@@ -216,7 +216,7 @@
         "y": 220,
         "wires": [
             [
-                "f3375175.ff6f"
+                "a15d0f2a.06f37"
             ]
         ]
     },
@@ -269,6 +269,31 @@
         "wires": [
             [
                 "499cde45.ee948"
+            ]
+        ]
+    },
+    {
+        "id": "a15d0f2a.06f37",
+        "type": "switch",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "property": "payload.event",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "2002",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 890,
+        "y": 220,
+        "wires": [
+            [
+                "f3375175.ff6f"
             ]
         ]
     }
