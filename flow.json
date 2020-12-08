@@ -118,12 +118,12 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "payload.event",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1170,
-        "y": 460,
+        "x": 850,
+        "y": 240,
         "wires": []
     },
     {
@@ -148,7 +148,9 @@
         "x": 530,
         "y": 220,
         "wires": [
-            []
+            [
+                "f3375175.ff6f"
+            ]
         ]
     },
     {
@@ -189,12 +191,8 @@
         "x": 310,
         "y": 360,
         "wires": [
-            [
-                "f3375175.ff6f"
-            ],
-            [
-                "f3375175.ff6f"
-            ]
+            [],
+            []
         ]
     }
 ]
