@@ -230,7 +230,7 @@
         "debugenabled": false,
         "service_domain": "light",
         "service": "toggle",
-        "entityId": "Aqara1",
+        "entityId": "light.2",
         "data": "",
         "dataType": "json",
         "mergecontext": "",
