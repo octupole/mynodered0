@@ -149,8 +149,7 @@
         "y": 220,
         "wires": [
             [
-                "3fcbe2f5.b2b93e",
-                "f3375175.ff6f"
+                "3fcbe2f5.b2b93e"
             ]
         ]
     },
@@ -201,7 +200,7 @@
         "type": "switch",
         "z": "f0166d14.e4e0c",
         "name": "",
-        "property": "payload.id",
+        "property": "payload.event.id",
         "propertyType": "msg",
         "rules": [
             {
@@ -213,11 +212,12 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 730,
+        "x": 770,
         "y": 220,
         "wires": [
             [
-                "a15d0f2a.06f37"
+                "a15d0f2a.06f37",
+                "f3375175.ff6f"
             ]
         ]
     },
