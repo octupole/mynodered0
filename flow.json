@@ -122,8 +122,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1110,
-        "y": 220,
+        "x": 1290,
+        "y": 200,
         "wires": []
     },
     {
@@ -212,7 +212,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 770,
+        "x": 750,
         "y": 220,
         "wires": [
             [
@@ -237,8 +237,8 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 1010,
-        "y": 340,
+        "x": 1120,
+        "y": 300,
         "wires": [
             []
         ]
@@ -291,6 +291,34 @@
         "outputs": 1,
         "x": 890,
         "y": 220,
+        "wires": [
+            [
+                "ba814e87.7ee9b",
+                "499cde45.ee948"
+            ]
+        ]
+    },
+    {
+        "id": "ba814e87.7ee9b",
+        "type": "change",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "toggle",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1080,
+        "y": 200,
         "wires": [
             [
                 "f3375175.ff6f"
