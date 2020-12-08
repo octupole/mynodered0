@@ -152,36 +152,6 @@
         ]
     },
     {
-        "id": "63e27439.c4832c",
-        "type": "api-current-state",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "server": "48d01de6.b64724",
-        "version": 1,
-        "outputs": 2,
-        "halt_if": "2002",
-        "halt_if_type": "num",
-        "halt_if_compare": "is",
-        "override_topic": false,
-        "entity_id": "sensor.switch_60_battery_level",
-        "state_type": "num",
-        "state_location": "payload.event.event",
-        "override_payload": "msg",
-        "entity_location": "data",
-        "override_data": "msg",
-        "blockInputOverrides": false,
-        "x": 880,
-        "y": 720,
-        "wires": [
-            [
-                "f3375175.ff6f"
-            ],
-            [
-                "f3375175.ff6f"
-            ]
-        ]
-    },
-    {
         "id": "8a50152a.6ec2e8",
         "type": "trigger-state",
         "z": "f0166d14.e4e0c",
@@ -216,11 +186,15 @@
         "customoutputs": [],
         "outputinitially": false,
         "state_type": "str",
-        "x": 360,
-        "y": 500,
+        "x": 310,
+        "y": 360,
         "wires": [
-            [],
-            []
+            [
+                "f3375175.ff6f"
+            ],
+            [
+                "f3375175.ff6f"
+            ]
         ]
     }
 ]
