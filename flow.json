@@ -105,8 +105,28 @@
         "x": 710,
         "y": 500,
         "wires": [
-            [],
-            []
+            [
+                "f3375175.ff6f"
+            ],
+            [
+                "f3375175.ff6f"
+            ]
         ]
+    },
+    {
+        "id": "f3375175.ff6f",
+        "type": "debug",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1100,
+        "y": 500,
+        "wires": []
     }
 ]
