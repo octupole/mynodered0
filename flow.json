@@ -68,25 +68,44 @@
         "cacheJson": true
     },
     {
-        "id": "2b484dfa.674ab2",
-        "type": "api-call-service",
+        "id": "5ad4eaa8.1826e4",
+        "type": "server-state-changed",
         "z": "f0166d14.e4e0c",
         "name": "",
         "server": "48d01de6.b64724",
         "version": 1,
-        "debugenabled": false,
-        "service_domain": "",
-        "service": "toggle",
-        "entityId": "swit",
-        "data": "",
-        "dataType": "json",
-        "mergecontext": "",
-        "output_location": "",
-        "output_location_type": "none",
-        "mustacheAltTags": false,
-        "x": 570,
-        "y": 660,
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "entityidfilter": "sensor.switch_60_battery_level",
+        "entityidfiltertype": "exact",
+        "outputinitially": false,
+        "state_type": "str",
+        "haltifstate": "yu",
+        "halt_if_type": "str",
+        "halt_if_compare": "is_not",
+        "outputs": 2,
+        "output_only_on_state_change": true,
+        "for": 0,
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "x": 710,
+        "y": 500,
         "wires": [
+            [],
             []
         ]
     }
