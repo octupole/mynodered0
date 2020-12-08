@@ -118,11 +118,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload.event",
+        "complete": "payload.event.event",
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 850,
+        "x": 870,
         "y": 240,
         "wires": []
     },
