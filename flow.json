@@ -8675,5 +8675,28 @@
                 "d3ae4b41.17ca78"
             ]
         ]
+    },
+    {
+        "id": "3ea284f1.bc769c",
+        "type": "api-call-service",
+        "z": "629f21c7.4f293",
+        "name": "",
+        "server": "48d01de6.b64724",
+        "version": 1,
+        "debugenabled": false,
+        "service_domain": "light",
+        "service": "toggle",
+        "entityId": "light.bureau_plafonnier",
+        "data": "",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 310,
+        "y": 400,
+        "wires": [
+            []
+        ]
     }
 ]
