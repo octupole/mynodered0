@@ -122,8 +122,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 810,
-        "y": 240,
+        "x": 1170,
+        "y": 460,
         "wires": []
     },
     {
@@ -148,9 +148,35 @@
         "x": 530,
         "y": 220,
         "wires": [
+            []
+        ]
+    },
+    {
+        "id": "63e27439.c4832c",
+        "type": "api-current-state",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "server": "48d01de6.b64724",
+        "version": 1,
+        "outputs": 2,
+        "halt_if": "2002",
+        "halt_if_type": "num",
+        "halt_if_compare": "is",
+        "override_topic": false,
+        "entity_id": "sensor.switch_60_battery_level",
+        "state_type": "num",
+        "state_location": "payload.event.event",
+        "override_payload": "msg",
+        "entity_location": "data",
+        "override_data": "msg",
+        "blockInputOverrides": false,
+        "x": 880,
+        "y": 720,
+        "wires": [
             [
                 "f3375175.ff6f"
-            ]
+            ],
+            []
         ]
     }
 ]
