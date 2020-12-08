@@ -118,11 +118,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload.event.event",
+        "complete": "payload",
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1150,
+        "x": 1110,
         "y": 220,
         "wires": []
     },
@@ -216,7 +216,8 @@
         "y": 220,
         "wires": [
             [
-                "a15d0f2a.06f37"
+                "a15d0f2a.06f37",
+                "f3375175.ff6f"
             ]
         ]
     },
@@ -290,7 +291,7 @@
         "repair": false,
         "outputs": 1,
         "x": 890,
-        "y": 220,
+        "y": 320,
         "wires": [
             [
                 "f3375175.ff6f"
