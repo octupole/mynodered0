@@ -216,8 +216,7 @@
         "y": 220,
         "wires": [
             [
-                "a15d0f2a.06f37",
-                "f3375175.ff6f"
+                "a15d0f2a.06f37"
             ]
         ]
     },
@@ -278,7 +277,7 @@
         "type": "switch",
         "z": "f0166d14.e4e0c",
         "name": "",
-        "property": "payload.event",
+        "property": "payload.event.event",
         "propertyType": "msg",
         "rules": [
             {
@@ -291,7 +290,7 @@
         "repair": false,
         "outputs": 1,
         "x": 890,
-        "y": 320,
+        "y": 220,
         "wires": [
             [
                 "f3375175.ff6f"
