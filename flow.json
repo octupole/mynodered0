@@ -421,7 +421,7 @@
             },
             {
                 "p": "payload.data",
-                "v": "{\"brightness_oct\": 100}",
+                "v": "{\"brightness_pct\": 100}",
                 "vt": "jsonata"
             }
         ],
@@ -447,7 +447,7 @@
         "version": 1,
         "debugenabled": false,
         "service_domain": "light",
-        "service": "",
+        "service": "toggle",
         "entityId": "",
         "data": "{\"brightness_pct\": 100}",
         "dataType": "json",
@@ -455,7 +455,7 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 740,
+        "x": 760,
         "y": 1180,
         "wires": [
             []
