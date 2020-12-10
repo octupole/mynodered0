@@ -903,5 +903,28 @@
                 "20ae86e4.0e5f8a"
             ]
         ]
+    },
+    {
+        "id": "5ee8a525.f7c45c",
+        "type": "inject",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 1340,
+        "wires": [
+            []
+        ]
     }
 ]
