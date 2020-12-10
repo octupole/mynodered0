@@ -770,10 +770,58 @@
         "device": "00:15:8d:00:02:c6:5a:d6-01",
         "device_name": "Aqara1 : Color temperature light",
         "state": "0",
-        "x": 150,
-        "y": 1040,
+        "x": 420,
+        "y": 1500,
         "wires": [
-            []
+            [
+                "c3eeb16d.aae83"
+            ]
         ]
+    },
+    {
+        "id": "88418495.b3e6b8",
+        "type": "inject",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1440,
+        "wires": [
+            [
+                "90bbf286.f81f"
+            ]
+        ]
+    },
+    {
+        "id": "c3eeb16d.aae83",
+        "type": "debug",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 1500,
+        "wires": []
     }
 ]
