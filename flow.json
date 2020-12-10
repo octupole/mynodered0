@@ -2,6 +2,13 @@
     {
         "id": "f0166d14.e4e0c",
         "type": "tab",
+        "label": "Automation sensor_drawer",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "aee8ddaf.b36bb",
+        "type": "tab",
         "label": "Flow 1",
         "disabled": false,
         "info": ""
@@ -181,197 +188,6 @@
         ]
     },
     {
-        "id": "90bbf286.f81f",
-        "type": "deconz-get",
-        "z": "f0166d14.e4e0c",
-        "name": "aqara1",
-        "server": "29f75ce1.2ab4e4",
-        "device": "00:15:8d:00:02:c6:5a:d6-01",
-        "device_name": "Aqara1 : Color temperature light",
-        "state": "0",
-        "x": 400,
-        "y": 460,
-        "wires": [
-            [
-                "c3eeb16d.aae83"
-            ]
-        ]
-    },
-    {
-        "id": "88418495.b3e6b8",
-        "type": "inject",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "x": 90,
-        "y": 400,
-        "wires": [
-            [
-                "90bbf286.f81f"
-            ]
-        ]
-    },
-    {
-        "id": "c3eeb16d.aae83",
-        "type": "debug",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 720,
-        "y": 460,
-        "wires": []
-    },
-    {
-        "id": "417d0846.d4db48",
-        "type": "deconz-output",
-        "z": "f0166d14.e4e0c",
-        "name": "aqara1",
-        "server": "29f75ce1.2ab4e4",
-        "device": "00:15:8d:00:02:c6:5a:d6-01",
-        "device_name": "Aqara1 : Color temperature light",
-        "command": "on",
-        "commandType": "deconz_cmd",
-        "payload": "payload",
-        "payloadType": "msg",
-        "transitionTime": "1200",
-        "x": 480,
-        "y": 320,
-        "wires": []
-    },
-    {
-        "id": "2b11da9f.8c22e6",
-        "type": "inject",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "true",
-        "payloadType": "bool",
-        "x": 150,
-        "y": 220,
-        "wires": [
-            [
-                "417d0846.d4db48"
-            ]
-        ]
-    },
-    {
-        "id": "20ae86e4.0e5f8a",
-        "type": "deconz-output",
-        "z": "f0166d14.e4e0c",
-        "name": "aqara1",
-        "server": "29f75ce1.2ab4e4",
-        "device": "00:15:8d:00:02:c6:5a:d6-01",
-        "device_name": "Aqara1 : Color temperature light",
-        "command": "toggle",
-        "commandType": "deconz_cmd",
-        "payload": "payload",
-        "payloadType": "msg",
-        "transitionTime": "120",
-        "x": 480,
-        "y": 240,
-        "wires": []
-    },
-    {
-        "id": "2113c7c.3809038",
-        "type": "inject",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 160,
-        "y": 140,
-        "wires": [
-            [
-                "20ae86e4.0e5f8a"
-            ]
-        ]
-    },
-    {
-        "id": "5ee8a525.f7c45c",
-        "type": "inject",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "false",
-        "payloadType": "bool",
-        "x": 150,
-        "y": 300,
-        "wires": [
-            [
-                "417d0846.d4db48"
-            ]
-        ]
-    },
-    {
-        "id": "c78c1a90.0d4b78",
-        "type": "inject",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 530,
-        "y": 1160,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "8c88dfec.18954",
         "type": "api-call-service",
         "z": "f0166d14.e4e0c",
@@ -451,24 +267,20 @@
         ]
     },
     {
-        "id": "9329fe2d.8d6a4",
-        "type": "inject",
-        "z": "f0166d14.e4e0c",
+        "id": "ebf64947.7086b8",
+        "type": "thingzi-schedule",
+        "z": "aee8ddaf.b36bb",
         "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 520,
-        "y": 1240,
+        "events": "[{\"start\":{\"dow\":1,\"mod\":435},\"end\":{\"dow\":1,\"mod\":510}},{\"start\":{\"dow\":2,\"mod\":435},\"end\":{\"dow\":2,\"mod\":510}},{\"start\":{\"dow\":3,\"mod\":435},\"end\":{\"dow\":3,\"mod\":510}},{\"start\":{\"dow\":4,\"mod\":435},\"end\":{\"dow\":4,\"mod\":510}},{\"start\":{\"dow\":5,\"mod\":435},\"end\":{\"dow\":5,\"mod\":510}},{\"start\":{\"dow\":6,\"mod\":450},\"end\":{\"dow\":6,\"mod\":540}},{\"start\":{\"dow\":0,\"mod\":450},\"end\":{\"dow\":0,\"mod\":540}},{\"start\":{\"dow\":1,\"mod\":735},\"end\":{\"dow\":1,\"mod\":795}},{\"start\":{\"dow\":2,\"mod\":735},\"end\":{\"dow\":2,\"mod\":795}},{\"start\":{\"dow\":3,\"mod\":735},\"end\":{\"dow\":3,\"mod\":795}},{\"start\":{\"dow\":4,\"mod\":735},\"end\":{\"dow\":4,\"mod\":795}},{\"start\":{\"dow\":5,\"mod\":735},\"end\":{\"dow\":5,\"mod\":795}},{\"start\":{\"dow\":6,\"mod\":735},\"end\":{\"dow\":6,\"mod\":795}},{\"start\":{\"dow\":0,\"mod\":735},\"end\":{\"dow\":0,\"mod\":795}}]",
+        "sendType": "msg",
+        "sendId": "payload",
+        "onPayloadType": "str",
+        "onPayload": "ON",
+        "offPayloadType": "str",
+        "offPayload": "OFF",
+        "startupMessage": true,
+        "x": 510,
+        "y": 860,
         "wires": [
             []
         ]
