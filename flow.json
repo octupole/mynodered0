@@ -331,9 +331,9 @@
         "name": "",
         "server": "48d01de6.b64724",
         "version": 1,
-        "debugenabled": false,
-        "service_domain": "deconz",
-        "service": "configure",
+        "debugenabled": true,
+        "service_domain": "sensor",
+        "service": "",
         "entityId": "binary_sensor.sensor_drawer",
         "data": "",
         "dataType": "json",
@@ -341,7 +341,7 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 1120,
+        "x": 1090,
         "y": 680,
         "wires": [
             []
