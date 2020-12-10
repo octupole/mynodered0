@@ -832,7 +832,7 @@
         "commandType": "deconz_cmd",
         "payload": "payload",
         "payloadType": "msg",
-        "transitionTime": "120",
+        "transitionTime": "1200",
         "x": 500,
         "y": 1360,
         "wires": []
