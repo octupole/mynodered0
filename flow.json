@@ -68,6 +68,17 @@
         "cacheJson": true
     },
     {
+        "id": "29f75ce1.2ab4e4",
+        "type": "deconz-server",
+        "name": "deconz domotica",
+        "ip": "192.168.1.122",
+        "port": "8090",
+        "apikey": "9DF1B4CF80",
+        "ws_port": "8090",
+        "secure": false,
+        "polling": "15"
+    },
+    {
         "id": "5ad4eaa8.1826e4",
         "type": "server-state-changed",
         "z": "f0166d14.e4e0c",
@@ -378,7 +389,7 @@
         "type": "debug",
         "z": "f0166d14.e4e0c",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -414,6 +425,19 @@
             [
                 "57a4bf5c.45343"
             ]
+        ]
+    },
+    {
+        "id": "a0841450.981c38",
+        "type": "deconz-event",
+        "z": "f0166d14.e4e0c",
+        "name": "look at input",
+        "server": "29f75ce1.2ab4e4",
+        "device_name": null,
+        "x": 260,
+        "y": 800,
+        "wires": [
+            []
         ]
     }
 ]
