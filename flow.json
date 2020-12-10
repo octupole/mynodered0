@@ -730,7 +730,7 @@
         "service_domain": "light",
         "service": "turn_off",
         "entityId": "light.2",
-        "data": "{\"transition\": 120}",
+        "data": "{\"transition\": 120, brightness: 20}",
         "dataType": "json",
         "mergecontext": "",
         "output_location": "",
