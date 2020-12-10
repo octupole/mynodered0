@@ -402,17 +402,23 @@
                 "t": "neq",
                 "v": "sensor.ubnt_system_uptime",
                 "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "binary_sensor.ubnt_system_status",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
-        "outputs": 1,
+        "outputs": 2,
         "x": 910,
         "y": 880,
         "wires": [
             [
                 "57a4bf5c.45343"
-            ]
+            ],
+            []
         ]
     }
 ]
