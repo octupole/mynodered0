@@ -405,19 +405,7 @@
         "name": "",
         "props": [
             {
-                "p": "payload.domain",
-                "v": "light",
-                "vt": "str"
-            },
-            {
-                "p": "payload.service",
-                "v": "toggle",
-                "vt": "str"
-            },
-            {
-                "p": "payload.data",
-                "v": "{\"entity_id\": \"light.2\",\"brightness_pct\": 100}",
-                "vt": "jsonata"
+                "p": "payload"
             }
         ],
         "repeat": "",
@@ -425,7 +413,9 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 520,
+        "payload": "",
+        "payloadType": "date",
+        "x": 530,
         "y": 1160,
         "wires": [
             [
