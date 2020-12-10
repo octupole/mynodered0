@@ -378,7 +378,7 @@
         "type": "debug",
         "z": "f0166d14.e4e0c",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -400,7 +400,7 @@
         "rules": [
             {
                 "t": "regex",
-                "v": "binary_sensor\\.",
+                "v": "binary_sensor.(?!ubnt.*$)",
                 "vt": "str",
                 "case": false
             }
