@@ -327,10 +327,10 @@
         "schedules": [
             {
                 "on_h": "17",
-                "on_m": "32",
+                "on_m": "34",
                 "on_s": "00",
                 "off_h": "17",
-                "off_m": "33",
+                "off_m": "35",
                 "off_s": "00",
                 "valid": true
             }
@@ -339,7 +339,7 @@
         "y": 480,
         "wires": [
             [
-                "39d9cae3.dcf7f6"
+                "37dd766b.f11a9a"
             ]
         ]
     },
@@ -438,5 +438,29 @@
         "x": 740,
         "y": 620,
         "wires": []
+    },
+    {
+        "id": "37dd766b.f11a9a",
+        "type": "join",
+        "z": "aee8ddaf.b36bb",
+        "name": "",
+        "mode": "auto",
+        "build": "string",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": "false",
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "x": 550,
+        "y": 540,
+        "wires": [
+            [
+                "39d9cae3.dcf7f6"
+            ]
+        ]
     }
 ]
