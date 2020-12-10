@@ -11,7 +11,8 @@
         "thingzi-logic-timers": "1.1.3",
         "node-red-contrib-zigbee2mqtt": "0.6.2",
         "node-red-contrib-ui-led": "0.3.3",
-        "tuya-led-node": "1.0.0"
+        "tuya-led-node": "1.0.0",
+        "node-red-contrib-home-assistant-websocket": "0.27.8"
     },
     "node-red": {
         "settings": {
