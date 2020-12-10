@@ -600,7 +600,7 @@
         "version": 1,
         "debugenabled": false,
         "service_domain": "light",
-        "service": "toggle",
+        "service": "turn_on",
         "entityId": "light.2",
         "data": "{\"brightness_pct\": 100}",
         "dataType": "json",
@@ -608,8 +608,8 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 880,
-        "y": 1780,
+        "x": 1130,
+        "y": 1660,
         "wires": [
             [
                 "5f4bd365.88ab1c"
@@ -672,9 +672,7 @@
         "x": 520,
         "y": 1900,
         "wires": [
-            [
-                "cf1dd3c5.d9aa9"
-            ]
+            []
         ]
     },
     {
@@ -725,8 +723,60 @@
         "y": 1640,
         "wires": [
             [
-                "cf1dd3c5.d9aa9"
+                "6dc00faa.bbb71"
             ]
+        ]
+    },
+    {
+        "id": "6dc00faa.bbb71",
+        "type": "switch",
+        "z": "f0166d14.e4e0c",
+        "name": "ON/OFF",
+        "property": "payload.event.new_state.state",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "of",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 870,
+        "y": 1840,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c6567b2.fbc2288",
+        "type": "api-call-service",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "server": "48d01de6.b64724",
+        "version": 1,
+        "debugenabled": false,
+        "service_domain": "light",
+        "service": "turn_off",
+        "entityId": "light.2",
+        "data": "{\"transition\": 20}",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 1050,
+        "y": 1960,
+        "wires": [
+            []
         ]
     }
 ]
