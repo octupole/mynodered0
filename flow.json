@@ -415,7 +415,7 @@
                 "vt": "str"
             },
             {
-                "p": "payload.entity_id",
+                "p": "entity_id",
                 "v": "light.2",
                 "vt": "str"
             },
