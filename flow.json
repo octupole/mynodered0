@@ -816,11 +816,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
+        "complete": "payload.bri",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 720,
+        "x": 750,
         "y": 1500,
         "wires": []
     }
