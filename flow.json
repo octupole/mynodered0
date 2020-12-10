@@ -73,8 +73,8 @@
         "name": "deconz domotica",
         "ip": "192.168.1.122",
         "port": "8090",
-        "apikey": "9DF1B4CF80",
-        "ws_port": "90",
+        "apikey": "32420ABFAD",
+        "ws_port": "8088",
         "secure": false,
         "polling": "15"
     },
