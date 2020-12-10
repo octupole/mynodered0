@@ -828,7 +828,7 @@
         "id": "417d0846.d4db48",
         "type": "deconz-output",
         "z": "f0166d14.e4e0c",
-        "name": "",
+        "name": "aqara1",
         "server": "29f75ce1.2ab4e4",
         "device": "group_31",
         "device_name": "○ Aqara",
