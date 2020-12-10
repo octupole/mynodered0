@@ -315,39 +315,12 @@
         ]
     },
     {
-        "id": "57951619.bab058",
-        "type": "timerswitch",
-        "z": "aee8ddaf.b36bb",
-        "name": "",
-        "ontopic": "",
-        "offtopic": "",
-        "onpayload": "{\"service\": \"turn_on\"}",
-        "offpayload": "{\"service\": \"turn_of\"}",
-        "disabled": false,
-        "schedules": [
-            {
-                "on_h": "17",
-                "on_m": "35",
-                "on_s": "00",
-                "off_h": "17",
-                "off_m": "36",
-                "off_s": "00",
-                "valid": true
-            }
-        ],
-        "x": 370,
-        "y": 480,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "f956776d.78d6c8",
         "type": "eztimer",
         "z": "aee8ddaf.b36bb",
         "name": "",
         "debug": false,
-        "autoname": "17:41:05 - 17:42:01",
+        "autoname": "7:15:00 - 8:30:00",
         "tag": "eztimer",
         "suspended": false,
         "sendEventsOnSuspend": false,
@@ -357,7 +330,7 @@
         "startupMessage": true,
         "ontype": "2",
         "ontimesun": "dawn",
-        "ontimetod": "17:41:05",
+        "ontimetod": "7:15:00",
         "onpropertytype": "msg",
         "onproperty": "payload",
         "onvaluetype": "json",
@@ -367,7 +340,7 @@
         "onsuppressrepeats": false,
         "offtype": "2",
         "offtimesun": "dusk",
-        "offtimetod": "17:42:01",
+        "offtimetod": "8:30:00",
         "offduration": "00:01:00",
         "offpropertytype": "msg",
         "offproperty": "payload",
