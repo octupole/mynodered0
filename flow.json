@@ -338,9 +338,7 @@
         "x": 370,
         "y": 480,
         "wires": [
-            [
-                "a13b6b66.d33db8"
-            ]
+            []
         ]
     },
     {
@@ -354,7 +352,9 @@
         "x": 600,
         "y": 540,
         "wires": [
-            []
+            [
+                "d31bcfae.6244d"
+            ]
         ]
     },
     {
@@ -363,7 +363,7 @@
         "z": "aee8ddaf.b36bb",
         "name": "",
         "debug": false,
-        "autoname": "17:00 - 17:40:01",
+        "autoname": "17:41:05 - 17:42:01",
         "tag": "eztimer",
         "suspended": false,
         "sendEventsOnSuspend": false,
@@ -373,7 +373,7 @@
         "startupMessage": true,
         "ontype": "2",
         "ontimesun": "dawn",
-        "ontimetod": "17:00",
+        "ontimetod": "17:41:05",
         "onpropertytype": "msg",
         "onproperty": "payload",
         "onvaluetype": "json",
@@ -383,7 +383,7 @@
         "onsuppressrepeats": false,
         "offtype": "2",
         "offtimesun": "dusk",
-        "offtimetod": "17:40:01",
+        "offtimetod": "17:42:01",
         "offduration": "00:01:00",
         "offpropertytype": "msg",
         "offproperty": "payload",
@@ -399,10 +399,29 @@
         "fri": true,
         "sat": false,
         "sun": false,
-        "x": 330,
+        "x": 340,
         "y": 160,
         "wires": [
-            []
+            [
+                "a13b6b66.d33db8"
+            ]
         ]
+    },
+    {
+        "id": "d31bcfae.6244d",
+        "type": "debug",
+        "z": "aee8ddaf.b36bb",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 580,
+        "wires": []
     }
 ]
