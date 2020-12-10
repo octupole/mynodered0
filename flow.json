@@ -369,7 +369,7 @@
         "y": 880,
         "wires": [
             [
-                "52d52f91.750f7"
+                "fe69acb5.e95f9"
             ]
         ]
     },
@@ -391,56 +391,6 @@
         "wires": []
     },
     {
-        "id": "52d52f91.750f7",
-        "type": "switch",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "property": "payload.entity_id",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "neq",
-                "v": "sensor.ubnt_system_uptime",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 910,
-        "y": 880,
-        "wires": [
-            [
-                "5f150e6a.ce843"
-            ]
-        ]
-    },
-    {
-        "id": "5f150e6a.ce843",
-        "type": "switch",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "property": "payload.entity_id",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "neq",
-                "v": "binary_sensor.ubnt_system_status",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 1070,
-        "y": 860,
-        "wires": [
-            [
-                "fe69acb5.e95f9"
-            ]
-        ]
-    },
-    {
         "id": "fe69acb5.e95f9",
         "type": "switch",
         "z": "f0166d14.e4e0c",
@@ -449,15 +399,16 @@
         "propertyType": "msg",
         "rules": [
             {
-                "t": "neq",
-                "v": "sensor.linux_internet_gateway_device_packets_s_received",
-                "vt": "str"
+                "t": "regex",
+                "v": "binary_sensor\\.",
+                "vt": "str",
+                "case": false
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1190,
+        "x": 930,
         "y": 860,
         "wires": [
             [
