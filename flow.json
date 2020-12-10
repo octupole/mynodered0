@@ -513,8 +513,8 @@
             }
         ],
         "waitForRunning": true,
-        "x": 940,
-        "y": 1080,
+        "x": 880,
+        "y": 980,
         "wires": [
             [
                 "675ca7f0.3d8f48"
@@ -588,6 +588,91 @@
         "wires": [
             [
                 "8bf43284.99258"
+            ]
+        ]
+    },
+    {
+        "id": "cf1dd3c5.d9aa9",
+        "type": "api-call-service",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "server": "48d01de6.b64724",
+        "version": 1,
+        "debugenabled": false,
+        "service_domain": "light",
+        "service": "turn_on",
+        "entityId": "",
+        "data": "{\"entity_id\": \"light.2\",\"brightness_pct\": 100}",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 630,
+        "y": 1420,
+        "wires": [
+            [
+                "5f4bd365.88ab1c"
+            ]
+        ]
+    },
+    {
+        "id": "ef114c18.ce94d",
+        "type": "ha-fire-event",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "server": "48d01de6.b64724",
+        "event": "",
+        "data": "",
+        "dataType": "json",
+        "x": 740,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5f4bd365.88ab1c",
+        "type": "debug",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 940,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "fbbb5ea.ffdf6a",
+        "type": "inject",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 350,
+        "y": 1360,
+        "wires": [
+            [
+                "cf1dd3c5.d9aa9"
             ]
         ]
     }
