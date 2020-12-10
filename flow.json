@@ -451,11 +451,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "payload.id",
+        "complete": "payload",
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 660,
+        "x": 650,
         "y": 1080,
         "wires": []
     },
