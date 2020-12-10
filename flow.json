@@ -608,8 +608,8 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 620,
-        "y": 1420,
+        "x": 880,
+        "y": 1780,
         "wires": [
             [
                 "5f4bd365.88ab1c"
@@ -644,8 +644,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 920,
-        "y": 1420,
+        "x": 1210,
+        "y": 1880,
         "wires": []
     },
     {
@@ -669,8 +669,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 350,
-        "y": 1360,
+        "x": 520,
+        "y": 1900,
         "wires": [
             [
                 "cf1dd3c5.d9aa9"
@@ -696,8 +696,8 @@
             }
         ],
         "waitForRunning": true,
-        "x": 500,
-        "y": 1800,
+        "x": 540,
+        "y": 1600,
         "wires": [
             [
                 "e6963f4d.81c4a"
@@ -713,19 +713,20 @@
         "propertyType": "msg",
         "rules": [
             {
-                "t": "regex",
-                "v": "binary_sensor.(?!ubnt.*$)",
-                "vt": "str",
-                "case": false
+                "t": "eq",
+                "v": "binary_sensor.sensor_drawer",
+                "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 700,
-        "y": 1780,
+        "x": 750,
+        "y": 1640,
         "wires": [
-            []
+            [
+                "cf1dd3c5.d9aa9"
+            ]
         ]
     }
 ]
