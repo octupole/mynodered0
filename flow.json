@@ -410,17 +410,17 @@
                 "vt": "str"
             },
             {
-                "p": "service",
+                "p": "payload.service",
                 "v": "toggle",
                 "vt": "str"
             },
             {
-                "p": "entity_id",
+                "p": "payload.entity_id",
                 "v": "light.2",
                 "vt": "str"
             },
             {
-                "p": "data",
+                "p": "payload.data",
                 "v": "{\"brightness_oct\": 100}",
                 "vt": "jsonata"
             }
