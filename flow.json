@@ -405,7 +405,7 @@
         "name": "",
         "props": [
             {
-                "p": "domain",
+                "p": "payload.domain",
                 "v": "light",
                 "vt": "str"
             },
