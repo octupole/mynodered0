@@ -389,7 +389,7 @@
         "type": "debug",
         "z": "f0166d14.e4e0c",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -397,8 +397,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1330,
-        "y": 860,
+        "x": 1170,
+        "y": 820,
         "wires": []
     },
     {
@@ -451,10 +451,11 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "true",
+        "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 650,
+        "x": 630,
         "y": 1080,
         "wires": []
     }
