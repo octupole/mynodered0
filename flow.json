@@ -313,5 +313,130 @@
                 "38ef961a.b0f15a"
             ]
         ]
+    },
+    {
+        "id": "57951619.bab058",
+        "type": "timerswitch",
+        "z": "aee8ddaf.b36bb",
+        "name": "",
+        "ontopic": "",
+        "offtopic": "",
+        "onpayload": "{\"service\": \"turn_on\"}",
+        "offpayload": "{\"service\": \"turn_of\"}",
+        "disabled": false,
+        "schedules": [
+            {
+                "on_h": "17",
+                "on_m": "32",
+                "on_s": "00",
+                "off_h": "17",
+                "off_m": "33",
+                "off_s": "00",
+                "valid": true
+            }
+        ],
+        "x": 370,
+        "y": 480,
+        "wires": [
+            [
+                "39d9cae3.dcf7f6"
+            ]
+        ]
+    },
+    {
+        "id": "e2282d4.29f65d",
+        "type": "switch",
+        "z": "aee8ddaf.b36bb",
+        "name": "",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "on",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "off",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 550,
+        "y": 380,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "a85dba0a.6c82a8",
+        "type": "change",
+        "z": "aee8ddaf.b36bb",
+        "name": "on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"service\": \"turn_on\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7de744fa.0eae2c",
+        "type": "change",
+        "z": "aee8ddaf.b36bb",
+        "name": "off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\"service\": \"turn_off\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "39d9cae3.dcf7f6",
+        "type": "debug",
+        "z": "aee8ddaf.b36bb",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 620,
+        "wires": []
     }
 ]
