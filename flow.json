@@ -284,5 +284,53 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "38ef961a.b0f15a",
+        "type": "api-call-service",
+        "z": "aee8ddaf.b36bb",
+        "name": "",
+        "server": "48d01de6.b64724",
+        "version": 1,
+        "debugenabled": false,
+        "service_domain": "switch",
+        "service": "",
+        "entityId": "switch.espresso, switch.grinder",
+        "data": "",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 1070,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "59c957d4.8ce158",
+        "type": "inject",
+        "z": "aee8ddaf.b36bb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload.service",
+                "v": "toggle",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 520,
+        "y": 1140,
+        "wires": [
+            [
+                "38ef961a.b0f15a"
+            ]
+        ]
     }
 ]
