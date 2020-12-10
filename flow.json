@@ -216,7 +216,8 @@
         "y": 220,
         "wires": [
             [
-                "a15d0f2a.06f37"
+                "a15d0f2a.06f37",
+                "f3375175.ff6f"
             ]
         ]
     },
@@ -290,7 +291,7 @@
         "repair": false,
         "outputs": 1,
         "x": 890,
-        "y": 220,
+        "y": 60,
         "wires": [
             [
                 "ba814e87.7ee9b"
@@ -317,11 +318,9 @@
         "to": "",
         "reg": false,
         "x": 1080,
-        "y": 200,
+        "y": 100,
         "wires": [
-            [
-                "f3375175.ff6f"
-            ]
+            []
         ]
     },
     {
@@ -379,7 +378,7 @@
         "type": "debug",
         "z": "f0166d14.e4e0c",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
