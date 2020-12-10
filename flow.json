@@ -550,7 +550,7 @@
         "type": "debug",
         "z": "f0166d14.e4e0c",
         "name": "",
-        "active": false,
+        "active": true,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -583,8 +583,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 490,
-        "y": 1120,
+        "x": 460,
+        "y": 1180,
         "wires": [
             [
                 "8bf43284.99258"
@@ -675,6 +675,57 @@
             [
                 "cf1dd3c5.d9aa9"
             ]
+        ]
+    },
+    {
+        "id": "efa23626.a3f8b8",
+        "type": "server-events",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "server": "48d01de6.b64724",
+        "event_type": "state_changed",
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "waitForRunning": true,
+        "x": 500,
+        "y": 1800,
+        "wires": [
+            [
+                "e6963f4d.81c4a"
+            ]
+        ]
+    },
+    {
+        "id": "e6963f4d.81c4a",
+        "type": "switch",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "property": "payload.entity_id",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "binary_sensor.(?!ubnt.*$)",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 700,
+        "y": 1780,
+        "wires": [
+            []
         ]
     }
 ]
