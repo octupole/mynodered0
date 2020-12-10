@@ -378,7 +378,7 @@
         "type": "debug",
         "z": "f0166d14.e4e0c",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -386,7 +386,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1210,
+        "x": 1330,
         "y": 860,
         "wires": []
     },
@@ -433,6 +433,31 @@
         "repair": false,
         "outputs": 1,
         "x": 1070,
+        "y": 860,
+        "wires": [
+            [
+                "fe69acb5.e95f9"
+            ]
+        ]
+    },
+    {
+        "id": "fe69acb5.e95f9",
+        "type": "switch",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "property": "payload.entity_id",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "sensor.linux_internet_gateway_device_packets_s_received",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1190,
         "y": 860,
         "wires": [
             [
