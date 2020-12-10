@@ -446,7 +446,7 @@
         "server": "48d01de6.b64724",
         "version": 1,
         "debugenabled": false,
-        "service_domain": "",
+        "service_domain": "light",
         "service": "",
         "entityId": "",
         "data": "{\"brightness_pct\": 100}",
@@ -455,7 +455,7 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 730,
+        "x": 740,
         "y": 1180,
         "wires": [
             []
