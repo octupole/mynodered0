@@ -608,7 +608,7 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 1130,
+        "x": 970,
         "y": 1940,
         "wires": [
             [
@@ -729,7 +729,7 @@
         "service_domain": "light",
         "service": "turn_off",
         "entityId": "light.2",
-        "data": "{\"transition\": 20}",
+        "data": "{\"transition\": 120}",
         "dataType": "json",
         "mergecontext": "",
         "output_location": "",
