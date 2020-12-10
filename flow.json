@@ -446,8 +446,8 @@
         "server": "48d01de6.b64724",
         "version": 1,
         "debugenabled": false,
-        "service_domain": "light",
-        "service": "toggle",
+        "service_domain": "",
+        "service": "",
         "entityId": "",
         "data": "{\"brightness_pct\": 100}",
         "dataType": "json",
@@ -455,7 +455,7 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 760,
+        "x": 730,
         "y": 1180,
         "wires": [
             []
