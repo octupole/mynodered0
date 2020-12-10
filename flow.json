@@ -711,8 +711,8 @@
         "y": 1740,
         "wires": [
             [
-                "c6567b2.fbc2288",
-                "d88043d1.e493a"
+                "d88043d1.e493a",
+                "4b671456.6bebdc"
             ],
             [
                 "cf1dd3c5.d9aa9"
@@ -730,14 +730,14 @@
         "service_domain": "light",
         "service": "turn_off",
         "entityId": "light.2",
-        "data": "{\"transition\": 120}",
+        "data": "{\"transition\": 0}",
         "dataType": "json",
         "mergecontext": "",
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 1130,
-        "y": 1640,
+        "x": 1190,
+        "y": 1560,
         "wires": [
             [
                 "5f4bd365.88ab1c"
@@ -926,6 +926,31 @@
         "wires": [
             [
                 "417d0846.d4db48"
+            ]
+        ]
+    },
+    {
+        "id": "4b671456.6bebdc",
+        "type": "api-call-service",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "server": "48d01de6.b64724",
+        "version": 1,
+        "debugenabled": false,
+        "service_domain": "light",
+        "service": "turn_on",
+        "entityId": "light.2",
+        "data": "{\"brightness_pct\": 50, \"transition\": 50}",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 990,
+        "y": 1600,
+        "wires": [
+            [
+                "c6567b2.fbc2288"
             ]
         ]
     }
