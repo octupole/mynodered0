@@ -910,5 +910,45 @@
                 "417d0846.d4db48"
             ]
         ]
+    },
+    {
+        "id": "62966dc2.f6d244",
+        "type": "deconz-output",
+        "z": "f0166d14.e4e0c",
+        "name": "aqara1_bri",
+        "server": "29f75ce1.2ab4e4",
+        "device": "00:15:8d:00:02:c6:5a:d6-01",
+        "device_name": "Aqara1 : Color temperature light",
+        "command": "bri",
+        "commandType": "deconz_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transitionTime": "0",
+        "x": 490,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "85cefb48.937078",
+        "type": "inject",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "128",
+        "payloadType": "num",
+        "x": 140,
+        "y": 1000,
+        "wires": [
+            []
+        ]
     }
 ]
