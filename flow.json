@@ -352,7 +352,7 @@
         "z": "f0166d14.e4e0c",
         "name": "",
         "server": "48d01de6.b64724",
-        "event_type": "",
+        "event_type": "deconz_event",
         "exposeToHomeAssistant": false,
         "haConfig": [
             {
@@ -365,7 +365,7 @@
             }
         ],
         "waitForRunning": true,
-        "x": 690,
+        "x": 730,
         "y": 880,
         "wires": [
             [
@@ -386,7 +386,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 860,
+        "x": 1210,
         "y": 860,
         "wires": []
     }
