@@ -445,7 +445,7 @@
         "service_domain": "",
         "service": "",
         "entityId": "",
-        "data": "{\"brightness_pct\": 100}",
+        "data": "",
         "dataType": "json",
         "mergecontext": "",
         "output_location": "",
