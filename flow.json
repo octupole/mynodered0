@@ -342,17 +342,17 @@
         "server": "48d01de6.b64724",
         "version": 1,
         "debugenabled": true,
-        "service_domain": "sensor",
-        "service": "",
-        "entityId": "binary_sensor.sensor_drawer",
+        "service_domain": "automation",
+        "service": "trigger",
+        "entityId": "binary_sensor.ubnt_device_quadrupole",
         "data": "",
         "dataType": "json",
         "mergecontext": "",
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 1090,
-        "y": 680,
+        "x": 1160,
+        "y": 1240,
         "wires": [
             []
         ]
@@ -490,6 +490,57 @@
             [
                 "1f5c466f.d6bfaa"
             ]
+        ]
+    },
+    {
+        "id": "b6df2622.248e28",
+        "type": "server-events",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "server": "48d01de6.b64724",
+        "event_type": "",
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "waitForRunning": true,
+        "x": 940,
+        "y": 1080,
+        "wires": [
+            [
+                "675ca7f0.3d8f48"
+            ]
+        ]
+    },
+    {
+        "id": "675ca7f0.3d8f48",
+        "type": "switch",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "property": "payload.entity_id",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "regex",
+                "v": "binary_sensor.(?!ubnt.*$)",
+                "vt": "str",
+                "case": false
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1150,
+        "y": 1040,
+        "wires": [
+            []
         ]
     }
 ]
