@@ -343,7 +343,7 @@
         "version": 1,
         "debugenabled": true,
         "service_domain": "light",
-        "service": "",
+        "service": "toggle",
         "entityId": "binary_sensor.ubnt_device_quadrupole",
         "data": "",
         "dataType": "json",
@@ -351,7 +351,7 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 760,
+        "x": 780,
         "y": 1260,
         "wires": [
             []
