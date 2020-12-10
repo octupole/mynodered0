@@ -823,5 +823,22 @@
         "x": 740,
         "y": 1500,
         "wires": []
+    },
+    {
+        "id": "417d0846.d4db48",
+        "type": "deconz-output",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "server": "29f75ce1.2ab4e4",
+        "device": "group_31",
+        "device_name": "○ Aqara",
+        "command": "toggle",
+        "commandType": "deconz_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transitionTime": "36",
+        "x": 270,
+        "y": 1340,
+        "wires": []
     }
 ]
