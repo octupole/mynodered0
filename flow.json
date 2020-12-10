@@ -395,7 +395,7 @@
         "type": "switch",
         "z": "f0166d14.e4e0c",
         "name": "",
-        "property": "payload.event.id",
+        "property": "payload.entity_id",
         "propertyType": "msg",
         "rules": [
             {
@@ -420,7 +420,7 @@
         "type": "switch",
         "z": "f0166d14.e4e0c",
         "name": "",
-        "property": "payload.event.id",
+        "property": "payload.entity_id",
         "propertyType": "msg",
         "rules": [
             {
