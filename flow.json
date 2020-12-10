@@ -608,8 +608,8 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 970,
-        "y": 1940,
+        "x": 1070,
+        "y": 1920,
         "wires": [
             [
                 "5f4bd365.88ab1c"
@@ -711,7 +711,8 @@
         "y": 1740,
         "wires": [
             [
-                "c6567b2.fbc2288"
+                "c6567b2.fbc2288",
+                "d88043d1.e493a"
             ],
             [
                 "cf1dd3c5.d9aa9"
@@ -742,5 +743,22 @@
                 "5f4bd365.88ab1c"
             ]
         ]
+    },
+    {
+        "id": "d88043d1.e493a",
+        "type": "debug",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1400,
+        "y": 1680,
+        "wires": []
     }
 ]
