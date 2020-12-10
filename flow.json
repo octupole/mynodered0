@@ -344,102 +344,6 @@
         ]
     },
     {
-        "id": "e2282d4.29f65d",
-        "type": "switch",
-        "z": "aee8ddaf.b36bb",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "on",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "off",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 550,
-        "y": 380,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "a85dba0a.6c82a8",
-        "type": "change",
-        "z": "aee8ddaf.b36bb",
-        "name": "on",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"service\": \"turn_on\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 820,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "7de744fa.0eae2c",
-        "type": "change",
-        "z": "aee8ddaf.b36bb",
-        "name": "off",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "{\"service\": \"turn_off\"}",
-                "tot": "json"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 830,
-        "y": 460,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "39d9cae3.dcf7f6",
-        "type": "debug",
-        "z": "aee8ddaf.b36bb",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 740,
-        "y": 620,
-        "wires": []
-    },
-    {
         "id": "a13b6b66.d33db8",
         "type": "json",
         "z": "aee8ddaf.b36bb",
@@ -450,9 +354,55 @@
         "x": 600,
         "y": 540,
         "wires": [
-            [
-                "39d9cae3.dcf7f6"
-            ]
+            []
+        ]
+    },
+    {
+        "id": "f956776d.78d6c8",
+        "type": "eztimer",
+        "z": "aee8ddaf.b36bb",
+        "name": "",
+        "debug": false,
+        "autoname": "17:00 - 17:40:01",
+        "tag": "eztimer",
+        "suspended": false,
+        "sendEventsOnSuspend": false,
+        "lat": "",
+        "lon": "",
+        "timerType": "1",
+        "startupMessage": true,
+        "ontype": "2",
+        "ontimesun": "dawn",
+        "ontimetod": "17:00",
+        "onpropertytype": "msg",
+        "onproperty": "payload",
+        "onvaluetype": "json",
+        "onvalue": "{\"service\": \"turn_on\"}",
+        "onoffset": 0,
+        "onrandomoffset": 0,
+        "onsuppressrepeats": false,
+        "offtype": "2",
+        "offtimesun": "dusk",
+        "offtimetod": "17:40:01",
+        "offduration": "00:01:00",
+        "offpropertytype": "msg",
+        "offproperty": "payload",
+        "offvaluetype": "json",
+        "offvalue": "{\"service\": \"turn_off\"}",
+        "offoffset": 0,
+        "offrandomoffset": 0,
+        "offsuppressrepeats": false,
+        "mon": true,
+        "tue": true,
+        "wed": true,
+        "thu": true,
+        "fri": true,
+        "sat": false,
+        "sun": false,
+        "x": 330,
+        "y": 160,
+        "wires": [
+            []
         ]
     }
 ]
