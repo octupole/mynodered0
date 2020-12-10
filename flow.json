@@ -351,10 +351,12 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 1160,
-        "y": 1240,
+        "x": 800,
+        "y": 1260,
         "wires": [
-            []
+            [
+                "9cacffc9.6a7ea"
+            ]
         ]
     },
     {
@@ -542,5 +544,22 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "9cacffc9.6a7ea",
+        "type": "debug",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 1260,
+        "wires": []
     }
 ]
