@@ -438,7 +438,7 @@
         "y": 800,
         "wires": [
             [
-                "1f5c466f.d6bfaa"
+                "8117826f.46851"
             ]
         ]
     },
@@ -470,22 +470,26 @@
             {
                 "t": "eq",
                 "v": "18",
-                "vt": "str"
+                "vt": "num"
             },
             {
                 "t": "eq",
                 "v": "17",
-                "vt": "str"
+                "vt": "num"
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 410,
-        "y": 1080,
+        "x": 450,
+        "y": 920,
         "wires": [
-            [],
-            []
+            [
+                "1f5c466f.d6bfaa"
+            ],
+            [
+                "1f5c466f.d6bfaa"
+            ]
         ]
     }
 ]
