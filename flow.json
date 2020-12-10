@@ -608,27 +608,12 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 1110,
-        "y": 1920,
+        "x": 1090,
+        "y": 1960,
         "wires": [
             [
                 "5f4bd365.88ab1c"
             ]
-        ]
-    },
-    {
-        "id": "ef114c18.ce94d",
-        "type": "ha-fire-event",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "server": "48d01de6.b64724",
-        "event": "",
-        "data": "",
-        "dataType": "json",
-        "x": 740,
-        "y": 1560,
-        "wires": [
-            []
         ]
     },
     {
@@ -647,33 +632,6 @@
         "x": 1370,
         "y": 1860,
         "wires": []
-    },
-    {
-        "id": "fbbb5ea.ffdf6a",
-        "type": "inject",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 520,
-        "y": 1900,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "efa23626.a3f8b8",
