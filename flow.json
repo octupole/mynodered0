@@ -354,9 +354,7 @@
         "x": 800,
         "y": 1260,
         "wires": [
-            [
-                "9cacffc9.6a7ea"
-            ]
+            []
         ]
     },
     {
@@ -531,7 +529,7 @@
         "rules": [
             {
                 "t": "regex",
-                "v": "binary_sensor.(?!ubnt.*$)",
+                "v": "light\\..*$",
                 "vt": "str",
                 "case": false
             }
@@ -542,7 +540,9 @@
         "x": 1150,
         "y": 1040,
         "wires": [
-            []
+            [
+                "9cacffc9.6a7ea"
+            ]
         ]
     },
     {
@@ -558,8 +558,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1080,
-        "y": 1260,
+        "x": 1430,
+        "y": 1200,
         "wires": []
     },
     {
@@ -636,7 +636,7 @@
         "type": "debug",
         "z": "f0166d14.e4e0c",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
