@@ -852,7 +852,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "false",
+        "payload": "true",
         "payloadType": "bool",
         "x": 170,
         "y": 1260,
