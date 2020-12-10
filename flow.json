@@ -550,7 +550,7 @@
         "type": "debug",
         "z": "f0166d14.e4e0c",
         "name": "",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -700,7 +700,7 @@
             },
             {
                 "t": "eq",
-                "v": "of",
+                "v": "on",
                 "vt": "str"
             }
         ],
