@@ -74,7 +74,7 @@
         "ip": "192.168.1.122",
         "port": "8090",
         "apikey": "9DF1B4CF80",
-        "ws_port": "8090",
+        "ws_port": "8082",
         "secure": false,
         "polling": "15"
     },
