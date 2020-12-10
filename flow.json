@@ -943,7 +943,7 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "128",
+        "payload": "254",
         "payloadType": "num",
         "x": 140,
         "y": 1000,
