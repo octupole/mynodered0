@@ -486,5 +486,44 @@
                 "8c88dfec.18954"
             ]
         ]
+    },
+    {
+        "id": "f91a0133.1959a",
+        "type": "change",
+        "z": "f0166d14.e4e0c",
+        "name": "light.2 turn_off",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.domain",
+                "pt": "msg",
+                "to": "light",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.service",
+                "pt": "msg",
+                "to": "turn_off",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.data",
+                "pt": "msg",
+                "to": "{\"entity_id\": \"light.2\",\"brightness_pct\": 100}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 720,
+        "y": 1280,
+        "wires": [
+            []
+        ]
     }
 ]
