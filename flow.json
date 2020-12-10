@@ -346,5 +346,49 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "e7c33f2.aad0fc",
+        "type": "server-events",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "server": "48d01de6.b64724",
+        "event_type": "",
+        "exposeToHomeAssistant": false,
+        "haConfig": [
+            {
+                "property": "name",
+                "value": ""
+            },
+            {
+                "property": "icon",
+                "value": ""
+            }
+        ],
+        "waitForRunning": true,
+        "x": 690,
+        "y": 880,
+        "wires": [
+            [
+                "57a4bf5c.45343"
+            ]
+        ]
+    },
+    {
+        "id": "57a4bf5c.45343",
+        "type": "debug",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 860,
+        "y": 860,
+        "wires": []
     }
 ]
