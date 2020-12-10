@@ -946,8 +946,8 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 990,
-        "y": 1600,
+        "x": 950,
+        "y": 1560,
         "wires": [
             [
                 "c6567b2.fbc2288"
