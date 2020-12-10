@@ -282,9 +282,7 @@
         "x": 510,
         "y": 860,
         "wires": [
-            [
-                "23e81cc0.bfcce4"
-            ]
+            []
         ]
     },
     {
@@ -304,8 +302,8 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 1070,
-        "y": 940,
+        "x": 1230,
+        "y": 880,
         "wires": [
             []
         ]
