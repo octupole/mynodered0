@@ -344,7 +344,7 @@
         "debugenabled": true,
         "service_domain": "light",
         "service": "toggle",
-        "entityId": "binary_sensor.ubnt_device_quadrupole",
+        "entityId": "light.2",
         "data": "",
         "dataType": "json",
         "mergecontext": "",
