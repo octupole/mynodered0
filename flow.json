@@ -475,6 +475,13 @@
                 "pt": "msg",
                 "to": "turn_on",
                 "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.data",
+                "pt": "msg",
+                "to": "{\"entity_id\": \"light.2\",\"brightness_pct\": 100}",
+                "tot": "jsonata"
             }
         ],
         "action": "",
