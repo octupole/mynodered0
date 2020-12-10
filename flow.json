@@ -449,7 +449,7 @@
         "debugenabled": false,
         "service_domain": "",
         "service": "",
-        "entityId": "",
+        "entityId": "light.2",
         "data": "{\"brightness_pct\": 100}",
         "dataType": "json",
         "mergecontext": "",
