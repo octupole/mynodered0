@@ -369,7 +369,7 @@
         "y": 880,
         "wires": [
             [
-                "57a4bf5c.45343"
+                "52d52f91.750f7"
             ]
         ]
     },
@@ -389,5 +389,30 @@
         "x": 1210,
         "y": 860,
         "wires": []
+    },
+    {
+        "id": "52d52f91.750f7",
+        "type": "switch",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "property": "payload.event.id",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "neq",
+                "v": "sensor.ubnt_system_uptime",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 910,
+        "y": 880,
+        "wires": [
+            [
+                "57a4bf5c.45343"
+            ]
+        ]
     }
 ]
