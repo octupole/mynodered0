@@ -79,519 +79,6 @@
         "polling": "15"
     },
     {
-        "id": "5ad4eaa8.1826e4",
-        "type": "server-state-changed",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "server": "48d01de6.b64724",
-        "version": 1,
-        "exposeToHomeAssistant": false,
-        "haConfig": [
-            {
-                "property": "name",
-                "value": ""
-            },
-            {
-                "property": "icon",
-                "value": ""
-            }
-        ],
-        "entityidfilter": "sensor.switch_60_battery_level",
-        "entityidfiltertype": "exact",
-        "outputinitially": false,
-        "state_type": "str",
-        "haltifstate": "yu",
-        "halt_if_type": "str",
-        "halt_if_compare": "is_not",
-        "outputs": 2,
-        "output_only_on_state_change": true,
-        "for": 0,
-        "forType": "num",
-        "forUnits": "minutes",
-        "ignorePrevStateNull": false,
-        "ignorePrevStateUnknown": false,
-        "ignorePrevStateUnavailable": false,
-        "ignoreCurrentStateUnknown": false,
-        "ignoreCurrentStateUnavailable": false,
-        "x": 710,
-        "y": 500,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "f3375175.ff6f",
-        "type": "debug",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1290,
-        "y": 200,
-        "wires": []
-    },
-    {
-        "id": "7979bebf.06641",
-        "type": "server-events",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "server": "48d01de6.b64724",
-        "event_type": "deconz_event",
-        "exposeToHomeAssistant": false,
-        "haConfig": [
-            {
-                "property": "name",
-                "value": ""
-            },
-            {
-                "property": "icon",
-                "value": ""
-            }
-        ],
-        "waitForRunning": true,
-        "x": 530,
-        "y": 220,
-        "wires": [
-            [
-                "3fcbe2f5.b2b93e",
-                "f3375175.ff6f"
-            ]
-        ]
-    },
-    {
-        "id": "8a50152a.6ec2e8",
-        "type": "trigger-state",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "server": "48d01de6.b64724",
-        "exposeToHomeAssistant": false,
-        "haConfig": [
-            {
-                "property": "name",
-                "value": ""
-            },
-            {
-                "property": "icon",
-                "value": ""
-            }
-        ],
-        "entityid": "sensor.switch_60_battery_level",
-        "entityidfiltertype": "exact",
-        "debugenabled": false,
-        "constraints": [
-            {
-                "targetType": "this_entity",
-                "targetValue": "",
-                "propertyType": "current_state",
-                "comparatorType": "is",
-                "comparatorValueDatatype": "str",
-                "comparatorValue": "",
-                "propertyValue": "new_state.state"
-            }
-        ],
-        "outputs": 2,
-        "customoutputs": [],
-        "outputinitially": false,
-        "state_type": "str",
-        "x": 310,
-        "y": 360,
-        "wires": [
-            [],
-            []
-        ]
-    },
-    {
-        "id": "3fcbe2f5.b2b93e",
-        "type": "switch",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "property": "payload.event.id",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "extra_2_gang",
-                "vt": "str"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 690,
-        "y": 100,
-        "wires": [
-            [
-                "a15d0f2a.06f37"
-            ]
-        ]
-    },
-    {
-        "id": "499cde45.ee948",
-        "type": "api-call-service",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "server": "48d01de6.b64724",
-        "version": 1,
-        "debugenabled": false,
-        "service_domain": "light",
-        "service": "toggle",
-        "entityId": "light.2",
-        "data": "{\"brightness_pct\": 100}",
-        "dataType": "json",
-        "mergecontext": "",
-        "output_location": "",
-        "output_location_type": "none",
-        "mustacheAltTags": false,
-        "x": 1120,
-        "y": 300,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f6e017d1.803f88",
-        "type": "inject",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 690,
-        "y": 320,
-        "wires": [
-            [
-                "499cde45.ee948"
-            ]
-        ]
-    },
-    {
-        "id": "a15d0f2a.06f37",
-        "type": "switch",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "property": "payload.event.event",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "2002",
-                "vt": "num"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 890,
-        "y": 60,
-        "wires": [
-            [
-                "ba814e87.7ee9b"
-            ]
-        ]
-    },
-    {
-        "id": "ba814e87.7ee9b",
-        "type": "change",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "toggle",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1080,
-        "y": 100,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "8bf43284.99258",
-        "type": "api-call-service",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "server": "48d01de6.b64724",
-        "version": 1,
-        "debugenabled": true,
-        "service_domain": "light",
-        "service": "toggle",
-        "entityId": "light.2",
-        "data": "",
-        "dataType": "json",
-        "mergecontext": "",
-        "output_location": "",
-        "output_location_type": "none",
-        "mustacheAltTags": false,
-        "x": 780,
-        "y": 1260,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e7c33f2.aad0fc",
-        "type": "server-events",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "server": "48d01de6.b64724",
-        "event_type": "",
-        "exposeToHomeAssistant": false,
-        "haConfig": [
-            {
-                "property": "name",
-                "value": ""
-            },
-            {
-                "property": "icon",
-                "value": ""
-            }
-        ],
-        "waitForRunning": true,
-        "x": 690,
-        "y": 880,
-        "wires": [
-            [
-                "fe69acb5.e95f9"
-            ]
-        ]
-    },
-    {
-        "id": "57a4bf5c.45343",
-        "type": "debug",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1170,
-        "y": 820,
-        "wires": []
-    },
-    {
-        "id": "fe69acb5.e95f9",
-        "type": "switch",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "property": "payload.entity_id",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "regex",
-                "v": "binary_sensor.(?!ubnt.*$)",
-                "vt": "str",
-                "case": false
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 930,
-        "y": 860,
-        "wires": [
-            [
-                "57a4bf5c.45343"
-            ]
-        ]
-    },
-    {
-        "id": "a0841450.981c38",
-        "type": "deconz-event",
-        "z": "f0166d14.e4e0c",
-        "name": "look at input",
-        "server": "29f75ce1.2ab4e4",
-        "device_name": null,
-        "x": 260,
-        "y": 800,
-        "wires": [
-            [
-                "8117826f.46851"
-            ]
-        ]
-    },
-    {
-        "id": "1f5c466f.d6bfaa",
-        "type": "debug",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 650,
-        "y": 1080,
-        "wires": []
-    },
-    {
-        "id": "8117826f.46851",
-        "type": "switch",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "property": "payload.id",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "18",
-                "vt": "num"
-            },
-            {
-                "t": "eq",
-                "v": "17",
-                "vt": "num"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 450,
-        "y": 920,
-        "wires": [
-            [
-                "1f5c466f.d6bfaa"
-            ],
-            [
-                "1f5c466f.d6bfaa"
-            ]
-        ]
-    },
-    {
-        "id": "b6df2622.248e28",
-        "type": "server-events",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "server": "48d01de6.b64724",
-        "event_type": "",
-        "exposeToHomeAssistant": false,
-        "haConfig": [
-            {
-                "property": "name",
-                "value": ""
-            },
-            {
-                "property": "icon",
-                "value": ""
-            }
-        ],
-        "waitForRunning": true,
-        "x": 880,
-        "y": 980,
-        "wires": [
-            [
-                "675ca7f0.3d8f48"
-            ]
-        ]
-    },
-    {
-        "id": "675ca7f0.3d8f48",
-        "type": "switch",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "property": "payload.entity_id",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "regex",
-                "v": "light\\..*$",
-                "vt": "str",
-                "case": false
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 1150,
-        "y": 1040,
-        "wires": [
-            [
-                "9cacffc9.6a7ea"
-            ]
-        ]
-    },
-    {
-        "id": "9cacffc9.6a7ea",
-        "type": "debug",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1430,
-        "y": 1200,
-        "wires": []
-    },
-    {
-        "id": "d80a89b9.86f238",
-        "type": "inject",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 460,
-        "y": 1080,
-        "wires": [
-            [
-                "8bf43284.99258"
-            ]
-        ]
-    },
-    {
         "id": "cf1dd3c5.d9aa9",
         "type": "api-call-service",
         "z": "f0166d14.e4e0c",
@@ -608,8 +95,8 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 1130,
-        "y": 1880,
+        "x": 1110,
+        "y": 840,
         "wires": [
             [
                 "5f4bd365.88ab1c"
@@ -629,8 +116,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1370,
-        "y": 1820,
+        "x": 1350,
+        "y": 780,
         "wires": []
     },
     {
@@ -652,8 +139,8 @@
             }
         ],
         "waitForRunning": true,
-        "x": 540,
-        "y": 1600,
+        "x": 340,
+        "y": 720,
         "wires": [
             [
                 "e6963f4d.81c4a"
@@ -677,8 +164,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 750,
-        "y": 1640,
+        "x": 610,
+        "y": 740,
         "wires": [
             [
                 "6dc00faa.bbb71"
@@ -707,8 +194,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 880,
-        "y": 1740,
+        "x": 800,
+        "y": 740,
         "wires": [
             [
                 "c6567b2.fbc2288"
@@ -735,8 +222,8 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 1190,
-        "y": 1560,
+        "x": 1170,
+        "y": 520,
         "wires": [
             [
                 "5f4bd365.88ab1c"
@@ -752,8 +239,8 @@
         "device": "00:15:8d:00:02:c6:5a:d6-01",
         "device_name": "Aqara1 : Color temperature light",
         "state": "0",
-        "x": 420,
-        "y": 1500,
+        "x": 400,
+        "y": 460,
         "wires": [
             [
                 "c3eeb16d.aae83"
@@ -777,8 +264,8 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 110,
-        "y": 1440,
+        "x": 90,
+        "y": 400,
         "wires": [
             [
                 "90bbf286.f81f"
@@ -798,8 +285,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 740,
-        "y": 1500,
+        "x": 720,
+        "y": 460,
         "wires": []
     },
     {
@@ -815,8 +302,8 @@
         "payload": "payload",
         "payloadType": "msg",
         "transitionTime": "1200",
-        "x": 500,
-        "y": 1360,
+        "x": 480,
+        "y": 320,
         "wires": []
     },
     {
@@ -836,8 +323,8 @@
         "topic": "",
         "payload": "true",
         "payloadType": "bool",
-        "x": 170,
-        "y": 1260,
+        "x": 150,
+        "y": 220,
         "wires": [
             [
                 "417d0846.d4db48"
@@ -857,8 +344,8 @@
         "payload": "payload",
         "payloadType": "msg",
         "transitionTime": "120",
-        "x": 500,
-        "y": 1280,
+        "x": 480,
+        "y": 240,
         "wires": []
     },
     {
@@ -878,8 +365,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 180,
-        "y": 1180,
+        "x": 160,
+        "y": 140,
         "wires": [
             [
                 "20ae86e4.0e5f8a"
@@ -903,8 +390,8 @@
         "topic": "",
         "payload": "false",
         "payloadType": "bool",
-        "x": 170,
-        "y": 1340,
+        "x": 150,
+        "y": 300,
         "wires": [
             [
                 "417d0846.d4db48"
@@ -912,30 +399,30 @@
         ]
     },
     {
-        "id": "62966dc2.f6d244",
-        "type": "deconz-output",
-        "z": "f0166d14.e4e0c",
-        "name": "aqara1_bri",
-        "server": "29f75ce1.2ab4e4",
-        "device": "00:15:8d:00:02:c6:5a:d6-01",
-        "device_name": "Aqara1 : Color temperature light",
-        "command": "bri",
-        "commandType": "deconz_cmd",
-        "payload": "payload",
-        "payloadType": "msg",
-        "transitionTime": "0",
-        "x": 490,
-        "y": 1180,
-        "wires": []
-    },
-    {
-        "id": "85cefb48.937078",
+        "id": "c78c1a90.0d4b78",
         "type": "inject",
         "z": "f0166d14.e4e0c",
         "name": "",
         "props": [
             {
-                "p": "payload"
+                "p": "domain",
+                "v": "light",
+                "vt": "str"
+            },
+            {
+                "p": "service",
+                "v": "toggle",
+                "vt": "str"
+            },
+            {
+                "p": "entity_id",
+                "v": "light.2",
+                "vt": "str"
+            },
+            {
+                "p": "data",
+                "v": "{\"brightness_oct\": 100}",
+                "vt": "jsonata"
             }
         ],
         "repeat": "",
@@ -943,14 +430,35 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "254",
-        "payloadType": "num",
-        "x": 140,
-        "y": 1000,
+        "x": 520,
+        "y": 1160,
         "wires": [
             [
-                "62966dc2.f6d244"
+                "8c88dfec.18954"
             ]
+        ]
+    },
+    {
+        "id": "8c88dfec.18954",
+        "type": "api-call-service",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "server": "48d01de6.b64724",
+        "version": 1,
+        "debugenabled": false,
+        "service_domain": "",
+        "service": "",
+        "entityId": "",
+        "data": "{\"brightness_pct\": 100}",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 730,
+        "y": 1180,
+        "wires": [
+            []
         ]
     }
 ]
