@@ -837,8 +837,8 @@
         "payload": "payload",
         "payloadType": "msg",
         "transitionTime": "36",
-        "x": 270,
-        "y": 1340,
+        "x": 520,
+        "y": 1300,
         "wires": []
     },
     {
