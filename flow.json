@@ -342,8 +342,8 @@
         "server": "48d01de6.b64724",
         "version": 1,
         "debugenabled": true,
-        "service_domain": "automation",
-        "service": "trigger",
+        "service_domain": "light",
+        "service": "",
         "entityId": "binary_sensor.ubnt_device_quadrupole",
         "data": "",
         "dataType": "json",
@@ -351,7 +351,7 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 800,
+        "x": 760,
         "y": 1260,
         "wires": [
             []
@@ -760,5 +760,20 @@
         "x": 1400,
         "y": 1680,
         "wires": []
+    },
+    {
+        "id": "90bbf286.f81f",
+        "type": "deconz-get",
+        "z": "f0166d14.e4e0c",
+        "name": "aqara1",
+        "server": "29f75ce1.2ab4e4",
+        "device": "00:15:8d:00:02:c6:5a:d6-01",
+        "device_name": "Aqara1 : Color temperature light",
+        "state": "0",
+        "x": 150,
+        "y": 1040,
+        "wires": [
+            []
+        ]
     }
 ]
