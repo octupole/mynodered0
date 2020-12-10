@@ -415,13 +415,8 @@
                 "vt": "str"
             },
             {
-                "p": "entity_id",
-                "v": "light.2",
-                "vt": "str"
-            },
-            {
                 "p": "payload.data",
-                "v": "{\"brightness_pct\": 100}",
+                "v": "{\"entity_id\": l\"ight.2\",\"brightness_pct\": 100}",
                 "vt": "jsonata"
             }
         ],
@@ -449,7 +444,7 @@
         "debugenabled": false,
         "service_domain": "",
         "service": "",
-        "entityId": "light.30",
+        "entityId": "",
         "data": "{\"brightness_pct\": 100}",
         "dataType": "json",
         "mergecontext": "",
