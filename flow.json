@@ -79,31 +79,6 @@
         "polling": "15"
     },
     {
-        "id": "cf1dd3c5.d9aa9",
-        "type": "api-call-service",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "server": "48d01de6.b64724",
-        "version": 1,
-        "debugenabled": false,
-        "service_domain": "light",
-        "service": "turn_on",
-        "entityId": "light.2",
-        "data": "{\"brightness_pct\": 100}",
-        "dataType": "json",
-        "mergecontext": "",
-        "output_location": "",
-        "output_location_type": "none",
-        "mustacheAltTags": false,
-        "x": 1110,
-        "y": 840,
-        "wires": [
-            [
-                "5f4bd365.88ab1c"
-            ]
-        ]
-    },
-    {
         "id": "5f4bd365.88ab1c",
         "type": "debug",
         "z": "f0166d14.e4e0c",
@@ -116,7 +91,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1350,
+        "x": 1430,
         "y": 780,
         "wires": []
     },
@@ -198,35 +173,10 @@
         "y": 740,
         "wires": [
             [
-                "c6567b2.fbc2288"
+                "108a1437.16bb7c"
             ],
             [
-                "cf1dd3c5.d9aa9"
-            ]
-        ]
-    },
-    {
-        "id": "c6567b2.fbc2288",
-        "type": "api-call-service",
-        "z": "f0166d14.e4e0c",
-        "name": "",
-        "server": "48d01de6.b64724",
-        "version": 1,
-        "debugenabled": false,
-        "service_domain": "light",
-        "service": "turn_off",
-        "entityId": "light.2",
-        "data": "{\"transition\": 50}",
-        "dataType": "json",
-        "mergecontext": "",
-        "output_location": "",
-        "output_location_type": "none",
-        "mustacheAltTags": false,
-        "x": 1170,
-        "y": 520,
-        "wires": [
-            [
-                "5f4bd365.88ab1c"
+                "f91a0133.1959a"
             ]
         ]
     },
@@ -418,9 +368,7 @@
         "x": 530,
         "y": 1160,
         "wires": [
-            [
-                "108a1437.16bb7c"
-            ]
+            []
         ]
     },
     {
@@ -440,10 +388,12 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 1050,
-        "y": 1200,
+        "x": 1190,
+        "y": 740,
         "wires": [
-            []
+            [
+                "5f4bd365.88ab1c"
+            ]
         ]
     },
     {
@@ -465,8 +415,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 780,
-        "y": 1260,
+        "x": 1000,
+        "y": 840,
         "wires": [
             [
                 "8c88dfec.18954"
@@ -492,8 +442,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 820,
-        "y": 1120,
+        "x": 980,
+        "y": 620,
         "wires": [
             [
                 "8c88dfec.18954"
@@ -520,9 +470,7 @@
         "x": 520,
         "y": 1240,
         "wires": [
-            [
-                "f91a0133.1959a"
-            ]
+            []
         ]
     }
 ]
