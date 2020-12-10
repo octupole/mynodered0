@@ -313,26 +313,5 @@
                 "38ef961a.b0f15a"
             ]
         ]
-    },
-    {
-        "id": "b2fc518b.e5d48",
-        "type": "thingzi-schedule",
-        "z": "aee8ddaf.b36bb",
-        "name": "",
-        "events": "[{\"start\":{\"dow\":4,\"mod\":1035},\"end\":{\"dow\":4,\"mod\":1080}}]",
-        "sendType": "msg",
-        "sendId": "payload",
-        "onPayloadType": "json",
-        "onPayload": "{\"service\": \"turn_on\"}",
-        "offPayloadType": "str",
-        "offPayload": "{\"service\": \"turn_off\"}",
-        "startupMessage": true,
-        "x": 370,
-        "y": 820,
-        "wires": [
-            [
-                "38ef961a.b0f15a"
-            ]
-        ]
     }
 ]
