@@ -423,10 +423,62 @@
         "fri": false,
         "sat": true,
         "sun": true,
-        "x": 360,
+        "x": 320,
         "y": 260,
         "wires": [
-            []
+            [
+                "d31bcfae.6244d"
+            ]
+        ]
+    },
+    {
+        "id": "45770a73.3ae334",
+        "type": "eztimer",
+        "z": "aee8ddaf.b36bb",
+        "name": "Lunch time",
+        "debug": false,
+        "autoname": "12:15:00 - 13:10:00",
+        "tag": "eztimer",
+        "suspended": false,
+        "sendEventsOnSuspend": false,
+        "lat": "",
+        "lon": "",
+        "timerType": "1",
+        "startupMessage": true,
+        "ontype": "2",
+        "ontimesun": "dawn",
+        "ontimetod": "12:15:00",
+        "onpropertytype": "msg",
+        "onproperty": "payload",
+        "onvaluetype": "json",
+        "onvalue": "{\"service\": \"turn_on\"}",
+        "onoffset": 0,
+        "onrandomoffset": 0,
+        "onsuppressrepeats": false,
+        "offtype": "2",
+        "offtimesun": "dusk",
+        "offtimetod": "13:10:00",
+        "offduration": "00:01:00",
+        "offpropertytype": "msg",
+        "offproperty": "payload",
+        "offvaluetype": "json",
+        "offvalue": "{\"service\": \"turn_off\"}",
+        "offoffset": 0,
+        "offrandomoffset": 0,
+        "offsuppressrepeats": false,
+        "mon": true,
+        "tue": true,
+        "wed": true,
+        "thu": true,
+        "fri": true,
+        "sat": true,
+        "sun": true,
+        "x": 310,
+        "y": 400,
+        "wires": [
+            [
+                "d31bcfae.6244d"
+            ]
         ]
     }
 ]
