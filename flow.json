@@ -9,7 +9,7 @@
     {
         "id": "aee8ddaf.b36bb",
         "type": "tab",
-        "label": "Flow 1",
+        "label": "Espresso Schedule",
         "disabled": false,
         "info": ""
     },
@@ -283,35 +283,10 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 1230,
-        "y": 880,
+        "x": 1030,
+        "y": 600,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "59c957d4.8ce158",
-        "type": "inject",
-        "z": "aee8ddaf.b36bb",
-        "name": "",
-        "props": [
-            {
-                "p": "payload.service",
-                "v": "toggle",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "x": 520,
-        "y": 1140,
-        "wires": [
-            [
-                "38ef961a.b0f15a"
-            ]
         ]
     },
     {
@@ -356,30 +331,13 @@
         "fri": true,
         "sat": false,
         "sun": false,
-        "x": 340,
-        "y": 160,
+        "x": 550,
+        "y": 520,
         "wires": [
             [
-                "d31bcfae.6244d"
+                "38ef961a.b0f15a"
             ]
         ]
-    },
-    {
-        "id": "d31bcfae.6244d",
-        "type": "debug",
-        "z": "aee8ddaf.b36bb",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 980,
-        "y": 580,
-        "wires": []
     },
     {
         "id": "a775af2e.fe5f7",
@@ -423,11 +381,11 @@
         "fri": false,
         "sat": true,
         "sun": true,
-        "x": 320,
-        "y": 260,
+        "x": 530,
+        "y": 620,
         "wires": [
             [
-                "d31bcfae.6244d"
+                "38ef961a.b0f15a"
             ]
         ]
     },
@@ -473,11 +431,11 @@
         "fri": true,
         "sat": true,
         "sun": true,
-        "x": 310,
-        "y": 400,
+        "x": 520,
+        "y": 760,
         "wires": [
             [
-                "d31bcfae.6244d"
+                "38ef961a.b0f15a"
             ]
         ]
     }
