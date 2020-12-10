@@ -832,11 +832,11 @@
         "server": "29f75ce1.2ab4e4",
         "device": "00:15:8d:00:02:c6:5a:d6-01",
         "device_name": "Aqara1 : Color temperature light",
-        "command": "toggle",
+        "command": "on",
         "commandType": "deconz_cmd",
         "payload": "payload",
         "payloadType": "msg",
-        "transitionTime": "36",
+        "transitionTime": "40",
         "x": 520,
         "y": 1300,
         "wires": []
