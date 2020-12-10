@@ -323,5 +323,28 @@
                 "f3375175.ff6f"
             ]
         ]
+    },
+    {
+        "id": "8bf43284.99258",
+        "type": "api-call-service",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "server": "48d01de6.b64724",
+        "version": 1,
+        "debugenabled": false,
+        "service_domain": "light",
+        "service": "toggle",
+        "entityId": "binary_sensor.sensor_drawer",
+        "data": "",
+        "dataType": "json",
+        "mergecontext": "",
+        "output_location": "",
+        "output_location_type": "none",
+        "mustacheAltTags": false,
+        "x": 1100,
+        "y": 680,
+        "wires": [
+            []
+        ]
     }
 ]
