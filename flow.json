@@ -584,7 +584,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 460,
-        "y": 1180,
+        "y": 1080,
         "wires": [
             [
                 "8bf43284.99258"
@@ -834,7 +834,7 @@
         "payloadType": "msg",
         "transitionTime": "120",
         "x": 500,
-        "y": 1300,
+        "y": 1360,
         "wires": []
     },
     {
@@ -855,10 +855,52 @@
         "payload": "false",
         "payloadType": "bool",
         "x": 170,
-        "y": 1200,
+        "y": 1260,
         "wires": [
             [
                 "417d0846.d4db48"
+            ]
+        ]
+    },
+    {
+        "id": "20ae86e4.0e5f8a",
+        "type": "deconz-output",
+        "z": "f0166d14.e4e0c",
+        "name": "aqara1",
+        "server": "29f75ce1.2ab4e4",
+        "device": "00:15:8d:00:02:c6:5a:d6-01",
+        "device_name": "Aqara1 : Color temperature light",
+        "command": "toggle",
+        "commandType": "deconz_cmd",
+        "payload": "payload",
+        "payloadType": "msg",
+        "transitionTime": "120",
+        "x": 500,
+        "y": 1280,
+        "wires": []
+    },
+    {
+        "id": "2113c7c.3809038",
+        "type": "inject",
+        "z": "f0166d14.e4e0c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 170,
+        "y": 1180,
+        "wires": [
+            [
+                "20ae86e4.0e5f8a"
             ]
         ]
     }
