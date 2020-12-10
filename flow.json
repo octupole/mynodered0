@@ -416,7 +416,7 @@
             },
             {
                 "p": "payload.data",
-                "v": "{\"entity_id\": l\"ight.2\",\"brightness_pct\": 100}",
+                "v": "{\"entity_id\": \"light.2\",\"brightness_pct\": 100}",
                 "vt": "jsonata"
             }
         ],
