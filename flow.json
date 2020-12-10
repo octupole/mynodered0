@@ -429,8 +429,7 @@
         "y": 1160,
         "wires": [
             [
-                "8c88dfec.18954",
-                "6cd7dd0.6bf7224"
+                "53f58a40.1831b4"
             ]
         ]
     },
@@ -458,20 +457,44 @@
         ]
     },
     {
-        "id": "6cd7dd0.6bf7224",
-        "type": "debug",
+        "id": "53f58a40.1831b4",
+        "type": "change",
         "z": "f0166d14.e4e0c",
-        "name": "",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 880,
-        "y": 1280,
-        "wires": []
+        "name": "light.2 turn_on",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.domain",
+                "pt": "msg",
+                "to": "light",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.service",
+                "pt": "msg",
+                "to": "turn_on",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.data",
+                "pt": "msg",
+                "to": "{\"entity_id\": \"light.2\",\"brightness_pct\": 100}",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 780,
+        "y": 1180,
+        "wires": [
+            [
+                "8c88dfec.18954"
+            ]
+        ]
     }
 ]
