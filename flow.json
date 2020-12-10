@@ -332,8 +332,8 @@
         "server": "48d01de6.b64724",
         "version": 1,
         "debugenabled": false,
-        "service_domain": "notify",
-        "service": "toggle",
+        "service_domain": "",
+        "service": "",
         "entityId": "binary_sensor.sensor_drawer",
         "data": "",
         "dataType": "json",
@@ -341,7 +341,7 @@
         "output_location": "",
         "output_location_type": "none",
         "mustacheAltTags": false,
-        "x": 1110,
+        "x": 1070,
         "y": 680,
         "wires": [
             []
