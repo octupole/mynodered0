@@ -342,22 +342,6 @@
         ]
     },
     {
-        "id": "a13b6b66.d33db8",
-        "type": "json",
-        "z": "aee8ddaf.b36bb",
-        "name": "",
-        "property": "payload",
-        "action": "",
-        "pretty": false,
-        "x": 600,
-        "y": 540,
-        "wires": [
-            [
-                "d31bcfae.6244d"
-            ]
-        ]
-    },
-    {
         "id": "f956776d.78d6c8",
         "type": "eztimer",
         "z": "aee8ddaf.b36bb",
@@ -403,7 +387,7 @@
         "y": 160,
         "wires": [
             [
-                "a13b6b66.d33db8"
+                "d31bcfae.6244d"
             ]
         ]
     },
